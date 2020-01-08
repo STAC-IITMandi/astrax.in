@@ -564,7 +564,7 @@ a:hover, a:active {
 .homepage-featured-events {
     height: auto;
     padding: 110px 0 150px;
-    background: url("images/featured-events-bg.jpg") no-repeat center;
+    background: url("images/featured-events-bg.png") no-repeat center;
     background-size: cover !important;
 }
 
@@ -1004,6 +1004,11 @@ a:hover, a:active {
 .event-overlay-link:hover {
     text-decoration: none;
     color: #fff;
+}
+
+.swiper-slide {
+    background: url('images/header-bg.png') no-repeat center;
+    background-size: cover;
 }
 
 .homepage-regional-events-slider .swiper-slide:hover .event-overlay-link {
