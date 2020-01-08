@@ -1148,7 +1148,7 @@ a:hover, a:active {
 }
 
 .contact-page-header {
-    background-image: url("images/contact-bg.jpg");
+    background-image: url("images/contact-bg.png");
 }
 
 .elements-page-header {
@@ -1295,7 +1295,7 @@ a:hover, a:active {
 .upcoming-events-outer {
     padding: 400px 0 120px;
     margin-top: -200px;
-    background: url("images/upcoming-events-bg.jpg") no-repeat;
+    background: url("images/upcoming-events-bg.png") no-repeat;
     background-size: cover;
 }
 
