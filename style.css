@@ -116,7 +116,7 @@ a:hover, a:active {
 }
 
 .site-header .site-title img {
-    max-height: 64px;
+    max-height: 72px;
 }
 
 /*
@@ -313,6 +313,7 @@ a:hover, a:active {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-slider {
+    height: 100vh;
 }
 
 .hero-content {
@@ -453,9 +454,6 @@ a:hover, a:active {
 
 
 @media screen and (min-width: 992px) {
-    .hero-slider {
-        height: 100vh;
-    }
 
     .hero-content {
 
@@ -488,6 +486,39 @@ a:hover, a:active {
     }
 }
 
+/*--------------------------------------------------------------
+# Homepage - Header Footer | STAC, IIT Mandi logos
+--------------------------------------------------------------*/
+.header-footer {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hf-logo {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100px;
+}
+
+@media screen and (max-width: 992px) {
+    .hf-logo {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 16px;
+        display: block;
+        width: 80px;
+    }
+}
 
 /*--------------------------------------------------------------
 # Homepage - Info Section
@@ -2177,4 +2208,10 @@ ul.tabs-nav .tab-nav.active {
 
 .back-to-top path {
     fill: #fff;
+}
+
+@media screen and (max-width: 576px){
+    .footer-logo img {
+        max-width: 80%;
+    }
 }
