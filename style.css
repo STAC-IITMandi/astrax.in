@@ -903,7 +903,7 @@ a:hover, a:active {
 .homepage-regional-events {
     min-height: 1500px;
     padding-top: 280px;
-    background: url("images/regional-events-bg.png") no-repeat 70%;
+    background: url("images/regional-events-bg.png") no-repeat;
     background-size: cover;
 }
 
@@ -1033,13 +1033,15 @@ a:hover, a:active {
 
 @media screen and (max-width: 992px) {
     .homepage-regional-events {
-        background: url("images/regional-events-bg.png") no-repeat 50%;
+        background: url("images/regional-events-bg.png") no-repeat 40% center;
+        background-size: cover;
     }
 }
 
 @media screen and (max-width: 768px) {
     .homepage-regional-events {
-        background: url("images/regional-events-bg.png") no-repeat;
+        background: url("images/regional-events-bg.png") no-repeat 0% center;
+        background-size: cover;
     }
 }
 
