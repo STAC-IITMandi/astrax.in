@@ -1,2 +1,3 @@
 # astrax.in
-INTERVENTIONS STRICTLY PROHIBITED FOR NOW
+
+For administrative details, contact shreyas@astrax.in
