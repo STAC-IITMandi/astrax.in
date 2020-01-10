@@ -494,7 +494,7 @@ a:hover, a:active {
     padding: 0;
     bottom: 0;
     left: 0;
-    z-index: 99;
+    z-index: 80;
     width: 100%;
     display: flex;
     position: absolute;
