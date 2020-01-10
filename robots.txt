@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://astrax.in/sitemap.xml
