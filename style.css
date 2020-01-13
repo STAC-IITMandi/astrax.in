@@ -317,7 +317,7 @@ a:hover, a:active {
 }
 
 .hero-content {
-    padding-top: 150px;
+    padding-top: 130px;
     padding-bottom: 120px;
 }
 
@@ -328,14 +328,14 @@ a:hover, a:active {
 }
 
 .hero-slider .entry-title {
-    font-size: 28px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.0;
     font-weight: bold;
     color: #fff;
 }
 
 .hero-slider .btn {
-    margin-top: 45px;
+    margin-top: 20px;
 }
 
 .swiper-container-horizontal >.swiper-pagination-bullets,
@@ -483,6 +483,37 @@ a:hover, a:active {
 
     .swiper-button-prev {
         left: 24px;
+    }
+}
+
+/*--------------------------------
+# Event Dates
+--------------------------------*/
+.event-dates {
+    position: relative;
+    float: left;
+    margin-right: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 5px;
+    color: white;
+}
+
+.event-dates a {
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .event-dates {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .event-dates {
+        font-size: 32px;
+        padding: 10px 5px;
     }
 }
 
