@@ -559,7 +559,7 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Homepage - Featured Events
+# Homepage - Summary Section
 --------------------------------------------------------------*/
 .homepage-featured-events {
     height: auto;
@@ -898,7 +898,7 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Homepage - Regional Events
+# Homepage - AstraX Events
 --------------------------------------------------------------*/
 .homepage-regional-events {
     min-height: 1500px;
@@ -911,6 +911,42 @@ a:hover, a:active {
     font-size: 60px;
     font-weight: bold;
     color: #fff;
+}
+
+.homepage-regional-events .row {
+    padding: 10px;
+} 
+
+.homepage-regional-events .category-title {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.homepage-regional-events .card {
+    /* border: unset; */
+    border-radius: 0;
+}
+
+.homepage-regional-events .card-body {
+    padding: 0;
+    margin: 0;
+}
+
+.homepage-regional-events .card-title {
+    padding: 0;
+    margin: 0;
+    margin-top: -50px;
+    margin-left: 0;
+    color: white;
+    padding-right: 20px;
+    text-align: right;
+    font-weight: bolder;
 }
 
 .homepage-regional-events .select-location select {
