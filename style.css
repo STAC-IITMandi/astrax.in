@@ -932,7 +932,7 @@ a:hover, a:active {
 # Homepage - AstraX Events
 --------------------------------------------------------------*/
 .homepage-regional-events {
-    min-height: 1500px;
+    min-height: 1050px;
     padding-top: 280px;
     background: url("images/regional-events-bg.png") no-repeat;
     background-size: cover;
