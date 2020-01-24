@@ -1234,23 +1234,23 @@ a:hover, a:active {
 }
 
 .events-page-header {
-    background-image: url("images/header-bg2.png");
+    background-image: url("./images/header-bg-common.png");
 }
 
 .single-event-page-header {
-    background-image: url("images/header-bg2.png");
+    background-image: url("./images/header-bg-common.png");
 }
 
 .events-news-page-header {
-    background-image: url("images/header-bg2.png");
+    background-image: url("./images/header-bg-common.png");
 }
 
 .contact-page-header {
-    background-image: url("images/header-bg2.png");
+    background-image: url("./images/header-bg-common.png");
 }
 
 .elements-page-header {
-    background-image: url("images/header-bg2.png");
+    background-image: url("./images/header-bg-common.png");
 }
 
 /*--------------------------------------------------------------
