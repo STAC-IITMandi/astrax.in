@@ -590,7 +590,7 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Homepage - Summary Section
+# Homepage - Highlights Section
 --------------------------------------------------------------*/
 .homepage-featured-events {
     height: auto;
@@ -818,6 +818,14 @@ a:hover, a:active {
         left: 475px;
     }
 }
+
+/*--------------------------------------------------------------
+# About page
+--------------------------------------------------------------*/
+.margin-bottom-120 {
+    margin-bottom: 120px;
+}
+
 
 /*--------------------------------------------------------------
 # Homepage - Next Events
@@ -1226,23 +1234,23 @@ a:hover, a:active {
 }
 
 .events-page-header {
-    background-image: url("images/events-page-header-bg.jpg");
+    background-image: url("images/header-bg2.png");
 }
 
 .single-event-page-header {
-    background-image: url("images/single-event-bg.jpg");
+    background-image: url("images/header-bg2.png");
 }
 
 .events-news-page-header {
-    background-image: url("images/events-news-bg.jpg");
+    background-image: url("images/header-bg2.png");
 }
 
 .contact-page-header {
-    background-image: url("images/contact-bg.png");
+    background-image: url("images/header-bg2.png");
 }
 
 .elements-page-header {
-    background-image: url("images/elements-bg.jpg");
+    background-image: url("images/header-bg2.png");
 }
 
 /*--------------------------------------------------------------
@@ -2002,6 +2010,160 @@ ul.tabs-nav .tab-nav.active {
     width: 32px;
     height: 2px;
     background: #232127;
+}
+
+/*--------------------------------------------------------------
+# Team Page
+--------------------------------------------------------------*/
+.team-wrapper{
+    margin-top: 80px;
+}
+
+.team-page .entry-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #232127;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.team-section {
+    width: 100%;
+}
+
+.member-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin: 12px;
+}
+
+.member .img-wrapper {
+    width: 100%;
+    padding: 3px;
+    box-shadow: #b1b1b1 0px 0px 5px 0px;
+    transition: 0.2s;
+    margin: 10px;
+}
+
+.member img {
+    width: 100%;
+}
+
+.member .img-wrapper:hover {
+    box-shadow: #777777 0px 0px 8px 0px;
+    transition: 0.2s;
+}
+
+.member .name {
+    margin: 0;
+    font: inherit;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.member .por {
+    margin: 0;
+    font: inherit;
+    color: #581687;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.member .social-links {
+    width: 100%;
+    text-align: center;
+    margin: 2px;
+}
+
+.member .social-links a {
+    font-size: 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #aaa;
+    transition: 0.2s;
+}
+
+.member .social-links a:hover {
+    color: #231e23;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 992px){
+    .member .name {
+        font-size: 18px;
+    }
+    .member .por {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .member {
+        width: 22%;
+        margin: 8px;
+    }
+    .member .name {
+        font-size: 15px;
+    }
+    .member .por {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 533px){
+    .team-page .entry-title {
+        font-size: 50px;
+    }
+    .member {
+        width: 34%;
+        margin: 10px;
+    }
+    .member .name {
+        font-size: 18px;
+    }
+    .member .por {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .member {
+        width: 50%;
+        margin: 10px;
+    }
+    .member .name {
+        font-size: 22px;
+    }
+    .member .por {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .member {
+        width: 60%;
+        margin: 10px;
+    }
+    .member .name {
+        font-size: 20px;
+    }
+    .member .por {
+        font-size: 18px;
+    }
 }
 
 /*--------------------------------------------------------------
