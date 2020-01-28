@@ -2439,7 +2439,7 @@ ul.tabs-nav .tab-nav.active {
 .footer-navigation ul,
 .footer-social ul {
     padding: 0;
-    margin: 32px 0 0;
+    margin: 32px 0;
     list-style: none;
 }
 
@@ -2508,9 +2508,35 @@ ul.tabs-nav .tab-nav.active {
 }
 
 /*--------------------------------------------------------------
+ # Contact
+ --------------------------------------------------------------*/
+
+ .contact {
+     margin: 32px 0;
+ }
+
+ .contact i {
+     color: white;
+     background-color: #9a24c1;
+     font-size: 20px !important;
+     padding-top: 9px;
+     width: 40px;
+     height: 40px;
+     display: inline-block;
+     border: 1px solid black;
+     border-radius: 50%;
+     text-align: center;
+     margin-right: 10px;
+ }
+
+ .contact a, .contact p {
+     color: white;
+ }
+
+/*--------------------------------------------------------------
 # Copyright
 --------------------------------------------------------------*/
 .copyright {
-    padding: 35px;
+    margin: 32px 0;
     color: white;
 }
