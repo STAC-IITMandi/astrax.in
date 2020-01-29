@@ -2510,9 +2510,8 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
  # Contact
  --------------------------------------------------------------*/
-
  .contact {
-     margin: 32px 0;
+     margin: 14px 0 32px;
  }
 
  .contact i {
@@ -2526,12 +2525,18 @@ ul.tabs-nav .tab-nav.active {
      border: 1px solid black;
      border-radius: 50%;
      text-align: center;
-     margin-right: 10px;
+     margin: 18px 0 6px;
  }
 
  .contact a, .contact p {
      color: white;
  }
+
+@media screen and (max-width: 576px){
+    .contact .col-4 {
+        min-width: 100%;
+    }
+}
 
 /*--------------------------------------------------------------
 # Copyright
