@@ -1540,7 +1540,7 @@ a:hover, a:active {
 
     .upcoming-events-list .entry-header,
     .upcoming-events-list .entry-footer {
-        width: 45%;
+        width: 100%;
         margin-top: 0;
     }
 
@@ -1671,7 +1671,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .single-event-page .event-content-wrap .entry-title {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     color: #232127;
     text-decoration: none;
@@ -2539,4 +2539,28 @@ ul.tabs-nav .tab-nav.active {
 .copyright {
     margin: 32px 0;
     color: white;
+}
+
+/*--------------------------------------------------------------
+# Problem Statement
+--------------------------------------------------------------*/
+.ps-list {
+
+}
+
+.ps-list li {
+    margin-bottom: 10px;
+}
+
+.ps table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.ps table th, td {
+    color: #2f2f2f;
+    padding: 5px;
+    text-align: center;
+    border: #232127 solid 2px;
 }
