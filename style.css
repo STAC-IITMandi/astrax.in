@@ -2508,6 +2508,40 @@ ul.tabs-nav .tab-nav.active {
 }
 
 /*--------------------------------------------------------------
+# How To Reach
+--------------------------------------------------------------*/
+.contact-location-details .transit {
+ position: absolute;
+ top: -25px;
+}
+
+.how-to-reach-map iframe {
+ width: 80%;
+ height: 600;
+ margin: 0% 10% 10%;
+}
+
+@media screen and (max-width: 992px){
+ .how-to-reach-map iframe {
+     width: 90%;
+     margin: 10% 5% 15%;
+ }
+ .contact-location-details .transit {
+     position: static;
+ }
+}
+
+@media screen and (max-width: 576px){
+ .how-to-reach-map iframe {
+     width: 90%;
+     margin: 18% 5% 25%;
+ }
+ .contact-location-details .transit {
+     position: static;
+ }
+}
+
+/*--------------------------------------------------------------
  # Contact
  --------------------------------------------------------------*/
 
