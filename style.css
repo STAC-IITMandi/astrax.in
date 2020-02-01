@@ -617,7 +617,7 @@ a:hover, a:active {
     position: absolute;
     left: 18px;
     bottom: 24px;
-    z-index: 99;
+    z-index: 97;
 }
 
 .homepage-featured-events .event-content-wrap .entry-header .entry-title {
