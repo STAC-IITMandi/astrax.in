@@ -266,8 +266,20 @@ a:hover, a:active {
     border-color: #2f2f2f;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .site-navigation ul li {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .site-navigation {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         position: relative;
         top: auto;
         right: auto;
@@ -278,7 +290,7 @@ a:hover, a:active {
     .site-navigation ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
+        justify-content: space-around;
         align-items: center;
         position: relative;
         top: auto;
