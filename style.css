@@ -2588,13 +2588,13 @@ ul.tabs-nav .tab-nav.active {
     margin-right: 15px;
     width: calc(100% - 30px);
     height: inherit;
-    background-color: #000000dd;
+    background-color: #220022dd;
     transition: 0.2s;
 }
 
 .poster-overlay:hover {
     color: #ffffff;
-    background-color: #220022dd;
+    background-color: #000000aa;
     transition: 0.2s;
 }
 
