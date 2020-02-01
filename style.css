@@ -2564,3 +2564,43 @@ ul.tabs-nav .tab-nav.active {
     text-align: center;
     border: #232127 solid 2px;
 }
+
+.ps .event-coordis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.ps .coordi-1 {
+    margin-right: 40px;
+}
+
+.ps .coordi-2 {
+    text-align: right;
+}
+
+.ps .coordi-email a {
+    font-weight: normal;
+    color: #9a24c1;
+}
+
+@media screen and (max-width: 992px) {
+    .upcoming-event-wrap .entry-title, .upcoming-event-wrap .entry-title a {
+        font-size: 1rem;
+    }
+    .upcoming-event-wrap .entry-header {
+        margin-top: 0;
+    }
+    /* .ps .event-coordis .entry-title a {
+        font-size: 20px;
+    } */
+}
+
+@media screen and (max-width: 536px) {
+    .ps .coordi-2 {
+        margin-left: 0px;
+        margin-top: 20px;
+        text-align: left;
+    }
+}
