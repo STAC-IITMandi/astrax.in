@@ -153,11 +153,12 @@ a:hover, a:active {
   Hamburger Menu
 ----------------------------------------*/
 .hamburger-menu {
-    position: relative;
+    position: fixed;
     width: 100%;
     max-width: 24px;
     height: 22px;
     margin-left: auto;
+    right: 20px;
     transition: .5s ease-in-out;
     cursor: pointer;
 }
@@ -167,7 +168,7 @@ a:hover, a:active {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #fff;
+    background: #AA00FF;
     border-radius: 10px;
     opacity: 1;
     left: 0;
@@ -220,6 +221,8 @@ a:hover, a:active {
     overflow: hidden;
     list-style: none;
     transition: all .35s;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .site-navigation.show {
@@ -290,7 +293,7 @@ a:hover, a:active {
     .site-navigation ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
         position: relative;
         top: auto;
@@ -951,6 +954,13 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Homepage - AstraX Events
 --------------------------------------------------------------*/
+.events-info {
+    text-align: left;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+}
+
 .homepage-regional-events {
     min-height: 1050px;
     padding-top: 280px;
