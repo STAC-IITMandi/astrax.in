@@ -168,7 +168,7 @@ a:hover, a:active {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #AA00FF;
+    background: linear-gradient(180deg, rgba(171,0,229,1) 0%, rgba(88,20,121,1) 100%);
     border-radius: 10px;
     opacity: 1;
     left: 0;
@@ -240,7 +240,7 @@ a:hover, a:active {
     overflow-x: scroll;
     padding: 30px;
     margin: 0;
-    background: #9a28d7;
+    background: linear-gradient(180deg, rgba(171,0,229,1) 0%, rgba(88,20,121,1) 100%);
     transition: all 0.35s;
 }
 
@@ -431,6 +431,10 @@ a:hover, a:active {
     background: #fff;
 }
 
+.hero-content .btn {
+    margin-right: 15px;
+}
+
 @media screen and (min-width: 768px){
     .swiper-button-next,
     .swiper-button-prev {
@@ -452,7 +456,7 @@ a:hover, a:active {
     font-size: 13px;
 }
 
-@media screen and (min-width: 576px){
+@media screen and (max-width: 992px){
     .hero-slider .entry-title {
         font-size: 42px;
     }
@@ -460,6 +464,21 @@ a:hover, a:active {
     .countdown-holder {
         margin-right: 24px;
         font-size: 42px;
+    }
+
+    .countdown-holder label {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .hero-slider .entry-title {
+        font-size: 32px;
+    }
+
+    .countdown-holder {
+        margin-right: 12px;
+        font-size: 32px;
     }
 
     .countdown-holder label {
@@ -516,13 +535,6 @@ a:hover, a:active {
 
 .event-dates a {
     color: white;
-}
-
-@media screen and (max-width: 576px) {
-    .event-dates {
-        font-size: 16px;
-        padding: 0 5px;
-    }
 }
 
 @media screen and (min-width: 992px) {
@@ -959,6 +971,8 @@ a:hover, a:active {
     width: 100%;
     color: #fff;
     font-weight: bold;
+    text-align: right;
+    font-size: 20px;
 }
 
 .homepage-regional-events {
@@ -2503,7 +2517,6 @@ ul.tabs-nav .tab-nav.active {
     background: #9a28d7;
     transition: all .35s;
     cursor: pointer;
-
     visibility: hidden;
     opacity: 0;
 }
