@@ -846,13 +846,6 @@ a:hover, a:active {
     }
 }
 
-/*--------------------------------------------------------------
-# About page
---------------------------------------------------------------*/
-.margin-bottom-120 {
-    margin-bottom: 120px;
-}
-
 
 /*--------------------------------------------------------------
 # Homepage - Next Events
@@ -1587,6 +1580,89 @@ a:hover, a:active {
 
     .upcoming-events-list .entry-footer {
         width: auto;
+    }
+}
+
+/*--------------------------------------------------------------
+# About Us Page
+--------------------------------------------------------------*/
+.aboutus-info-section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    background: #fff;
+}
+
+.aboutus-info-section figure img {
+    position: absolute;
+    margin: auto;
+    width: 75%;
+    top: 0;
+    bottom: 0;
+}
+
+.aboutus-info-section .entry-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    color: #232127;
+}
+
+.aboutus-info-section .entry-content {
+    margin-top: 32px;
+}
+
+.aboutus-info-section .entry-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777777;
+}
+
+.aboutus-info-section .entry-footer a {
+    margin-top: 32px;
+    margin-right: 12px;
+}
+
+.aboutus-info-section .member {
+    position: absolute;
+    margin: auto;
+    top: 80px;
+    bottom: 0;
+    width: 40%;
+    margin-left: -8%;
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutus-info-section .member {
+        top: 65px;
+        width: 50%;
+        margin-left: -6%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .aboutus-info-section .member {
+        top: 135px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutus-info-section {
+        margin: 80px 0;
+        background: #fff;
+    }
+    
+    .aboutus-info-section figure img {
+        position: relative;
+        margin: 0 auto 10%;
+        display:flex;
+    }
+    
+    .aboutus-info-section .member {
+        position: relative;
+        top: 0px;
+        margin: 0 auto 6%;
+        width: 50%;
     }
 }
 
