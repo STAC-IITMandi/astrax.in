@@ -605,7 +605,7 @@ a:hover, a:active {
     margin-top: 32px;
 }
 
-.homepage-info-section .entry-content p {
+.homepage-info-section .entry-content p, .workshop .entry-content {
     font-size: 18px;
     line-height: 1.7;
     color: #777777;
@@ -863,7 +863,8 @@ a:hover, a:active {
 }
 
 .next-events-section-header .entry-title,
-.events-partners .entry-title {
+.events-partners .entry-title,
+.workshop .entry-title {
     padding: 24px 0;
     font-size: 60px;
     font-weight: bold;
@@ -1128,10 +1129,14 @@ a:hover, a:active {
 }
 
 .events-partners {
-    padding: 120px 0;
+    padding: 40px 0 120px 0;
 }
 
-.events-partners .entry-title {
+.workshop {
+    padding: 100px 0;
+}
+
+.events-partners .entry-title, .workshop .entry-title {
     color: #232127;
 }
 
@@ -1432,7 +1437,7 @@ a:hover, a:active {
     color: #9a28d7;
 }
 
-.events-list-page .event-content-wrap .entry-content p {
+.events-list-page .event-content-wrap .entry-content p, .workshop .entry-content p {
     margin-top: 22px;
     font-size: 18px;
     line-height: 1.7;
@@ -2703,6 +2708,56 @@ ul.tabs-nav .tab-nav.active {
 .ps .coordi-email a {
     font-weight: normal;
     color: #9a24c1;
+}
+
+.workshop img {
+    width: 85% auto;
+    max-height: 240px;
+}
+
+.workshop .rover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.workshop .entry-content {
+    margin-top: 40px;
+}
+
+.workshop .entry-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.workshop .entry-footer .btn {
+    margin: 10px;
+}
+
+.workshop .workshop-l {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.workshop .workshop-l iframe {
+    width: 100%;
+    min-height: 200px;
+}
+
+.workshop p {
+    padding-right: 10px;
 }
 
 @media screen and (max-width: 992px) {
