@@ -846,13 +846,6 @@ a:hover, a:active {
     }
 }
 
-/*--------------------------------------------------------------
-# About page
---------------------------------------------------------------*/
-.margin-bottom-120 {
-    margin-bottom: 120px;
-}
-
 
 /*--------------------------------------------------------------
 # Homepage - Next Events
@@ -1591,6 +1584,85 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+# About Us Page
+--------------------------------------------------------------*/
+.aboutus-info-section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    background: #fff;
+}
+
+.aboutus-info-section figure img {
+    position: absolute;
+    margin: auto;
+    width: 75%;
+    top: 0;
+    bottom: 0;
+}
+
+.aboutus-info-section .entry-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    color: #232127;
+}
+
+.aboutus-info-section .entry-content {
+    margin-top: 32px;
+}
+
+.aboutus-info-section .entry-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777777;
+}
+
+.aboutus-info-section .entry-footer a {
+    margin-top: 32px;
+    margin-right: 12px;
+}
+
+.aboutus-info-section .member {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    width: 40%;
+    margin-left: -8%;
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutus-info-section .member {
+        width: 50%;
+        margin-left: -6%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .aboutus-info-section .member {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutus-info-section {
+        margin: 80px 0;
+    }
+    
+    .aboutus-info-section figure img {
+        position: relative;
+        margin: 10% auto 0;
+        display:flex;
+    }
+    
+    .aboutus-info-section .member {
+        position: relative;
+        margin: 10% auto 0;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+/*--------------------------------------------------------------
 # Tabs
 --------------------------------------------------------------*/
 ul.tabs-nav {
@@ -2095,6 +2167,10 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Team Page
 --------------------------------------------------------------*/
+.margin-bottom-120 {
+    margin-bottom: 120px;
+}
+
 .team-wrapper{
     margin-top: 80px;
 }
@@ -2113,6 +2189,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .member-wrapper {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
