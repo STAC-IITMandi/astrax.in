@@ -1649,19 +1649,23 @@ a:hover, a:active {
 @media screen and (max-width: 768px) {
     .aboutus-info-section {
         margin: 80px 0;
-        background: #fff;
+    }
+    
+    .aboutus-info-section .row {
+        display: flex;
+        flex-direction: column-reverse;
     }
     
     .aboutus-info-section figure img {
         position: relative;
-        margin: 0 auto 10%;
+        margin: 10% auto 0;
         display:flex;
     }
     
     .aboutus-info-section .member {
         position: relative;
         top: 0px;
-        margin: 0 auto 8%;
+        margin: 10% auto 0;
         width: 50%;
     }
 }
