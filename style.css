@@ -1625,15 +1625,13 @@ a:hover, a:active {
 .aboutus-info-section .member {
     position: absolute;
     margin: auto;
-    top: 80px;
-    bottom: 0;
+    top: 0;
     width: 40%;
     margin-left: -8%;
 }
 
 @media screen and (max-width: 1200px) {
     .aboutus-info-section .member {
-        top: 65px;
         width: 50%;
         margin-left: -6%;
     }
@@ -1641,19 +1639,13 @@ a:hover, a:active {
 
 @media screen and (max-width: 992px) {
     .aboutus-info-section .member {
-        top: 135px;
-        width: 60%;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .aboutus-info-section {
         margin: 80px 0;
-    }
-    
-    .aboutus-info-section .row {
-        display: flex;
-        flex-direction: column-reverse;
     }
     
     .aboutus-info-section figure img {
@@ -1664,9 +1656,9 @@ a:hover, a:active {
     
     .aboutus-info-section .member {
         position: relative;
-        top: 0px;
         margin: 10% auto 0;
         width: 50%;
+        margin-bottom: 20px;
     }
 }
 
@@ -2175,6 +2167,10 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Team Page
 --------------------------------------------------------------*/
+.margin-bottom-120 {
+    margin-bottom: 120px;
+}
+
 .team-wrapper{
     margin-top: 80px;
 }
@@ -2193,6 +2189,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .member-wrapper {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
