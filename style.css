@@ -1650,15 +1650,14 @@ a:hover, a:active {
     
     .aboutus-info-section figure img {
         position: relative;
-        margin: 10% auto 0;
+        margin: 0 auto 8%;
         display:flex;
     }
     
     .aboutus-info-section .member {
         position: relative;
-        margin: 10% auto 0;
+        margin: 0 auto 7%;
         width: 50%;
-        margin-bottom: 20px;
     }
 }
 
