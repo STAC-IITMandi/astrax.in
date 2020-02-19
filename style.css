@@ -2808,13 +2808,11 @@ ul.tabs-nav .tab-nav.active {
 .workshop .entry-footer {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 .workshop .entry-footer .btn {
-    margin: 10px;
+    margin: 10px 12px;
 }
 
 .workshop .workshop-l {
