@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "Astrax21",
+    description: "Astrax' 21, largest astro fest of Himalayas is happening! Featuring talks, workshops and more !!",
+    author: "AstraX Web Dev Team",
+    siteUrl: "https://astrax.in"
   },
   plugins: [
     "gatsby-plugin-image",
