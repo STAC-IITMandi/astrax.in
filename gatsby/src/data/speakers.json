@@ -1,0 +1,12 @@
+[
+  {
+    "name": "John Doe",
+    "title": "XYZ",
+    "image": "../images/speakers/speaker-1.jpg"
+  },
+  {
+    "name": "John Doe2",
+    "title": "ABC",
+    "image": "../images/speakers/speaker-2.jpg"
+  }
+]
