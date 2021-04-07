@@ -54,26 +54,6 @@ ul li {
     font-size: 1.25em;
 }
 
-.custom-list-icon,
-.list-arrow-right {
-    list-style-type: none;
-    padding: 0;
-}
-
-.custom-list-icon li,
-.list-arrow-right li {
-    position: relative;
-    padding-left: 20px;
-}
-
-.custom-list-icon li::before,
-.list-arrow-right li::before {
-    position: absolute;
-    left: 0;
-    color: #4e4e4e;
-    font-family: "Ionicons";
-}
-
 .social-block {
     list-style-type: none;
     padding: 0;
@@ -101,52 +81,6 @@ ul li {
 .social-block li a:hover,
 .social-block li a:focus {
     color: #000;
-}
-
-.btn.active.focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn:active:focus,
-.btn:focus {
-    outline: none;
-}
-
-.btn {
-    border: 0;
-    border-radius: 0;
-    padding: 6px 28px;
-    text-transform: uppercase;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: transform;
-}
-
-.btn:hover {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-}
-
-.form-control {
-    border-radius: 0;
-    box-shadow: none;
-    height: 48px;
-    padding: 10px 12px;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.form-control:focus {
-    box-shadow: none;
-    border-color: #ccc;
-    background-color: #f8f8f8;
 }
 
 .valign-center {
@@ -182,72 +116,6 @@ ul li {
 /* 
  * 3.0 Helper Class
  */
-
-/* 
- * 3.1 Helper Class: font-weight
- */
-
-.font-300 {
-    font-weight: 300;
-}
-
-.font-400 {
-    font-weight: 400;
-}
-
-.font-700 {
-    font-weight: 700;
-}
-
-/* 
- * 3.2 Helper Class: margin
- */
-
-.mt0 {
-    margin-top: 0;
-}
-
-.mb0 {
-    margin-bottom: 0;
-}
-
-.mt20 {
-    margin-top: 20px;
-}
-
-/* 
- * 3.3 Helper Class: list
- */
-
-.list-arrow-right li::before {
-    content: "\f3d3";
-}
-
-/* 
- * 3.4 Helper Class: button
- */
-
-.btn-white {
-    color: #000;
-    background-color: #fff;
-}
-
-.btn-white:hover,
-.btn-white:focus {
-    color: #000;
-    background-color: #fff;
-}
-
-.btn-black {
-    color: #fff;
-    background-color: #000;
-}
-
-.btn-black:hover,
-.btn-black:focus {
-    color: #fff;
-    background-color: #000;
-}
 
 /* 
  * 3.5 Helper Class: background
@@ -418,17 +286,6 @@ ul li {
     font-weight: 300;
 }
 
-@media (min-width: 768px) {
-    .navbar-custom {
-        background-color: transparent;
-        padding-top: 30px;
-    }
-    .site-branding {
-        margin-top: 6px;
-        margin-left: 0;
-    }
-}
-
 /* 
  * 6.1 Section: About 
  */
@@ -439,6 +296,13 @@ ul li {
 
 .about figure {
     margin-bottom: 25px;
+}
+
+@media (min-width: 1000px) {
+    #svgcover {
+        width: 45%;
+        max-width: 590px;
+    }
 }
 
 /* 
@@ -474,15 +338,6 @@ ul li {
 }
 
 /* 
- * 6.5 Section: Contribution
- */
-
-.contribution {
-    text-align: center;
-    color: #fff;
-}
-
-/* 
  * 6.6 Section: Schedule
  */
 
@@ -515,16 +370,10 @@ ul li {
 
 .partner .partner-box {
     display: block;
-    opacity: 0.3;
+    opacity: 0.8;
     height: 150px;
     width: 150px;
     margin: 25px auto;
-    -webkit-transition: 0.5s all linear;
-    transition: 0.5s all linear;
-}
-
-.partner .partner-box:hover {
-    opacity: 1;
 }
 
 .partner .partner-box-1 {
@@ -571,15 +420,57 @@ ul li {
  * 6.8 Section: FAQ
  */
 
-.faq .card-header {
-    cursor: pointer;
+.accordion .card {
+    margin-bottom: 30px;
+    border: 0;
 }
 
-.card-header a:link,
-a:focus,
-a:hover {
-    color: black;
-    text-decoration: none;
+.accordion .card .card-header {
+    border: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    border-radius: 2px;
+    padding: 0;
+}
+
+.accordion .card .card-header .btn-header-link {
+    color: #fff;
+    display: block;
+    text-align: left;
+    background: #ffe472;
+    color: #222;
+    padding: 20px;
+}
+
+.accordion .card .card-header .btn-header-link:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    float: right;
+}
+
+.accordion .card .card-header .btn-header-link.collapsed {
+    background: #a541bb;
+    color: #fff;
+}
+
+.accordion .card .card-header .btn-header-link.collapsed:after {
+    content: "\f106";
+}
+
+.accordion .card .collapsing {
+    background: #ffe472;
+    line-height: 30px;
+}
+
+.accordion .card .collapse {
+    border: 0;
+}
+
+.accordion .card .collapse.show {
+    background: #ffe472;
+    line-height: 30px;
+    color: #222;
 }
 
 /* 
