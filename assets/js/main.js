@@ -2,19 +2,13 @@
  * Change Navbar color while scrolling
  */
 
-$(window).scroll(function () {
-    handleTopNavAnimation();
-});
-
-function handleTopNavAnimation() {
-    var top = $(window).scrollTop();
-
-    if (top > 10) {
+$(function () {
+    if ($(window).scrollTop() > 10) {
         $("#site-nav").addClass("navbar-solid");
     } else {
         $("#site-nav").removeClass("navbar-solid");
     }
-}
+});
 
 $("#carousel").owlCarousel({
     items: 1,
