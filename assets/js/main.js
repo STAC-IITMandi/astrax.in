@@ -23,9 +23,55 @@ $(document).ready(function() {
         $("#navbar-items").collapse('hide');
     });
     // change active link
-    $('#navbar-items ul li').click(function () {
+    $('#navbar-items ul li').click(function() {
         $('#navbar-items ul li').removeClass('active');
         $(this).addClass('active');
+    });
+});
+
+/*
+ *events Dropdown
+ */
+
+$(document).ready(function() {
+    var zindex = 10;
+
+    $("div.card").hover(function(e) {
+        e.preventDefault();
+
+        var isShowing = false;
+
+        if ($(this).hasClass("d-card-show")) {
+            isShowing = true
+        }
+
+        if ($("div.dashboard-cards").hasClass("showing")) {
+            // a card is already in view
+            $("div.card.d-card-show")
+                .removeClass("d-card-show");
+
+            if (isShowing) {
+                // this card was showing - reset the grid
+                $("div.dashboard-cards")
+                    .removeClass("showing");
+            } else {
+                // this card isn't showing - get in with it
+                $(this)
+                    .css({ zIndex: zindex })
+                    .addClass("d-card-show");
+
+            }
+            zindex++;
+        } else {
+            // no dashboard-cards in view
+            $("div.dashboard-cards")
+                .addClass("showing");
+            $(this)
+                .css({ zIndex: zindex })
+                .addClass("d-card-show");
+            zindex++;
+        }
+
     });
 });
 
@@ -59,7 +105,7 @@ $("#carousel").owlCarousel({
 
 let btn = $("#go-to-top");
 
-$(window).scroll(function () {
+$(window).scroll(function() {
     if ($(window).scrollTop() > 90) {
         btn.addClass('show');
     } else {

@@ -353,26 +353,154 @@ ul li {
 
 
 /* 
- * 6.6 Section: Schedule
+ * 6.6 Section: events
  */
 
-.schedule-box {
-    position: relative;
-    background-color: #000;
+.bg-overlay {
+    background: linear-gradient(rgba(256, 256, 256, .2), rgba(256, 256, 256, .4)), url("../images/19333445.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     color: #fff;
-    text-align: center;
-    padding: 50px 0;
-    margin: 25px 0 0;
+    height: 50vh;
+    padding-top: 50px;
 }
 
-.schedule-box::before {
-    content: "";
+.dashboard-cards {
+    position: relative;
+    padding-bottom: 50px;
+    margin: 0 !important;
+    color: black;
+    border-radius: 20%;
+}
+
+.dashboard-cards .card {
+    background: #ffffff;
+    display: inline-block;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    z-index: 20;
+    padding: 0 !important;
+    margin: 5px 5px 10px 5px;
+    position: relative;
+    -webkit-transition: all 0.3s 0s ease-in;
+    transition: all 0.3s 0s ease-in;
+    z-index: 1;
+    /* width: calc(33.33333333% - 10px); */
+    max-width: 90%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dashboard-cards .card:hover {
+    box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+    transition: all 0.3s ease;
+}
+
+.dashboard-cards .card .card-title {
+    background: #ffffff;
+    padding: 20px 15px;
+    position: relative;
+    z-index: 0;
+}
+
+.dashboard-cards .card .card-title h2 {
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-cards .card .card-title h2 small {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    letter-spacing: -0.025em;
+}
+
+.dashboard-cards .card .card-description {
+    position: relative;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    padding: 10px 15px 0 15px;
+}
+
+.dashboard-cards .card .card-actions {
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+    padding: 10px;
+    text-align: center;
+}
+
+.dashboard-cards .card .card-flap {
+    background: #d9d9d9;
     position: absolute;
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
-    border: 1px solid #fff;
+    width: 100%;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.dashboard-cards .card .flap1 {
+    -webkit-transition: all 0.3s 0.3s ease-out;
+    transition: all 0.3s 0.3s ease-out;
+    z-index: -1;
+}
+
+.dashboard-cards .card .flap2 {
+    -webkit-transition: all 0.3s 0s ease-out;
+    transition: all 0.3s 0s ease-out;
+    z-index: -2;
+}
+
+.dashboard-cards.showing .card {
+    cursor: pointer;
+    opacity: 0.6;
+    -webkit-transform: scale(0.88);
+    transform: scale(0.88);
+}
+
+.dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
+    opacity: 0.94;
+    -webkit-transform: scale(0.92);
+    transform: scale(0.92);
+}
+
+.dashboard-cards .card.d-card-show {
+    opacity: 1 !important;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+}
+
+.dashboard-cards .card.d-card-show .card-flap {
+    background: #ffffff;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.dashboard-cards .card.d-card-show .flap1 {
+    -webkit-transition: all 0.3s 0s ease-out;
+    transition: all 0.3s 0s ease-out;
+}
+
+.dashboard-cards .card.d-card-show .flap2 {
+    -webkit-transition: all 0.3s 0.2s ease-out;
+    transition: all 0.3s 0.2s ease-out;
+}
+
+.dashboard-cards .card-actions .btn {
+    color: #fff;
+    font-size: 14px;
+}
+
+.dashboard-cards .card-actions .btn:hover {
+    background-color: #5bd0a4 !important;
+    /* background-color: rgb(1, 100, 139); */
+}
+
+#prizes {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
