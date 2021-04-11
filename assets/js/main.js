@@ -31,3 +31,27 @@ $("#carousel").owlCarousel({
     //     },
     // },
 });
+let btn = $('#button');
+
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 90) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+
+
+var scrollToTopBtn = document.getElementById("button")
+var rootElement = document.documentElement
+
+function scrollToTop() {
+    // Scroll to top logic
+    rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
