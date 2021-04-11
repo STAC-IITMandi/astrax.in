@@ -12,6 +12,10 @@ $(document).ready(function() {
     });
 });
 
+/*
+ * Owl Carousel
+ */
+
 $("#carousel").owlCarousel({
     items: 1,
     dots: true,
@@ -31,8 +35,12 @@ $("#carousel").owlCarousel({
     //     },
     // },
 });
-let btn = $('#go-to-top');
 
+/*
+ * Go to top button
+ */
+
+let btn = $("#go-to-top");
 
 $(window).scroll(function () {
     if ($(window).scrollTop() > 90) {
@@ -42,16 +50,14 @@ $(window).scroll(function () {
     }
 });
 
-
-
-var scrollToTopBtn = document.getElementById("go-to-top")
-var rootElement = document.documentElement
+let scrollToTopBtn = document.getElementById("go-to-top");
+let rootElement = document.documentElement;
 
 function scrollToTop() {
     // Scroll to top logic
     rootElement.scrollTo({
         top: 0,
         behavior: "smooth"
-    })
+    });
 }
-scrollToTopBtn.addEventListener("click", scrollToTop)
+scrollToTopBtn.addEventListener("click", scrollToTop);
