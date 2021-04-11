@@ -2,6 +2,15 @@
  * 1. Google Font
  */
 
+ :root {
+    --black: black;
+    --rgba: rgba(0, 0, 0, 0.7);
+    --white:white;
+    --blue:#3dac9c;
+    --yellow: #ffe472;
+
+  }
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
 
 /* 
@@ -24,7 +33,7 @@ body {
 }
 
 a {
-    color: #000;
+    color: black;
 }
 
 a:focus {
@@ -71,7 +80,7 @@ ul li {
 }
 
 .social-block li .fa {
-    color: black;
+    color: var(--black);
 }
 
 .social-block li a i {
@@ -80,7 +89,7 @@ ul li {
 
 .social-block li a:hover,
 .social-block li a:focus {
-    color: #000;
+    color: var(--black);
 }
 
 .valign-center {
@@ -145,7 +154,7 @@ ul li {
 }
 
 .bg-image-1::before {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--rgba);
 }
 
 .bg-image-2 {
@@ -153,7 +162,7 @@ ul li {
 }
 
 .bg-image-2::before {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color:var(--rgba);
 }
 
 
@@ -176,7 +185,7 @@ ul li {
 }
 
 .navbar-custom .navbar-nav>li>a {
-    color: #fff;
+    color: var(--white);
     /* text-transform: uppercase; */
     font-size: 18px;
     font-weight: bold;
@@ -208,7 +217,7 @@ ul li {
 }
 
 .navbar-solid {
-    background: #3dac9c !important;
+    background: var(--blue) !important;
     padding: 8px !important;
     -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
@@ -221,7 +230,7 @@ ul li {
 }
 
 .site-branding .logo {
-    color: #fff;
+    color:var(--white);
     font-size: 14px;
     font-weight: 700;
     margin-right: 5px;
@@ -259,7 +268,7 @@ ul li {
 }
 
 .site-header .intro {
-    color: #fff;
+    color:var(--white);
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -314,11 +323,11 @@ ul li {
  */
 
 .facts i {
-    color: white;
+    color: var(--white);
 }
 
 .facts h3 {
-    color: #fff;
+    color: var(--white);
     text-align: center;
     font-weight: 400;
 }
@@ -349,8 +358,8 @@ ul li {
 
 .schedule-box {
     position: relative;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     text-align: center;
     padding: 50px 0;
     margin: 25px 0 0;
@@ -363,7 +372,7 @@ ul li {
     right: 5px;
     bottom: 5px;
     left: 5px;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
 }
 
 
@@ -372,7 +381,7 @@ ul li {
  */
 
 .partner {
-    background-color: #f8f8f8;
+    background-color:var(--white);
 }
 
 .partner .partner-box {
@@ -434,11 +443,11 @@ ul li {
 }
 
 .accordion .card .card-header .btn-header-link {
-    color: #fff;
+    color:var(--white);
     display: block;
     text-align: left;
-    background: #ffe472;
-    color: #222;
+    background: var(--yellow);
+    color: var(--black);
     padding: 20px;
 }
 
@@ -451,7 +460,7 @@ ul li {
 
 .accordion .card .card-header .btn-header-link.collapsed {
     background: #a541bb;
-    color: #fff;
+    color:var(--white);
 }
 
 .accordion .card .card-header .btn-header-link.collapsed:after {
@@ -459,7 +468,7 @@ ul li {
 }
 
 .accordion .card .collapsing {
-    background: #ffe472;
+    background:var(--yellow);
     line-height: 30px;
 }
 
@@ -468,9 +477,9 @@ ul li {
 }
 
 .accordion .card .collapse.show {
-    background: #ffe472;
+    background: var(--yellow);
     line-height: 30px;
-    color: #222;
+    color:var(--black);
 }
 
 
@@ -486,7 +495,7 @@ ul li {
 
 #carousel .owl-item {
     background: #0c83e7;
-    color: #fff;
+    color: var(--white);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -550,7 +559,7 @@ ul li {
 
 .site-footer {
     background: #3dac9c;
-    color: #fff;
+    color: var(--white);
     text-align: center;
     padding: 30px 0;
 }
@@ -561,20 +570,20 @@ ul li {
 }
 
 .site-footer .site-info a {
-    color: #fff;
+    color: var(--white);
 }
 
 .site-footer .contact a {
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
 }
 
 .site-footer .social-block li a {
-    color: #fff;
+    color: var(--white);
 }
 
 .site-footer .social-block .fa {
-    color: white;
+    color: var(--white);
 }
 
 .site-footer .social-block li a:hover,
