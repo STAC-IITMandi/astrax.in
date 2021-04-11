@@ -31,7 +31,7 @@ $("#carousel").owlCarousel({
     //     },
     // },
 });
-let btn = $('#button');
+let btn = $('#go-to-top');
 
 
 $(window).scroll(function () {
@@ -44,7 +44,7 @@ $(window).scroll(function () {
 
 
 
-var scrollToTopBtn = document.getElementById("button")
+var scrollToTopBtn = document.getElementById("go-to-top")
 var rootElement = document.documentElement
 
 function scrollToTop() {
