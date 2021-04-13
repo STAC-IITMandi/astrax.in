@@ -214,6 +214,15 @@ ul li {
     transition: all 0.2s linear 0s;
 }
 
+@media (max-width: 767.98px) {
+    .navbar-solid-header {
+        /*Dont use !important or it will always have grey bg when uncollapsed*/
+    	background-color: #4e4e4e;
+        -webkit-transition: all 0.2s linear 0s;
+        transition: all 0.2s linear 0s;
+    }
+}
+
 .site-branding {
     float: left;
     margin-top: 0;
