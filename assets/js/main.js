@@ -21,7 +21,7 @@ $(document).ready(function() {
     //Close navbar when link is clicked
     $("#navbar-items .nav-item").click(function(clickevt) {
         $("#navbar-items").collapse('hide');
-    
+    });
     // change active link
     $('#navbar-items ul li').click(function () {
         $('#navbar-items ul li').removeClass('active');
