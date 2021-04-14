@@ -1,3 +1,5 @@
+window.__forceSmoothScrollPolyfill__ = true;
+
 /*
  * Change Navbar color while scrolling
  */
