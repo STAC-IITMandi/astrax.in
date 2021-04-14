@@ -591,3 +591,49 @@ ul li {
     width: 31.5rem;
     margin: 0 auto;
 }
+
+/*
+ * Go-to-top button
+ */
+
+ #go-to-top {
+    background-color: #198580;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: inline-block;
+}
+
+#go-to-top .fa-caret-up {
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 2em;
+    transform: translateY(-15%) translateX(-10%);
+}
+
+#go-to-top:hover {
+    text-decoration: none;   
+    cursor: pointer;
+    background-color: #00C6BE;
+    border-color:#2F3D5E;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #334B49;
+    transform: translateY(-5px);
+}
+
+#go-to-top:active {
+    background-color: #555;
+}
+
+#go-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
