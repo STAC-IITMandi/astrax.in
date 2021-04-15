@@ -504,15 +504,12 @@ ul li {
     border-radius: 50%;
     background-color: #1de9b6 !important;
 }
-.carousel-caption {
-background:#000000;
-height: 100px;
-width:400px;
-left:220px;
-opacity:0.5;
-}
-.carousel-caption:hover{
-opacity:1;
+.caption{
+text-align:center;
+display:block;
+background:#FFFFFF;
+background-width:fit-content;
+color:black;
 }
 #carousel .owl-dots {
     text-align: center;
