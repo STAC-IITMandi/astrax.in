@@ -348,12 +348,12 @@ ul li {
  */
 
 .bg-overlay {
-    background: linear-gradient(rgba(256, 256, 256, .2), rgba(256, 256, 256, .4)), url("../images/19333445.jpg");
+    background: linear-gradient(rgba(256, 256, 256, .8), rgba(256, 256, 256, .7)), url("../images/19333445.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: #fff;
-    height: 50vh;
+    height: auto;
     padding-top: 50px;
 }
 
