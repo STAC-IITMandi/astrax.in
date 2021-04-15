@@ -217,7 +217,7 @@ ul li {
 @media (max-width: 767.98px) {
     .navbar-solid-header {
         /*Dont use !important or it will always have grey bg when uncollapsed*/
-    	background-color: #4e4e4e;
+        background-color: #4e4e4e;
         -webkit-transition: all 0.2s linear 0s;
         transition: all 0.2s linear 0s;
     }
@@ -357,12 +357,12 @@ ul li {
  */
 
 .bg-overlay {
-    background: linear-gradient(rgba(256, 256, 256, .2), rgba(256, 256, 256, .4)), url("../images/19333445.jpg");
+    background: linear-gradient(rgba(256, 256, 256, .8), rgba(256, 256, 256, .7)), url("../images/19333445.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: #fff;
-    height: 50vh;
+    height: auto;
     padding-top: 50px;
 }
 
@@ -641,13 +641,15 @@ ul li {
     border-radius: 50%;
     background-color: #1de9b6 !important;
 }
-.caption{
-text-align:center;
-display:block;
-background:#FFFFFF;
-background-width:fit-content;
-color:black;
+
+.caption {
+    text-align: center;
+    display: block;
+    background: #FFFFFF;
+    background-width: fit-content;
+    color: black;
 }
+
 #carousel .owl-dots {
     text-align: center;
 }
@@ -735,11 +737,12 @@ color:black;
     margin: 0 auto;
 }
 
+
 /*
  * Go-to-top button
  */
 
- #go-to-top {
+#go-to-top {
     background-color: #198580;
     width: 50px;
     height: 50px;
@@ -747,8 +750,7 @@ color:black;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+    transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
@@ -763,10 +765,10 @@ color:black;
 }
 
 #go-to-top:hover {
-    text-decoration: none;   
+    text-decoration: none;
     cursor: pointer;
     background-color: #00C6BE;
-    border-color:#2F3D5E;
+    border-color: #2F3D5E;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #334B49;
     transform: translateY(-5px);
