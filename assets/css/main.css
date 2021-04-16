@@ -98,19 +98,34 @@ ul li {
     padding: 70px 0;
 }
 
-.big-section {
-    padding: 70px 0;
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-}
-
 .section-title {
     color: #313131;
     letter-spacing: 1px;
     margin: 0 0 20px;
     text-transform: uppercase;
     text-align: center;
+}
+
+/* 
+ * Landing Page
+ */
+
+#countdown {
+    font-weight: 500;
+}
+
+.landing {
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-links a {
+    white-space: pre-wrap;
+    font-weight: 500;
+    color: white;
+    background-color: darkblue;
+    border-radius: 30px;
+    padding: 10px 20px;
 }
 
 

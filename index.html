@@ -22,44 +22,54 @@
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
-    <!-- <div class="site-branding">
-        <a class="logo" href="index.html">
-            <!-- logo image  -->
-    <!-- <img src="" alt="Logo"></a> 
-    </div> -->
     <button type="button" id="go-to-top" class="btn btn-primary btn-floating">
         <i class="fa fa-caret-up"></i>
     </button>
     <nav id="site-nav" class="navbar fixed-top navbar-custom navbar-expand-md">
+        <!-- <a href="#" class="navbar-brand">
+            <img id="navbar-logo" class="img-fluid" src="./logo-x100.png" alt="">
+        </a> -->
         <button type="button" class="navbar-toggler ml-auto pr-2 hidden-sm-up float-xs-right" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbar-items">
             <ul class="nav navbar-nav mx-auto text-center navbar-nav-scroll">
-                <li class="active nav-item"><a data-scroll="" href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#speakers" class="nav-link">Speakers</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#schedule" class="nav-link">Schedule</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#partner" class="nav-link">Partner</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#faq" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#photos" class="nav-link">Photos</a>
-                </li>
+                <li class="nav-item"><a data-scroll="" href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a data-scroll="" href="#speakers" class="nav-link">Speakers</a></li>
+                <li class="nav-item"><a data-scroll="" href="#schedule" class="nav-link">Schedule</a></li>
+                <!-- <li class="nav-item"><a data-scroll="" href="#partner" class="nav-link">Partner</a></li> -->
+                <li class="nav-item"><a data-scroll="" href="#faq" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a data-scroll="" href="#photos" class="nav-link">Photos</a></li>
             </ul>
         </div>
         <!-- </div> -->
     </nav>
     <header id="site-header" class="site-header valign-center">
         <div class="intro">
-            <h2>14-18 May, 2021</h2>
-            <h1>AstraX 2021</h1>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div id="countdown" class="row pr-2 row-cols-1 row-cols-lg-4 row-cols-sm-2 text-center align-items-center">
+                            <div class="col"><div id="days"></div>days</div>
+                            <div class="col"><div id="hours"></div>Hours</div>
+                            <div class="col"><div id="minutes"></div>Minutes</div>
+                            <div class="col"><div id="seconds"></div>Seconds</div>
+                        </div>
+                        <div class="countdown-links p-1 row row-cols-1 row-cols-lg-2 row-cols-sm-2 justify-content-center">
+                            <div class="col btn"><a id="register" href="">Register Now</a></div>
+                            <div class="col btn"><a id="brochure" href="">See Brochure</a></div>
+                        </div>
+                    </div>
+                    <div class="col d-none d-lg-block d-xl-block">
+                        <div class="landing">
+                            <img src="./logo.png" alt="" id="headline" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <section id="about" class="section about mt-2">
+    <section id="about" class="section about">
         <div class="container">
             <div class="container p-2" id="svgcover">
                 <img src="/assets/images/backgrounds/default-monochrome.svg" alt="">
@@ -76,7 +86,7 @@
             </div>
         </div>
     </section>
-    <section id="facts" class="section bg-image-1 facts text-center">
+    <!-- <section id="facts" class="section bg-image-1 facts text-center">
         <div class="container">
             <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 justify-content-center">
                 <div class="col">
@@ -85,21 +95,19 @@
                 </div>
                 <div class="col">
                     <div class="fa fa-map-marker" aria-hidden="true"></div>
-                    <!-- <h3>California<br>IIT Mandi</h3> -->
+                    <h3>California<br>IIT Mandi</h3>
                 </div>
                 <div class="col">
                     <div class="fa fa-tags" aria-hidden="true"></div>
-                    <!-- <h3>150<br>Tickets</h3> -->
+                    <h3>150<br>Tickets</h3>
                 </div>
                 <div class="col">
                     <div class="fa fa-microphone" aria-hidden="true"></div>
                     <h3>06<br>Speakers</h3>
                 </div>
             </div>
-            <!-- row -->
         </div>
-        <!-- container -->
-    </section>
+    </section> -->
     <section id="speakers" class="section speakers">
         <div class="container">
             <div class="row">
@@ -107,7 +115,7 @@
                     <h3 class="section-title">Speakers</h3>
                 </div>
             </div>
-            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 justify-content-center">
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 justify-content-center">
                 <div class="col">
                     <div class="speaker">
                         <figure>
@@ -291,57 +299,53 @@
             </div>
         </div>
     </section>
-    <section id="partner" class="section partner">
+    <!-- <section id="partner" class="section partner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h3 class="section-title">Event Partner</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2">
+                <div class="col">
                     <a class="partner-box partner-box-1"></a>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <a class="partner-box partner-box-2"></a>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <a class="partner-box partner-box-3"></a>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <a class="partner-box partner-box-4"></a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
+                <div class="col">
                     <a class="partner-box partner-box-5"></a>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <a class="partner-box partner-box-6"></a>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <a class="partner-box partner-box-7"></a>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <a class="partner-box partner-box-8"></a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- <section id="" class="big-section">
     </section> -->
     <footer>
         <div class="footer-top">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center footer-contact">
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2">
+                    <div class="col text-center footer-contact">
                         <h4>Contact</h4>
                         <p><i class="fa fa-map-marker"></i> SAC-001, North Campus, IIT Mandi, Kamand, Himachal Pradesh – 175005, India</p>
                         <p><i class="fa fa-phone"></i> Phone: +91-12345-56789</p>
                         <p><i class="fa fa-phone"></i> Phone: +91-12345-56789</p>
                         <p><i class="fa fa-envelope"></i> Email: <a href="mailto:team@astrax.in">team@astrax.in</a></p>
                     </div>
-                    <div class="col-md-6 text-center footer-links">
+                    <div class="col text-center footer-links">
                         <div class="row">
                             <div class="col">
                                 <h4>Links</h4>
