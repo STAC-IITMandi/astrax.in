@@ -59,18 +59,16 @@ $("#carousel").owlCarousel({
  * Go to top button
  */
 
-let btn = $("#go-to-top");
+let scrollToTopBtn = $("#go-to-top");
+const rootElement = document.documentElement;
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() > 90) {
-        btn.addClass('show');
+    if ($(window).scrollTop() > 100) {
+        scrollToTopBtn.addClass('show');
     } else {
-        btn.removeClass('show');
+        scrollToTopBtn.removeClass('show');
     }
 });
-
-let scrollToTopBtn = document.getElementById("go-to-top");
-let rootElement = document.documentElement;
 
 function scrollToTop() {
     // Scroll to top logic
@@ -79,4 +77,5 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
-scrollToTopBtn.addEventListener("click", scrollToTop);
+scrollToTopBtn.off().on("click", scrollToTop);
+
