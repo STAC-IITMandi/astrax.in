@@ -513,7 +513,13 @@ ul li {
     border-radius: 50%;
     background-color: #1de9b6 !important;
 }
-
+.caption{
+text-align:center;
+display:block;
+background:#FFFFFF;
+background-width:fit-content;
+color:black;
+}
 #carousel .owl-dots {
     text-align: center;
 }
