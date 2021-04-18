@@ -386,6 +386,11 @@ ul li {
     text-shadow: 2px 2px black;
 }
 
+#event-title {
+    color: white !important;
+    text-shadow: 2px 2px black;
+}
+
 .bg-overlay {
     background: url("../../bg.png");
     background-repeat: no-repeat;
