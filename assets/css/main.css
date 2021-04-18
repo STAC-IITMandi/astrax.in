@@ -440,7 +440,8 @@ ul li {
     -webkit-transform-origin: top;
     transform-origin: top;
     -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
+    transform: rotateX(-85deg);
+    -moz-transform: rotateX(-90deg);
 }
 
 .dashboard-cards .card .flap1 {
