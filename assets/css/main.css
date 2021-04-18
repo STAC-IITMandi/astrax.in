@@ -269,7 +269,8 @@ ul li {
     min-height: 100vh;
     position: relative;
     text-align: center;
-    background: linear-gradient(to bottom right, #01648b, #5bd0a4);
+    background: url('../../Landing_Page.png') no-repeat left;
+    background-size: cover;
     display: table;
 }
 
