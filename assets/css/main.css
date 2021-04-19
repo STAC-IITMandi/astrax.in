@@ -210,7 +210,8 @@ ul li {
 }
 
 .navbar-solid {
-    background: #3dac9c !important;
+    /* background: #154d72 !important; */
+    background: #232248 !important;
     padding: 8px !important;
     -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
@@ -353,13 +354,25 @@ ul li {
     margin-bottom: 5px;
 }
 
+.person:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
 
 /* 
  * 6.6 Section: events
  */
 
+#event-title {
+    color: white !important;
+    text-shadow: 2px 2px black;
+}
+
 .bg-overlay {
-    background: linear-gradient(rgba(256, 256, 256, .7), rgba(256, 256, 256, .6)), url("../images/19333445.jpg");
+    background: linear-gradient(rgba(78, 78, 256, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png");
+    /* background: linear-gradient(rgba(42, 42, 147, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png"); */
+    /* background: linear-gradient(rgba(6, 137, 174, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -377,7 +390,10 @@ ul li {
 }
 
 .dashboard-cards .card {
-    background: #ffffff;
+    background: #dcf0ef;
+    background: #fff;
+    opacity: 0.95;
+    opacity: 0.87;
     display: inline-block;
     -webkit-perspective: 1000;
     perspective: 1000;
@@ -400,7 +416,8 @@ ul li {
 }
 
 .dashboard-cards .card .card-title {
-    background: #ffffff;
+    background: #dcf0ef;
+    background: #fff;
     padding: 20px 15px;
     position: relative;
     z-index: 0;
@@ -458,7 +475,7 @@ ul li {
 
 .dashboard-cards.showing .card {
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.87;
     -webkit-transform: scale(0.88);
     transform: scale(0.88);
 }
@@ -701,7 +718,7 @@ ul li {
  */
 
 .site-footer {
-    background: #3dac9c;
+    background: #232248;
     color: #fff;
     text-align: center;
     padding: 30px 0;
@@ -750,7 +767,7 @@ ul li {
  */
 
 #go-to-top {
-    background-color: #198580;
+    background-color: #232248;
     border: none;
     width: 50px;
     height: 50px;
@@ -775,7 +792,7 @@ ul li {
 #go-to-top:hover {
     text-decoration: none;
     cursor: pointer;
-    background-color: #00C6BE;
+    background-color: #308fcb;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #334B49;
     transform: translateY(-5px);
