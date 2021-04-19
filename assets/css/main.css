@@ -368,7 +368,7 @@ ul li {
 }
 
 .bg-overlay {
-    background: linear-gradient(rgba(78, 78, 256, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.webp");
+    background: linear-gradient(rgba(78, 78, 256, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/events.jpg");
     /* background: linear-gradient(rgba(42, 42, 147, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png"); */
     /* background: linear-gradient(rgba(6, 137, 174, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png"); */
     background-size: cover;
