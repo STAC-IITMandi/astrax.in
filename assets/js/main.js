@@ -31,30 +31,6 @@ $(document).ready(function() {
     });
 });
 
-/* 
- * Logo Shrink
- */
-
-window.onscroll = function() {
-    growShrinkLogo()
-};
-
-var Logo = $("#navbar-logo");
-var endOfDocumentTop = 100;
-var size = 0;
-
-function growShrinkLogo() {
-    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-
-    if (size == 0 && scroll > endOfDocumentTop) {
-        Logo.addClass('smallLogo');
-        size = 1;
-    } else if (size == 1 && scroll <= endOfDocumentTop) {
-        Logo.removeClass('smallLogo');
-        size = 0;
-    }
-}
-
 /*
  *events Dropdown
  */
@@ -147,6 +123,7 @@ $("#carousel").owlCarousel({
     items: 1,
     dots: true,
     loop: true,
+    margin: 2,
     autoplay: true,
     nav: true,
     navText: [

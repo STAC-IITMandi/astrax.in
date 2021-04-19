@@ -3,7 +3,7 @@
  */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
-@import url('https://fonts.googleapis.com/css2?family=Laila:wght@700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Laila:wght@700&display=swap);
 
 /* 
   * 2.0 Global Style
@@ -131,50 +131,6 @@ ul li {
     padding: 10px 20px;
 }
 
-
-/* 
-  * 3.0 Helper Class
-  */
-
-
-/* 
-  * 3.5 Helper Class: background
-  */
-
-.bg-image,
-.bg-image-1,
-.bg-image-2 {
-    position: relative;
-}
-
-.bg-image::before,
-.bg-image-1::before,
-.bg-image-2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.bg-image-1 {
-    background: url(../images/backgrounds/bg-1.webp) no-repeat center center/cover;
-}
-
-.bg-image-1::before {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.bg-image-2 {
-    background: url(../images/backgrounds/bg-2.webp) no-repeat center bottom/cover;
-}
-
-.bg-image-2::before {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-
 /* 
   * 4.0 Navigation
   */
@@ -273,7 +229,7 @@ ul li {
     min-height: 100vh;
     position: relative;
     text-align: center;
-    background: url('../../Landing_Page.png') no-repeat left;
+    background: url('../images/backgrounds/landing.jpg') no-repeat left;
     background-size: cover;
     display: table;
 }
@@ -386,10 +342,13 @@ ul li {
     text-shadow: 2px 2px black;
 }
 
+#event-title {
+    color: white !important;
+    text-shadow: 2px 2px black;
+}
+
 .bg-overlay {
-    background: linear-gradient(rgba(78, 78, 256, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png");
-    /* background: linear-gradient(rgba(42, 42, 147, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png"); */
-    /* background: linear-gradient(rgba(6, 137, 174, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png"); */
+    background: url("../images/backgrounds/events.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -668,6 +627,11 @@ ul li {
 
 #carousel .owl-dot.active {
     background-color: #49b5e7 !important;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
 }
 
 #carousel .owl-dot {
