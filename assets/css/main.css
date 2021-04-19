@@ -1,13 +1,13 @@
 /* 
- * 1. Google Font
- */
+* 1. Google Font
+*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
 @import url(https://fonts.googleapis.com/css2?family=Laila:wght@700&display=swap);
 
 /* 
-  * 2.0 Global Style
-  */
+* 2.0 Global Style
+*/
 
 html {
     font-family: "Roboto", sans-serif;
@@ -110,8 +110,8 @@ ul li {
 
 
 /* 
-  * Landing Page
-  */
+* Landing Page
+*/
 
 #countdown {
     font-weight: bold;
@@ -148,8 +148,8 @@ ul li {
 
 
 /* 
-  * 4.0 Navigation
-  */
+* 4.0 Navigation
+*/
 
 .navbar-custom {
     border: 0;
@@ -240,8 +240,8 @@ ul li {
 
 
 /* 
-  * 5.0 Site Header
-  */
+* 5.0 Site Header
+*/
 
 .site-header {
     width: 100%;
@@ -295,8 +295,8 @@ ul li {
 
 
 /* 
-  * 6.1 Section: About 
-  */
+ * 6.1 Section: About 
+*/
 
 .about .section-title {
     margin: 0 0 25px;
@@ -315,8 +315,8 @@ ul li {
 
 
 /* 
-  * 6.2 Section: Facts
-  */
+* 6.2 Section: Facts
+*/
 
 .facts i {
     color: white;
@@ -330,8 +330,8 @@ ul li {
 
 
 /* 
-  * 6.3 Section: Speaker
-  */
+* 6.3 Section: Speaker
+*/
 
 .speaker {
     text-align: center;
@@ -354,8 +354,13 @@ ul li {
 
 
 /* 
-  * 6.6 Section: events
-  */
+* 6.6 Section: events
+*/
+
+#event-title {
+    color: white !important;
+    text-shadow: 2px 2px black;
+}
 
 #event-title {
     color: white !important;
@@ -526,8 +531,8 @@ ul li {
 
 
 /* 
-  * 6.7 Section: Schedule
-  */
+* 6.7 Section: Schedule
+*/
 
 .partner .partner-box {
     display: block;
@@ -571,8 +576,8 @@ ul li {
 
 
 /* 
-  * 6.8 Section: FAQ
-  */
+* 6.8 Section: FAQ
+*/
 
 .accordion .card {
     margin-bottom: 30px;
@@ -629,8 +634,8 @@ ul li {
 
 
 /* 
-     Carousel
-  */
+    Carousel
+*/
 
 #carousel {
     width: 75%;
@@ -712,8 +717,8 @@ ul li {
 
 
 /* 
-  * 7.0 Site-footer
-  */
+* 7.0 Site-footer
+*/
 
 .footer-top {
     font-weight: 400;
@@ -829,8 +834,8 @@ ul li {
 
 
 /*
-  * Go-to-top button
-  */
+* Go-to-top button
+*/
 
 #go-to-top {
     background-color: #232248;
