@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@700&display=swap');
 
 /* 
- * 2.0 Global Style
- */
+  * 2.0 Global Style
+  */
 
 html {
     font-family: "Roboto", sans-serif;
@@ -99,13 +99,6 @@ ul li {
     padding: 70px 0;
 }
 
-.big-section {
-    padding: 70px 0;
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-}
-
 .section-title {
     color: #313131;
     font-family: 'Laila', sans-serif;
@@ -117,13 +110,36 @@ ul li {
 
 
 /* 
- * 3.0 Helper Class
- */
+  * Landing Page
+  */
+
+#countdown {
+    font-weight: 500;
+}
+
+.landing {
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-links a {
+    white-space: pre-wrap;
+    font-weight: 500;
+    color: white;
+    background-color: darkblue;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
 
 
 /* 
- * 3.5 Helper Class: background
- */
+  * 3.0 Helper Class
+  */
+
+
+/* 
+  * 3.5 Helper Class: background
+  */
 
 .bg-image,
 .bg-image-1,
@@ -160,8 +176,8 @@ ul li {
 
 
 /* 
- * 4.0 Navigation
- */
+  * 4.0 Navigation
+  */
 
 .navbar-custom {
     border: 0;
@@ -248,8 +264,8 @@ ul li {
 
 
 /* 
- * 5.0 Site Header
- */
+  * 5.0 Site Header
+  */
 
 .site-header {
     width: 100%;
@@ -257,7 +273,8 @@ ul li {
     min-height: 100vh;
     position: relative;
     text-align: center;
-    background: linear-gradient(to bottom right, #01648b, #5bd0a4);
+    background: url('../../Landing_Page.png') no-repeat left;
+    background-size: cover;
     display: table;
 }
 
@@ -302,8 +319,8 @@ ul li {
 
 
 /* 
- * 6.1 Section: About 
- */
+  * 6.1 Section: About 
+  */
 
 .about .section-title {
     margin: 0 0 25px;
@@ -322,8 +339,8 @@ ul li {
 
 
 /* 
- * 6.2 Section: Facts
- */
+  * 6.2 Section: Facts
+  */
 
 .facts i {
     color: white;
@@ -337,8 +354,8 @@ ul li {
 
 
 /* 
- * 6.3 Section: Speaker
- */
+  * 6.3 Section: Speaker
+  */
 
 .speaker {
     text-align: center;
@@ -361,8 +378,8 @@ ul li {
 
 
 /* 
- * 6.6 Section: events
- */
+  * 6.6 Section: events
+  */
 
 #event-title {
     color: white !important;
@@ -529,12 +546,8 @@ ul li {
 
 
 /* 
- * 6.7 Section: Schedule
- */
-
-.partner {
-    background-color: #f8f8f8;
-}
+  * 6.7 Section: Schedule
+  */
 
 .partner .partner-box {
     display: block;
@@ -578,8 +591,8 @@ ul li {
 
 
 /* 
- * 6.8 Section: FAQ
- */
+  * 6.8 Section: FAQ
+  */
 
 .accordion .card {
     margin-bottom: 30px;
@@ -636,8 +649,8 @@ ul li {
 
 
 /* 
-    Carousel
- */
+     Carousel
+  */
 
 #carousel {
     width: 75%;
@@ -714,57 +727,123 @@ ul li {
 
 
 /* 
- * 7.0 Site-footer
- */
+  * 7.0 Site-footer
+  */
 
-.site-footer {
-    background: #232248;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-}
-
-.site-footer .site-info {
+.footer-top {
     font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.site-footer .site-info a {
+    padding-top: 20px;
+    background: #232248;
+    text-align: left;
     color: #fff;
 }
 
-.site-footer .contact a {
-    color: #fff;
-    font-weight: bold;
-}
-
-.site-footer .social-block li a {
+.footer-top h4 {
+    padding-bottom: 5px;
     color: #fff;
 }
 
-.site-footer .social-block .fa {
-    color: white;
+.footer-about img.logo-footer {
+    max-width: 74px;
+    margin-top: 0;
+    margin-bottom: 18px;
 }
 
-.site-footer .social-block li a:hover,
-.site-footer .social-block li a:focus {
-    opacity: 0.8;
+.footer-about p a {
+    color: #fff;
+    border: 0;
 }
 
-.footer-logo {
-    margin-bottom: 40px;
-    display: block;
+.footer-about p a:hover,
+.footer-about p a:focus {
+    border: 0;
 }
 
-.footer-logo img {
-    width: 31.5rem;
-    margin: 0 auto;
+.footer-contact p {
+    word-wrap: break-word;
+}
+
+.footer-contact i {
+    padding-right: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-contact p,
+.footer-links p {
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.footer-contact p a {
+    color: #fff;
+    border: 0;
+}
+
+.footer-contact p a:hover,
+.footer-contact p a:focus {
+    border: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    border: 0;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    color: #fff;
+}
+
+.footer-bottom {
+    font-weight: 400;
+    padding: 15px 0 17px 0;
+    background: #232248;
+    text-align: left;
+    color: #fff;
+}
+
+.footer-social {
+    padding-top: 3px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.footer-social a {
+    margin-left: 10px;
+    color: #fff;
+    border: 0;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    color: #79a05f;
+    border: 0;
+}
+
+.footer-social i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.footer-copyright {
+    padding-top: 5px;
+}
+
+.footer-copyright a {
+    color: #fff;
+    border: 0;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+    color: #aaa;
 }
 
 
 /*
- * Go-to-top button
- */
+  * Go-to-top button
+  */
 
 #go-to-top {
     background-color: #232248;
