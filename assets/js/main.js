@@ -32,7 +32,7 @@ $(document).ready(function() {
 });
 
 /*
- * events Dropdown
+ *events Dropdown
  */
 
 $(document).ready(function() {
@@ -123,6 +123,7 @@ $("#carousel").owlCarousel({
     items: 1,
     dots: true,
     loop: true,
+    margin: 2,
     autoplay: true,
     nav: true,
     navText: [
