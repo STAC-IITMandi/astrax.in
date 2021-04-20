@@ -347,6 +347,13 @@ ul li {
     margin-bottom: 5px;
 }
 
+@media (max-width: 762.97px) {
+    .person {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 .person:hover {
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
