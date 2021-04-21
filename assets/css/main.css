@@ -15,8 +15,15 @@ html {
     scroll-behavior: smooth;
 }
 
+:root{
+    --section_1:#000;    /*Event title color*/
+    --section_2: #4e4e4e; /*About Astrax content color*/
+    --section_3: white;
+    --section_4:#fff;   /*Event block fill and top menu color*/
+}
+
 body {
-    color: #4e4e4e;
+    color: var(--section_2);
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     line-height: 1.6;
@@ -25,7 +32,7 @@ body {
 }
 
 a {
-    color: #000;
+    color: var(--section_1);
 }
 
 a:focus {
@@ -51,7 +58,7 @@ ul li {
 }
 
 .fa {
-    color: white;
+    color: var(--section_3);
     font-size: 1.25em;
 }
 
@@ -68,11 +75,11 @@ ul li {
     display: inline-block;
     height: 32px;
     width: 32px;
-    color: #4e4e4e;
+    color: var(--section_2);
 }
 
 .social-block li .fa {
-    color: black;
+    color: var(--section_1);
 }
 
 .social-block li a i {
@@ -81,7 +88,7 @@ ul li {
 
 .social-block li a:hover,
 .social-block li a:focus {
-    color: #000;
+    color: var(--section_1);
 }
 
 .valign-center {
@@ -129,7 +136,7 @@ ul li {
 .countdown-links a {
     white-space: pre-wrap;
     font-weight: 500;
-    color: white;
+    color: var(--section_3);
     background-color: #232248;
     border-radius: 30px;
     padding: 10px 20px;
@@ -166,7 +173,7 @@ ul li {
 }
 
 .navbar-custom .navbar-nav>li>a {
-    color: #fff;
+    color: var(--section_4);
     /* text-transform: uppercase; */
     font-size: 20px;
     font-weight: bold;
@@ -225,7 +232,7 @@ ul li {
 }
 
 .site-branding .logo {
-    color: #fff;
+    color: var(--section_4);
     font-size: 14px;
     font-weight: 700;
     margin-right: 5px;
@@ -264,7 +271,7 @@ ul li {
 }
 
 .site-header .intro {
-    color: #fff;
+    color: var(--section_4);
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -319,11 +326,11 @@ ul li {
 */
 
 .facts i {
-    color: white;
+    color: var(--section_3);
 }
 
 .facts h3 {
-    color: #fff;
+    color: var(--section_4);
     text-align: center;
     font-weight: 400;
 }
@@ -365,18 +372,18 @@ ul li {
 */
 
 #event-title {
-    color: white !important;
-    text-shadow: 2px 2px black;
+    color: var(--section_3) !important;
+    text-shadow: 2px 2px var(--section_1);
 }
 
 #event-title {
-    color: white !important;
-    text-shadow: 2px 2px black;
+    color: var(--section_3) !important;
+    text-shadow: 2px 2px var(--section_1);
 }
 
 #event-title {
-    color: white !important;
-    text-shadow: 2px 2px black;
+    color: var(--section_3) !important;
+    text-shadow: 2px 2px var(--section_1);
 }
 
 .bg-overlay {
@@ -385,7 +392,7 @@ ul li {
     /* background: linear-gradient(rgba(6, 137, 174, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png"); */
     background-size: cover;
     background-position: center center;
-    color: #fff;
+    color: var(--section_4);
     height: auto;
     padding-top: 50px;
 }
@@ -394,13 +401,13 @@ ul li {
     position: relative;
     padding-bottom: 50px;
     margin: 0 !important;
-    color: black;
+    color: var(--section_1);
     border-radius: 20%;
 }
 
 .dashboard-cards .card {
     background: #dcf0ef;
-    background: #fff;
+    background: var(--section_4);
     opacity: 0.95;
     opacity: 0.87;
     display: inline-block;
@@ -426,7 +433,7 @@ ul li {
 
 .dashboard-cards .card .card-title {
     background: #dcf0ef;
-    background: #fff;
+    background: var(--section_4);
     padding: 20px 15px;
     position: relative;
     z-index: 0;
@@ -518,7 +525,7 @@ ul li {
 }
 
 .dashboard-cards .card-actions .btn {
-    color: #fff;
+    color:var(--section_4);
     font-size: 14px;
 }
 
@@ -600,7 +607,7 @@ ul li {
 }
 
 .accordion .card .card-header .btn-header-link {
-    color: #fff;
+    color: var(--section_4);
     display: block;
     text-align: left;
     background: #ffe472;
@@ -617,7 +624,7 @@ ul li {
 
 .accordion .card .card-header .btn-header-link.collapsed {
     background: #a541bb;
-    color: #fff;
+    color: var(--section_4);
 }
 
 .accordion .card .card-header .btn-header-link.collapsed:after {
@@ -652,7 +659,7 @@ ul li {
 
 #carousel .owl-item {
     background: #0c83e7;
-    color: #fff;
+    color: var(--section_4);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -681,7 +688,7 @@ ul li {
     display: block;
     background: #FFFFFF;
     /* background-width: fit-content; */
-    color: black;
+    color: var(--section_1);
 }
 
 #carousel .owl-dots {
@@ -732,13 +739,13 @@ ul li {
     padding-top: 20px;
     background: #232248;
     text-align: left;
-    color: #fff;
+    color: var(--section_4);
     font-size: 18px;
 }
 
 .footer-top h4 {
     padding-bottom: 5px;
-    color: #fff;
+    color: var(--section_4);
 }
 
 .footer-about img.logo-footer {
@@ -748,7 +755,7 @@ ul li {
 }
 
 .footer-about p a {
-    color: #fff;
+    color: var(--section_4);
     border: 0;
 }
 
@@ -764,7 +771,7 @@ ul li {
 .footer-contact i {
     padding-right: 10px;
     font-size: 18px;
-    color: #fff;
+    color: var(--section_4);
 }
 
 .footer-contact p,
@@ -775,7 +782,7 @@ ul li {
 }
 
 .footer-contact p a {
-    color: #fff;
+    color: var(--section_4);
     border: 0;
 }
 
@@ -785,13 +792,13 @@ ul li {
 }
 
 .footer-links a {
-    color: #fff;
+    color: var(--section_4);
     border: 0;
 }
 
 .footer-links a:hover,
 .footer-links a:focus {
-    color: #fff;
+    color: var(--section_4);
 }
 
 .footer-bottom {
@@ -799,7 +806,7 @@ ul li {
     padding: 15px 0 17px 0;
     background: #232248;
     text-align: left;
-    color: #fff;
+    color: var(--section_4);
 }
 
 .footer-social {
@@ -810,7 +817,7 @@ ul li {
 
 .footer-social a {
     margin-left: 10px;
-    color: #fff;
+    color: var(--section_4);
     border: 0;
 }
 
@@ -830,7 +837,7 @@ ul li {
 }
 
 .footer-copyright a {
-    color: #fff;
+    color: var(--section_4);
     border: 0;
 }
 
@@ -871,7 +878,7 @@ ul li {
     text-decoration: none;
     cursor: pointer;
     background-color: #308fcb;
-    color: white;
+    color: var(--section_3);
     box-shadow: 0 0.5em 0.5em -0.4em #334B49;
     transform: translateY(-5px);
 }
