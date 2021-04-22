@@ -1,0 +1,8 @@
+[submodule "astrax20"]
+	path = astrax20
+	url = https://github.com/STAC-IITMandi/AstraX-Sites
+	branch = AstraX20
+[submodule "astrax19"]
+	path = astrax19
+	url = https://github.com/STAC-IITMandi/AstraX-Sites
+	branch = AstraX19
