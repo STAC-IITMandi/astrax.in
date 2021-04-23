@@ -128,13 +128,14 @@ ul li {
 
 .countdown-links a {
     white-space: pre-wrap;
-    font-weight: 500;
+    font-weight: lighter;
     color: white;
     background-color: #232248;
     border-radius: 30px;
     padding: 10px 20px;
     text-transform: capitalize;
     text-decoration: none;
+    font-family: 'Laila', sans-serif;
 }
 
 .countdown-links a:hover {
@@ -291,6 +292,12 @@ ul li {
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 300;
+}
+
+.clickinfo {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: 'Laila', sans-serif;
 }
 
 
