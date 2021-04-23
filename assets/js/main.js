@@ -199,7 +199,7 @@ function registerText() {
     btn.innerHTML = "Registrations will begin soon!";
 
     setTimeout(function() {
-        btn.innerHTML = "";
+        btn.innerHTML = "&nbsp;";
     }, 7000);
 }
 
@@ -208,6 +208,6 @@ function brochureText() {
     btn.innerHTML = "Brochure will be available soon!";
 
     setTimeout(function() {
-        btn.innerHTML = "";
+        btn.innerHTML = "&nbsp;";
     }, 7000);
 }
