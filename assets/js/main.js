@@ -189,3 +189,25 @@ scrollToTopBtn.off().on("click", scrollToTop);
             //seconds
         }, 0)
 }());
+
+/*
+ * Clickinfo text, text disappears after 7 seconds
+ */
+
+function registerText() {
+    var btn = document.getElementById("infotext");
+    btn.innerHTML = "Registrations will begin soon!";
+
+    setTimeout(function() {
+        btn.innerHTML = "";
+    }, 7000);
+}
+
+function brochureText() {
+    var btn = document.getElementById("infotext");
+    btn.innerHTML = "Brochure will be available soon!";
+
+    setTimeout(function() {
+        btn.innerHTML = "";
+    }, 7000);
+}
