@@ -197,6 +197,7 @@ scrollToTopBtn.off().on("click", scrollToTop);
 function registerText() {
     var btn = document.getElementById("infotext");
     btn.innerHTML = "Registrations will begin soon!";
+    btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
 
     setTimeout(function() {
         btn.innerHTML = "&nbsp;";
@@ -206,8 +207,13 @@ function registerText() {
 function brochureText() {
     var btn = document.getElementById("infotext");
     btn.innerHTML = "Brochure will be available soon!";
+    btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
 
     setTimeout(function() {
         btn.innerHTML = "&nbsp;";
     }, 7000);
 }
+
+$("a[href=\"#\"]").on("click", (e) => {
+    e.preventDefault();
+});
