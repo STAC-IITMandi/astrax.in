@@ -118,12 +118,14 @@ ul li {
     color: rgb(240, 234, 234);
     /* color: black; */
     font-family: 'Laila', sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .landing {
     align-items: center;
     justify-content: center;
+    background: url("../../logo.png") no-repeat center;
+    background-size: contain;
 }
 
 .countdown-links a {
@@ -455,7 +457,8 @@ ul li {
     letter-spacing: -0.025em;
 }
 
-.dashboard-cards .card a:hover, .dashboard-cards .card a:focus {
+.dashboard-cards .card a:hover,
+.dashboard-cards .card a:focus {
     color: black;
     text-decoration: none;
 }
@@ -466,6 +469,7 @@ ul li {
     border-top: 1px solid #ddd;
     padding: 10px 15px 0 15px;
 }
+
 
 /* .dashboard-cards .card .card-actions {
     box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
@@ -492,6 +496,7 @@ ul li {
     z-index: -1;
 }
 
+
 /* .dashboard-cards .card .flap2 {
     -webkit-transition: all 0.3s 0s ease-out;
     transition: all 0.3s 0s ease-out;
@@ -504,6 +509,7 @@ ul li {
     -webkit-transform: scale(0.88);
     transform: scale(0.88);
 }
+
 
 /* .dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
     opacity: 0.94;
@@ -528,6 +534,7 @@ ul li {
     -webkit-transition: all 0.3s 0s ease-out;
     transition: all 0.3s 0s ease-out;
 }
+
 
 /* .dashboard-cards .card.d-card-show .flap2 {
     -webkit-transition: all 0.3s 0.2s ease-out;
