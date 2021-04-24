@@ -455,6 +455,11 @@ ul li {
     letter-spacing: -0.025em;
 }
 
+.dashboard-cards .card a:hover, .dashboard-cards .card a:focus {
+    color: black;
+    text-decoration: none;
+}
+
 .dashboard-cards .card .card-description {
     position: relative;
     font-size: 14px;
