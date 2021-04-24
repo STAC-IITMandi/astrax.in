@@ -52,17 +52,17 @@
     </nav>
     <header id="site-header" class="site-header valign-center">
         <div class="intro">
-            <div class="container">
-                <div class="col align-items-center">
-                    <br><br>
-                    <div class="col col-lg-5 col-md-7 mx-auto d-md-block d-lg-block d-xl-block">
-                        <div class="landing">
-                            <img src="./logo.png" alt="" id="headline" class="img-fluid">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 landing" style="height: 50vh;">
+                        <div class="">
+                            <!-- <img src="./logo.png" alt="" id="headline" class="img-fluid"> -->
                         </div>
                     </div>
-                    <div class="col col-sm-12 pt-4 pb-2" id="dates"><i class="p-1 fa fa-calendar" aria-hidden="true"></i>14th - 16th May 2021
+                    <div class="col-12 mt-3 mb-2" style="height: 5vh;" id="dates">
+                        <i class="p-1 fa fa-calendar" aria-hidden="true"></i>14th - 16th May 2021
                     </div>
-                    <div class="col">
+                    <div class="col-10 mx-auto" style="height: 25vh;">
                         <div id="countdown" class="row p-md-2 p-sm-0 mt-md-3 pt-sm-1 row-cols-2 row-cols-lg-4 row-cols-sm-4 align-items-center">
                             <div class="col">
                                 <div id="days"></div>
@@ -81,15 +81,17 @@
                                 <p>Seconds</p>
                             </div>
                         </div>
-                        <div class="countdown-links p-3 row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center">
-                            <div class="col btn mt-2" id="register" onclick="registerText()">
+                        <div class="countdown-links mt-2 row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center">
+                            <div class="col btn btn-sm mt-3 mt-md-0" id="register" onclick="registerText()">
                                 <a href="#">Register Now</a>
                             </div>
-                            <div class="col btn mt-2" id="brochure" onclick="brochureText()"><a href="#">See Brochure</a></div>
+                            <div class="col btn btn-sm mt-3 mt-md-0" id="brochure" onclick="brochureText()">
+                                <a href="#">See Brochure</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-center clickinfo">
-                        <span id="infotext">&nbsp;</span>
+                        <div class="col-12 clickinfo mt-1">
+                            <span id="infotext">&nbsp;</span>
+                        </div>
                     </div>
                 </div>
             </div>
