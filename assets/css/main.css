@@ -462,20 +462,22 @@ ul li {
     padding: 10px 15px 0 15px;
 }
 
-.dashboard-cards .card .card-actions {
+/* .dashboard-cards .card .card-actions {
     box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
     padding: 10px;
     text-align: center;
-}
+} */
 
 .dashboard-cards .card .card-flap {
-    background: #d9d9d9;
+    background: #ffffff;
     position: absolute;
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
     width: 100%;
     -webkit-transform-origin: top;
     transform-origin: top;
     -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-85deg);
+    transform: rotateX(-90deg);
     -moz-transform: rotateX(-90deg);
 }
 
@@ -485,11 +487,11 @@ ul li {
     z-index: -1;
 }
 
-.dashboard-cards .card .flap2 {
+/* .dashboard-cards .card .flap2 {
     -webkit-transition: all 0.3s 0s ease-out;
     transition: all 0.3s 0s ease-out;
     z-index: -2;
-}
+} */
 
 .dashboard-cards.showing .card {
     cursor: pointer;
@@ -498,11 +500,11 @@ ul li {
     transform: scale(0.88);
 }
 
-.dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
+/* .dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
     opacity: 0.94;
     -webkit-transform: scale(0.92);
     transform: scale(0.92);
-}
+} */
 
 .dashboard-cards .card.d-card-show {
     opacity: 1 !important;
@@ -511,6 +513,7 @@ ul li {
 }
 
 .dashboard-cards .card.d-card-show .card-flap {
+    opacity: 1;
     background: #ffffff;
     -webkit-transform: rotateX(0deg);
     transform: rotateX(0deg);
@@ -521,10 +524,10 @@ ul li {
     transition: all 0.3s 0s ease-out;
 }
 
-.dashboard-cards .card.d-card-show .flap2 {
+/* .dashboard-cards .card.d-card-show .flap2 {
     -webkit-transition: all 0.3s 0.2s ease-out;
     transition: all 0.3s 0.2s ease-out;
-}
+} */
 
 .dashboard-cards .card-actions .btn {
     color: #fff;
