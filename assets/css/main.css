@@ -350,12 +350,17 @@ ul li {
 
 .speaker h4 {
     margin-top: 15px;
-    font-size: 18px;
 }
 
 .speaker p {
     margin-bottom: 5px;
-    font-size: 15px;
+}
+
+@media (min-width: 767.99px) {
+    .person {
+        width: 100%;
+        max-width: 275px;
+    }
 }
 
 @media (max-width: 767.98px) {
