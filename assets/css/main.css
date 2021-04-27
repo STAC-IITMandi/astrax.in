@@ -913,3 +913,83 @@ ul li {
     opacity: 1;
     visibility: visible;
 }
+/*
+* Sponsors
+*/
+
+
+/* #sponsors {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+   
+    margin-left: 140px;
+}
+     
+
+
+@media (max-width: 762.97px ) {
+    #sponsors {
+        vertical-align: middle;
+        width: 100px;
+        height: 130px;
+        margin:0%;
+          
+    }
+} 
+@media (max-width: 470 px ) {
+    #sponsors {
+        vertical-align: middle;
+        width: 75px;
+        height: 130px;
+       
+        margin:30%;  
+    }
+}  */
+#img{
+    width: 300px;
+    height: 300px;
+    
+}
+@media (max-width: 900px ) {
+    #img{
+        width:250px;
+        height:250px;
+    }
+}
+@media (max-width: 768px ) {
+    #img{
+        width:220px;
+        height:220px;
+    }
+}
+
+@media (max-width: 550px ) {
+    #img{
+        width:200px;
+        height:200px;
+    }
+}
+
+@media (max-width: 430px ) {
+    #img{
+        width:156px;
+        height:156px;
+        margin: auto;
+        
+    }
+    #img :nth-child(1){
+        padding-bottom: 8px;
+
+    }
+}
+@media (max-width: 361px ) {
+    #img{
+        width:135px;
+        height:135px;
+    }
+}
+#partner{
+    padding-bottom: 0px;
+
+} 
