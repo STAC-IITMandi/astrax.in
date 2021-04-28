@@ -917,79 +917,10 @@ ul li {
 * Sponsors
 */
 
-
-/* #sponsors {
-    vertical-align: middle;
-    width: 250px;
-    height: 250px;
-   
-    margin-left: 140px;
+#partner {
+    padding: 35px 0px 0px 0px;
 }
-     
 
-
-@media (max-width: 762.97px ) {
-    #sponsors {
-        vertical-align: middle;
-        width: 100px;
-        height: 130px;
-        margin:0%;
-          
-    }
-} 
-@media (max-width: 470 px ) {
-    #sponsors {
-        vertical-align: middle;
-        width: 75px;
-        height: 130px;
-       
-        margin:30%;  
-    }
-}  */
 .spon-img{
-    width: 300px;
-    height: 300px;
-    
+    max-width: 300px;
 }
-@media (max-width: 900px ) {
-    .spon-img{
-        width:250px;
-        height:250px;
-    }
-}
-@media (max-width: 768px ) {
-    .spon-img{
-        width:220px;
-        height:220px;
-    }
-}
-
-@media (max-width: 550px ) {
-    .spon-img{
-        width:200px;
-        height:200px;
-    }
-}
-
-@media (max-width: 430px ) {
-    .spon-img{
-        width:156px;
-        height:156px;
-        margin: auto;
-        
-    }
-    .spon-img :nth-child(1){
-        padding-bottom: 8px;
-
-    }
-}
-@media (max-width: 361px ) {
-    .spon-img{
-        width:135px;
-        height:135px;
-    }
-}
-#partner{
-    padding-bottom: 0px;
-
-} 
