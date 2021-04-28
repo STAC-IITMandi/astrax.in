@@ -100,9 +100,9 @@ ul li {
 }
 
 .section-title {
-    color: #313131;
+    color: #ffffff;
     font-family: 'Laila', sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin: 0 0 20px;
     text-align: center;
     font-size: 42px;
@@ -245,18 +245,24 @@ ul li {
 /* 
 * 5.0 Site Header
 */
-
+/*linear-gradient(to left, rgba(8, 9, 10, 0.4), rgba(8, 9, 10, 0)),*/
 .site-header {
     width: 100%;
     height: 100%;
     min-height: 100vh;
     position: relative;
     text-align: center;
-    background: linear-gradient(to left, rgba(8, 9, 10, 0.4), rgba(8, 9, 10, 0)), url('../images/backgrounds/landing.jpg') no-repeat center;
+    background:  url('../images/backgrounds/landingabout.png') no-repeat center;
     background-size: cover;
+    background-color: white;
     display: table;
 }
-
+.img-header-logo{
+    position: relative;
+    max-width: 200px;
+    max-height: 200px;
+    left: 55px;
+}
 .site-header::before {
     content: "";
     position: absolute;
