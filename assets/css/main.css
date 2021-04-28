@@ -356,6 +356,12 @@ ul li {
     margin-bottom: 5px;
 }
 
+.speaker-content {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+}
+
 @media (min-width: 767.99px) {
     .person {
         width: 100%;
