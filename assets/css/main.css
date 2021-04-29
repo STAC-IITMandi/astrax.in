@@ -902,23 +902,26 @@ ul li {
     transform: translateY(-15%) translateX(-10%);
 }
 
-#go-to-top:hover {
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #308fcb;
-    color: white;
-    box-shadow: 0 0.5em 0.5em -0.4em #334B49;
-    transform: translateY(-5px);
-}
-
 #go-to-top:active {
     background-color: #555;
+    
 }
-
 #go-to-top.show {
     opacity: 1;
     visibility: visible;
 }
+@media (min-width: 770px) {
+
+    #go-to-top:hover {
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #308fcb;
+        color: white;
+        box-shadow: 0 0.5em 0.5em -0.4em #334B49;
+        transform: translateY(-5px);
+    }
+}
+
 /*
 * Sponsors
 */
