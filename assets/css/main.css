@@ -174,16 +174,12 @@ ul li {
     font-size: 20px;
     font-weight: bold;
     border-bottom: 1px solid transparent;
+    border-bottom: solid transparent ;
+    transition: border-bottom 500ms linear;
 }
 
-.navbar-custom .navbar-nav>li>a:focus,
-.navbar-custom .navbar-nav>li>a:hover {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.5);
-}
-
-.navbar-custom .navbar-nav>.active>a {
-    border-color: rgba(32, 31, 31, 0.5);
+.navbar-custom .navbar-nav .active {
+    border-color: white;
 }
 
 .navbar-toggler-icon {
