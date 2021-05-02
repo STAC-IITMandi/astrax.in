@@ -43,7 +43,7 @@ $(document).ready(function() {
 
         // any cards were showing?
         if ($("div.dashboard-cards").hasClass("showing")) {
-            
+
             // a card is already in view
             $("div.card.d-card-show")
                 .removeClass("d-card-show");
@@ -193,16 +193,6 @@ scrollToTopBtn.off().on("click", scrollToTop);
 function registerText() {
     var btn = document.getElementById("infotext");
     btn.innerHTML = "Registrations will begin soon!";
-    btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-
-    setTimeout(function() {
-        btn.innerHTML = "&nbsp;";
-    }, 7000);
-}
-
-function brochureText() {
-    var btn = document.getElementById("infotext");
-    btn.innerHTML = "Brochure will be available soon!";
     btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
 
     setTimeout(function() {
