@@ -89,7 +89,6 @@ ul li {
 #countdown {
     font-weight: bold;
     color: rgb(240, 234, 234);
-    /* color: black; */
     font-family: 'Laila', sans-serif;
     font-size: 1.7rem;
 }
@@ -117,9 +116,24 @@ ul li {
     background-color: #308fcb;
 }
 
-#dates {
+#dates, #discord {
     text-transform: capitalize;
     font-family: 'Laila', sans-serif;
+}
+
+#discord a {
+    color: #7289da;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+}
+
+#discord a:hover {
+    transform: scale(1.1);
+}
+
+#discord img {
+    height: 3.5rem;
+    border-radius: 20px;
 }
 
 
@@ -365,8 +379,6 @@ ul li {
 
 .bg-overlay {
     background: linear-gradient(rgba(78, 78, 256, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/events.webp");
-    /* background: linear-gradient(rgba(42, 42, 147, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png"); */
-    /* background: linear-gradient(rgba(6, 137, 174, 0.2), rgba(256, 256, 256, 0)), url("../images/backgrounds/doodle.png"); */
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -402,8 +414,6 @@ ul li {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: "Arvo", serif;
-    /* font-family: 'Lato', sans-serif; */
-    /* font-style: italic; */
     font-weight: 700;
 }
 
@@ -474,26 +484,12 @@ ul li {
     z-index: -1;
 }
 
-
-/* .dashboard-cards .card .flap2 {
-    -webkit-transition: all 0.3s 0s ease-out;
-    transition: all 0.3s 0s ease-out;
-    z-index: -2;
-} */
-
 .dashboard-cards.showing .card {
     cursor: pointer;
     opacity: 0.87;
     -webkit-transform: scale(0.88);
     transform: scale(0.88);
 }
-
-
-/* .dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
-    opacity: 0.94;
-    -webkit-transform: scale(0.92);
-    transform: scale(0.92);
-} */
 
 .dashboard-cards .card.d-card-show {
     opacity: 1 !important;
@@ -512,12 +508,6 @@ ul li {
     -webkit-transition: all 0.3s 0s ease-out;
     transition: all 0.3s 0s ease-out;
 }
-
-
-/* .dashboard-cards .card.d-card-show .flap2 {
-    -webkit-transition: all 0.3s 0.2s ease-out;
-    transition: all 0.3s 0.2s ease-out;
-} */
 
 .dashboard-cards .card-actions .btn {
     color: #fff;
