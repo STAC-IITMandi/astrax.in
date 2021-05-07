@@ -125,16 +125,16 @@ ul li {
 #discord a {
     color: #7289da;
     text-decoration: none;
-    transition: 200ms ease-in-out;
 }
 
-#discord:hover {
+#discord img:hover {
     transform: scale(1.1);
 }
 
 #discord img {
     height: 3.5rem;
     border-radius: 20px;
+    transition: 200ms ease-in-out;
 }
 
 
