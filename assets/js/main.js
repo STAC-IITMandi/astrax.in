@@ -141,11 +141,13 @@ scrollToTopBtn.off().on("click", scrollToTop);
                 if (now >= countDownstart && now <= countDownend) {
                     countdown.innerHTML = 'AstraX 21 has started!';
                     countdown.removeAttribute("class");
+                    countdown.setAttribute("class", "py-2");
                     countdown.style.fontSize = '1.4rem';
                 }
                 else if (now > countDownend) {
                     countdown.innerHTML = 'AstraX 21 has ended! See you next year!';
                     countdown.removeAttribute("class");
+                    countdown.setAttribute("class", "py-2");
                     countdown.style.fontSize = '1.4rem';
                 }
                 clearInterval(x);
