@@ -116,7 +116,8 @@ ul li {
     background-color: #308fcb;
 }
 
-#dates, #discord {
+#dates,
+#discord {
     text-transform: capitalize;
     font-family: 'Laila', sans-serif;
 }
@@ -127,7 +128,7 @@ ul li {
     transition: 200ms ease-in-out;
 }
 
-#discord a:hover {
+#discord:hover {
     transform: scale(1.1);
 }
 
