@@ -1,0 +1,402 @@
+/* 
+* 1. Google Font
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css2?family=Laila:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap);
+
+/* 
+* 2.0 Global Style
+*/
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #4e4e4e;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: #000;
+}
+
+a:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 30px;
+}
+
+ul li {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.fa {
+    color: white;
+    font-size: 1.25em;
+}
+
+.valign-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section {
+    padding: 70px 0;
+}
+
+.section-title {
+    color: #313131;
+    font-family: 'Laila', sans-serif;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 42px;
+}
+
+/* 
+ * Landing
+ */
+
+.landing {
+    background-image: url(../images/backgrounds/other_landing.webp);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    color: white;
+    font-size: 2rem;
+}
+
+.landing .container, .landing .row {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .landing .col {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 767.99px) {
+    .landing .col {
+        text-align: center;
+    }
+}
+
+/* 
+ * Results
+ */
+
+ .accordion .card {
+    margin-bottom: 30px;
+    border: 0;
+}
+
+.accordion .card .card-header {
+    border: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    border-radius: 2px;
+    padding: 0;
+}
+
+.accordion .card .card-header .btn-header-link {
+    color: #fff;
+    display: block;
+    text-align: left;
+    background: #ffe472;
+    color: #222;
+    padding: 20px;
+}
+
+.accordion .card .card-header .btn-header-link:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    float: right;
+}
+
+.accordion .card .card-header .btn-header-link.collapsed {
+    background: #a541bb;
+    color: #fff;
+}
+
+.accordion .card .card-header .btn-header-link.collapsed:after {
+    content: "\f106";
+}
+
+.accordion .card .collapsing {
+    background: #ffe472;
+    line-height: 30px;
+}
+
+.accordion .card .collapse {
+    border: 0;
+}
+
+.accordion .card .collapse.show {
+    background: #ffe472;
+    line-height: 30px;
+    color: #222;
+}
+
+
+/* 
+* 4.0 Navigation
+*/
+
+.navbar-custom {
+    border: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+
+.navbar-custom .navbar-nav li {
+    margin: 0;
+    padding: 0px 15px;
+}
+
+.navbar-custom .navbar-nav>li>a {
+    color: #fff;
+    /* text-transform: uppercase; */
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    border-bottom: solid transparent ;
+    transition: border-bottom 500ms linear;
+}
+
+.navbar-custom .navbar-nav .active {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggle {
+    border: 0;
+    border-radius: 0;
+    margin-top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: rgb(27, 25, 25);
+}
+
+.navbar-solid {
+    /* background: #154d72 !important; */
+    background: #232248 !important;
+    padding: 8px !important;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-solid-header {
+        /*Dont use !important or it will always have grey bg when uncollapsed*/
+        background-color: #232248;
+        -webkit-transition: all 0.2s linear 0s;
+        transition: all 0.2s linear 0s;
+    }
+    #countdown {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* 
+* 7.0 Site-footer
+*/
+
+.footer-top {
+    font-weight: 400;
+    padding-top: 20px;
+    background: #232248;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-top h4 {
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.footer-about img.logo-footer {
+    max-width: 74px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.footer-about p a {
+    color: #fff;
+    border: 0;
+}
+
+.footer-about p a:hover,
+.footer-about p a:focus {
+    border: 0;
+}
+
+.footer-contact p {
+    word-wrap: break-word;
+}
+
+.footer-contact i {
+    padding-right: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-contact p,
+.footer-links p {
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.footer-contact p a {
+    color: #fff;
+    border: 0;
+}
+
+.footer-contact p a:hover,
+.footer-contact p a:focus {
+    border: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    border: 0;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    color: #fff;
+}
+
+.footer-bottom {
+    font-weight: 400;
+    padding: 15px 0 17px 0;
+    background: #232248;
+    text-align: left;
+    color: #fff;
+}
+
+.footer-social {
+    padding-top: 3px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.footer-social a {
+    margin-left: 10px;
+    color: #fff;
+    border: 0;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    color: #79a05f;
+    border: 0;
+}
+
+.footer-social i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.footer-copyright {
+    padding-top: 5px;
+}
+
+.footer-copyright a {
+    color: #fff;
+    border: 0;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+    color: #aaa;
+}
+
+
+/*
+* Go-to-top button
+*/
+
+#go-to-top {
+    background-color: #232248;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: inline-block;
+}
+
+#go-to-top .fa-caret-up {
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 2em;
+    transform: translateY(-15%) translateX(-10%);
+}
+
+@media (min-width: 770px) {
+
+    #go-to-top:hover {
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #308fcb;
+        color: white;
+        box-shadow: 0 0.5em 0.5em -0.4em #334B49;
+        transform: translateY(-5px);
+    }
+}
+
+#go-to-top:active {
+    background-color: #555;
+}
+
+#go-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
