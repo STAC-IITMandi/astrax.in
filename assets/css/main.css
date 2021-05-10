@@ -540,11 +540,11 @@ ul li {
     width: 86% !important;
 }
 
-#item-text {
+.item-text {
     text-align: left;
 }
 
-#item-time {
+.item-time {
     color: rgb(165, 167, 170);
     font-size: 0.88rem;
     text-align: right;
@@ -695,7 +695,7 @@ ul li {
 }
 
 @media(max-width:992px) {
-    #item-time {
+    .item-time {
         text-align: left;
     }
 }
