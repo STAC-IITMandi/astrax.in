@@ -1093,6 +1093,12 @@ ul li {
     padding: 70px 0px 0px 0px;
 }
 
+@media (max-width: 767.99px) {
+    #partner .section-title {
+        font-size: 35px;
+    }
+}
+
 .spon-img {
     max-width: 300px;
 }
