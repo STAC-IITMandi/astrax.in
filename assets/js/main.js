@@ -122,30 +122,28 @@ scrollToTopBtn.off().on("click", scrollToTop);
         hour = minute * 60,
         day = hour * 24;
 
-    let astraXstart = "May 14 2021 00:00:00 GMT+0530",
-        astraXend = "May 16 2021 23:59:59 GMT+0530",
+    let astraXstart = "May 14 2021 16:30:00 GMT+0530",
+        astraXend = "May 16 2021 19:30:00 GMT+0530",
         countDownstart = new Date(astraXstart).getTime(),
         countDownend = new Date(astraXend).getTime(),
-        x = setInterval(() =>
-        {
+        x = setInterval(() => {
             let now = new Date().getTime(),
                 distance = countDownstart - now;
             document.getElementById("days").innerText = (distance > 0) ? (Math.floor(distance / (day))) : (0),
-            document.getElementById("hours").innerText = (distance > 0) ? (Math.floor((distance % (day)) / (hour))) : (0),
-            document.getElementById("minutes").innerText = (distance > 0) ? (Math.floor((distance % (hour)) / (minute))) : (0),
-            document.getElementById("seconds").innerText = (distance > 0) ? (Math.floor((distance % (minute)) / (second))) : (0);
+                document.getElementById("hours").innerText = (distance > 0) ? (Math.floor((distance % (day)) / (hour))) : (0),
+                document.getElementById("minutes").innerText = (distance > 0) ? (Math.floor((distance % (hour)) / (minute))) : (0),
+                document.getElementById("seconds").innerText = (distance > 0) ? (Math.floor((distance % (minute)) / (second))) : (0);
 
             //do something later when date is reached
             if (distance < 0) {
                 const countdown = document.getElementById("countdown");
                 if (now >= countDownstart && now <= countDownend) {
-                    countdown.innerHTML = 'AstraX 21 has started!';
+                    countdown.innerHTML = 'AstraX has started!';
                     countdown.removeAttribute("class");
                     countdown.setAttribute("class", "py-2");
                     countdown.style.fontSize = '1.4rem';
-                }
-                else if (now > countDownend) {
-                    countdown.innerHTML = 'AstraX 21 has ended! See you next year!';
+                } else if (now > countDownend) {
+                    countdown.innerHTML = 'AstraX has ended! See you next year!';
                     countdown.removeAttribute("class");
                     countdown.setAttribute("class", "py-2");
                     countdown.style.fontSize = '1.4rem';
