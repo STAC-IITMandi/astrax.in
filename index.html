@@ -1,364 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="url" content="https://astrax.in">
-    <meta name="keywords" content="AstraX, STAC, IIT, Mandi, Space, Technology, Astronomy, Astro-Meet, Astro, Meet, inter-college" />
-    <meta name="description" content="AstraX is the annual inter-college Astro-Meet organized by the Space Technology and Astronomy Cell, IIT Mandi." />
-    <meta name="author" content="Web Development Team, Astrax, web@astrax.in">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Astrax 22</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="assets/css/style_default.css" rel="stylesheet">
 
-    <!-- social media -->
-    <meta property="og:title" content="AstraX 21 | IIT Mandi">
-    <meta property="og:url" content="https://astrax.in/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://astrax.in/logo_black.png">
-    <meta property="og:description" content="AstraX is the annual inter-college Astro-Meet organized by the Space Technology and Astronomy Cell, IIT Mandi.">
-
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:title" content="AstraX 21 | IIT Mandi">
-    <meta property="twitter:site" content="@stac_iitmandi">
-    <meta name="twitter:image" content="https://astrax.in/logo_black.png">
-    <meta property="twitter:description" content="AstraX is the annual inter-college Astro-Meet organized by the Space Technology and Astronomy Cell, IIT Mandi.">
-
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#000000">
-    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-    <title>AstraX 21 | IIT Mandi</title>
-    <!-- css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Smooth Scroll -->
-    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@1.0.0/dist/es5/seamless.auto-polyfill.min.js" data-seamless></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
 </head>
 
-<body data-spy="scroll" data-target="#site-nav">
-    <button type="button" id="go-to-top" class="btn btn-primary btn-floating">
-        <i class="fa fa-caret-up"></i>
-    </button>
-    <nav id="site-nav" class="navbar fixed-top navbar-custom navbar-expand-lg">
-        <button type="button" class="navbar-toggler ml-auto pr-2 hidden-sm-up float-xs-right" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse justify-content-between w-100" id="navbar-items">
-            <ul class="nav navbar-nav mx-auto text-center navbar-nav-scroll">
-                <li class="nav-item"><a data-scroll="" href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#speakers" class="nav-link">Keynotes</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#events" class="nav-link">Events</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#workshop" class="nav-link">Workshop</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#schedule" class="nav-link">Schedule</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="#partner" class="nav-link">Sponsors</a>
-                </li>
-                <!-- <li class="nav-item"><a data-scroll="" href="#faq" class="nav-link">FAQ</a>
-                </li> -->
-                <li class="nav-item"><a data-scroll="" href="#photos" class="nav-link">Photos</a>
-                </li>
-                <li class="nav-item"><a data-scroll="" href="https://astrax.in/team" class="nav-link">Team</a>
-                </li>
-            </ul>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top"><img src="assets/images/logo21.png" alt="Astrax Logo" width="64" height="64" /></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <!-- </div> -->
     </nav>
-
-    <header id="site-header" class="site-header valign-center">
-        <div class="intro">
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-12 landing" style="height: 50vh;">
-                        <div class="">
-                            <!--<img src="" alt="" id="headline" class="img-fluid"> -->
-                        </div>
-                    </div>
-                    <div class="col-12 mt-3 mb-2" style="height: 5vh;" id="dates">
-                        <i class="p-1 fa fa-calendar" aria-hidden="true"></i>14th - 16th May 2021
-                    </div>
-                    <div class="col-12 mt-0 mb-2" style="height: 5vh;" id="discord">
-                        <a href="https://discord.gg/Nu2Z32KhKY" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/images/discord.svg" alt="discord">
-                        </a>
-                    </div>
-                    <div class="col-10 mx-auto">
-                        <div id="countdown" class="row p-md-2 p-sm-0 mt-md-2 pt-sm-1 row-cols-2 row-cols-lg-4 row-cols-sm-4 align-items-center">
-                            <div class="col">
-                                <div id="days"></div>
-                                <p>days</p>
-                            </div>
-                            <div class="col">
-                                <div id="hours"></div>
-                                <p>Hours</p>
-                            </div>
-                            <div class="col">
-                                <div id="minutes"></div>
-                                <p>Minutes</p>
-                            </div>
-                            <div class="col">
-                                <div id="seconds"></div>
-                                <p>Seconds</p>
-                            </div>
-                        </div>
-                        <div class="countdown-links mt-2 row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center">
-                            <div class="col btn btn-sm mt-3 mt-md-0" id="register">
-                                <a href="https://www.townscript.com/e/astrax21" target="_blank" rel="noopener noreferrer">Register Now</a>
-                            </div>
-                            <div class="col btn btn-sm mt-3 mt-md-0" id="brochure">
-                                <a href="events/brochure.pdf" target="_blank" rel="noopener noreferrer">See Brochure</a>
-                            </div>
-                        </div>
-                        <div class="col-12 clickinfo mt-1">
-                            <span id="infotext">&nbsp;</span>
-                        </div>
-                    </div>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Astrax '22</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+                    <a class="btn btn-primary" href="#about">Get Started</a>
                 </div>
             </div>
         </div>
     </header>
-    <section id="about" class="section about">
-        <div class="container">
-            <!-- <div class="container p-2" id="svgcover">
-                <img src="/assets/images/backgrounds/default-monochrome.svg" alt="">
-            </div> -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="section-title">About AstraX</h3>
-                </div>
-                <div class="about-text py-4 col-lg-12 text-center">
-                    <p>AstraX, the inter-college Astro-Meet of Indian Institute of Technology Mandi is the center of attraction for students and professors with an inclination towards computational and theoretical astronomy.</p>
-                    <p> Bringing together space science and technology, AstraX is the one and only of it's kind marked by the acing competitions, prodigious talks, lauded workshops and much more. AstraX’21 aims to continue to bring together some of the most
-                        brilliant minds of the country under one umbrella to explore different realms of astrophysics, astronomy and cosmology. </p>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4">About AstraX</h2>
+                    <p class="text-white-50">
+                        AstraX is the inter-college astronomy themed fest organised annually by the students of Indian Institute of Technology Mandi.
+                        Spanning multiple days and including several engaging events, talks & workshops, it is the center of attraction for 
+                        students and professors with an inclination towards computational and theoretical astronomy.
+                    </p>
                 </div>
             </div>
+            <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
         </div>
     </section>
-    <!--
-    <section id="facts" class="section bg-image-1 facts text-center">
-        <div class="container">
-            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 justify-content-center">
-                <div class="col">
-                    <div class="fa fa-calendar" aria-hidden="true"></div>
-                    <h3>2021<br>May 14-17</h3>
-                </div>
-                <div class="col">
-                    <div class="fa fa-map-marker" aria-hidden="true"></div>
-                    <h3>IIT<br> Mandi</h3>
-                </div>
-                <div class="col">
-                    <div class="fa fa-tags" aria-hidden="true"></div>
-                    <h3>150<br>Tickets</h3>
-                </div>
-                <div class="col">
-                    <div class="fa fa-microphone" aria-hidden="true"></div>
-                    <h3>06<br>Speakers</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    <section id="speakers" class="section speakers">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12" id="keynote-title">
-                    <h3 class="section-title">Keynotes</h3>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 mx-md-5 justify-content-center">
-                <div class="col">
-                    <div class="speaker">
-                        <figure>
-                            <img alt="Dr. Somak Raychaudhury" class="img-fluid mx-auto rounded-circle person" src="assets/images/speakers/somyak.webp">
-                        </figure>
-                        <h4>Dr. Somak Raychaudhury</h4>
-                        <!-- <p class="text-info font-weight-bold">Date time</p> -->
-                        <div class="speaker-content">
-                            <p>
-                                He is the Director of the Inter-University Centre for Astronomy and Astrophysics (IUCAA), Pune. After his PhD from the University of Cambridge, UK, he worked at the Harvard-Smithsonian Centre for Astrophysics, USA, where he also was part of the team that
-                                built the Chandra X-Ray Observatory for NASA. His research involves a wide range of topics in Cosmology and Astrophysics, from the ground and from Space. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="speaker">
-                        <figure>
-                            <img alt="Dr. Laura Hayes" class="img-fluid mx-auto rounded-circle person" src="assets/images/speakers/lauraAhayes.webp">
-                        </figure>
-                        <h4>Dr. Laura Hayes</h4>
-                        <!-- <p class="text-info font-weight-bold">Date time</p> -->
-                        <div class="speaker-content">
-                            <p>
-                                She is currently a research fellow at Dublin Institute of Advanced Studies. Her research focuses on the multi-wavelength study of solar flares with a particular focus on oscillatory signatures observed in radio and hard X-ray observations. She has worked
-                                as a researcher at NASA Goddard Space Flight Center (GSFC) and NASA Frontier Development Lab.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="speaker">
-                        <figure>
-                            <img alt="Dr. Bala Iyer" class="img-fluid mx-auto rounded-circle person" src="assets/images/speakers/balaiyer.webp">
-                        </figure>
-                        <h4>Dr. Bala Iyer</h4>
-                        <!-- <p class="text-info font-weight-bold">Date time</p> -->
-                        <div class="speaker-content">
-                            <p>
-                                He is a Visiting Professor at ICTS-TIFR, Bangalore. His principal research interest over the last two decades relate to the computation of high accuracy gravitational waveforms for inspiralling compact binaries (ICB) of neutron stars and black holes using
-                                multipolar post Minkowskian methods. He has been involved in leading the activities of the Indian Initiative in Gravitational-wave Observations (IndIGO) Consortium.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="speaker">
-                        <figure>
-                            <img src="assets/images/speakers/dorje.webp" class="img-fluid mx-auto rounded-circle person" alt="Dorje Angchuk">
-                        </figure>
-                        <h4>Dorje Angchuk</h4>
-                        <div class="speaker-content">
-                            <p>
-                                He is an engineer at the Indian Astronomical Observatory at Hanle, Leh and works at the Indian Institute of Astrophysics, Bangalore. He is among the key staff members involved in the commissioning and operation of the telescopes at the IAO. Apart from
-                                his professional contribution, he is an outstanding astrophotographer. His pictures have been featured in leading publications such as The New Yorker magazine.
-                            </p>
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container px-4 px-lg-5">
+            <!-- Project One Row-->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Misty</h4>
+                                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="events" class="section bg-overlay">
-        <div class="container" id="mainevents">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="section-title" id="event-title">Events</h3>
-                </div>
-            </div>
-            <div class='dashboard-cards'>
-                <div class="row justify-content-center">
-                    <div class='card col-md-5 col-lg-3'>
-                        <div class='card-title text-center'>
-                            <h2 class="pt-2">
-                                Shooting Star
-                                <small class="text-danger font-weight-bold pt-2">Pre Event</small>
-                            </h2>
-                            <small class="text-info pt-2 font-weight-bold">Deadline: May 10th, 2021, 23:59(IST)</small>
-                            <br>
-                            <div class="text-info pt-2 font-weight-bold btn btn-info mt-2"><a href="./events/shooting-star.pdf" target="_blank" rel="noopener noreferrer">Rulebook</a></div>
-                        </div>
-                        <div class='card-flap flap1'>
-                            <div class='card-description'>
-                                <div class="col-lg-12 text-center font-weight-bold">"All we ever see of stars are their old photographs" ~ Alan Moore <br><br> The Astrophotography Contest that dares you to put a lens to the cosmos and capture it all too well! </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-5 col-lg-3">
-                        <div class='card-title text-center'>
-                            <h2 class="pt-2">
-                                Estrella
-                                <small class="text-danger font-weight-bold pt-2">Pre Event</small>
-                            </h2>
-                            <small class="text-info pt-2 font-weight-bold">Deadline: May 10th, 2021, 23:59(IST)</small>
-                            <br>
-                            <div class="text-info pt-2 font-weight-bold btn btn-info mt-2"><a href="./events/estrella.pdf" target="_blank" rel="noopener noreferrer">Rulebook</a></div>
-                        </div>
-                        <div class='card-flap flap1'>
-                            <div class='card-description'>
-                                <div class="col-lg-12 text-center font-weight-bold">Estrella is an online blog writing event. Participants can write their thoughts and research on topics that relate to a given theme. The winning blog entry will be hosted on the official blog of STAC, IIT Mandi.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='row justify-content-center'>
-                    <div class="card col-md-5 col-lg-3">
-                        <div class='card-title text-center'>
-                            <h2 class="pt-2">
-                                Enigma
-                                <small class="text-success font-weight-bold pt-2">The Astronomy Hackathon</small>
-                            </h2>
-                            <div class="text-info pt-2 font-weight-bold btn btn-info"><a href="./events/enigma.pdf" target="_blank" rel="noopener noreferrer">Rulebook</a></div>
-                        </div>
-                        <div class='card-flap flap1'>
-                            <div class='card-description'>
-                                <div class="col-lg-12 text-center font-weight-bold">Enigma, a hackathon organized in AstraX, makes the participants to brainstorm and dive deep into the data of the cosmos and make something meaningful and cool out of it. It contains multiple tasks, which may require application
-                                    of relevant astrophysics to find efficient and accurate methods to solve them.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-5 col-lg-3">
-                        <div class='card-title text-center'>
-                            <h2 class="pt-2">
-                                Gordian Knot
-                                <small class="text-success font-weight-bold pt-2">The Astronomy Quiz</small>
-                            </h2>
-                            <div class="text-info pt-2 font-weight-bold btn btn-info mt-2"><a href="./events/gordian-knot.pdf" target="_blank" rel="noopener noreferrer">Rulebook</a></div>
-                        </div>
-                        <div class='card-flap flap1'>
-                            <div class='card-description'>
-                                <div class="col-lg-12 text-center font-weight-bold">"When it comes down to competition, it's not always about the best skater, it's about who skates the best in that competition." <br>~Gracie Gold</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-5 col-lg-3">
-                        <div class='card-title text-center'>
-                            <h2 class="pt-2">
-                                Mission X
-                                <small class="text-success font-weight-bold pt-2">The Case Study Challenge</small>
-                            </h2>
-                            <div class="text-info pt-2 font-weight-bold btn btn-info mt-2"><a href="./events/mission-x.pdf" target="_blank" rel="noopener noreferrer">Rulebook</a></div>
-                        </div>
-                        <div class='card-flap flap1'>
-                            <div class='card-description'>
-                                <div class="col-lg-12 text-center font-weight-bold">
-                                    Put your technical excellence to work and bring out the genius in you through this exceptional case study event.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-5 col-lg-3">
-                        <div class='card-title text-center'>
-                            <h2 class="pt-2">
-                                Infinitesimal Abyss
-                                <small class="text-success font-weight-bold pt-2">Paper Presentation</small>
-                            </h2>
-                            <div class="text-info pt-2 font-weight-bold btn btn-info mt-2"><a href="./events/infinitesimal-abyss.pdf" target="_blank" rel="noopener noreferrer">Rulebook</a></div>
-                        </div>
-                        <div class='card-flap flap1'>
-                            <div class='card-description'>
-                                <div class="col-lg-12 text-center font-weight-bold">
-                                    Ever been inspired by papers on astronomy? Take this opportunity to choose any pre-published paper and present it to the fullest.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-5 col-lg-3">
-                        <div class='card-title text-center'>
-                            <h2 class="pt-2">
-                                War of the Worlds
-                                <small class="text-success font-weight-bold pt-2">The Ultimate Fight</small>
-                            </h2>
-                            <div class="text-info pt-2 font-weight-bold btn btn-info mt-2"><a href="./events/war-of-the-worlds.pdf" target="_blank" rel="noopener noreferrer">Rulebook</a></div>
-                        </div>
-                        <div class='card-flap flap1'>
-                            <div class='card-description'>
-                                <div class="col-lg-12 text-center font-weight-bold">
-                                    Are you of the opinion that Captain Marvel can destroy Superman in a fight? Enter into a debate with people who think otherwise and watch your friends participate in similar matchups across different universes in this fun event.
-                                </div>
+            <!-- Project Two Row-->
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Mountains</h4>
+                                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
                             </div>
                         </div>
                     </div>
@@ -366,376 +101,68 @@
             </div>
         </div>
     </section>
-    <section id="workshop" class="section workshop">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3 class="section-title">RAD@home Astronomy Workshop</h3>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="mx-auto" style="max-width: 250px;">
-                        <img class="img-fluid" src="assets/images/workshop/rad.webp" alt="RAD IIT Mandi Workshop">
-                    </div>
-                </div>
-            </div>
-            <h5 class="section-title" style="text-align:center; font-size: 35px;">#RADatIITmandi</h5>
-            <p style="text-align:center">
-                Astronomy Workshop by RAD@home for citizen science research with the Giant Metrewave Radio Telescope (GMRT). Be a part of the workshop in order to play and learn with radio astronomy and even possibly discover deep space objects! RAD@home Astronomy Collaboratory
-                is the first Indian Citizen Science Research initiative in the field of astronomy and astrophysics.
-                <br>
-                <strong style="color: black;">To participate and more, check out <u><a href="./events/workshop-brochure.pdf" target="_blank" rel="noopener noreferrer">workshop's brochure</a></u>.</strong>
-                <br>
-                <strong style="color: black;">Visit <u><a href="https://live.radathomeindia.org/" target="_blank" rel="noopener noreferrer">rad@home live board</a></u> for regular updates.</strong>
-            </p>
-        </div>
-    </section>
-
-    <section id="schedule" class="section schedule">
-        <div class="mx-auto" id="timeline-container">
-            <div class="row">
-                <div class="col pb-5">
-                    <h3 class="section-title">Schedule</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <p class="m-0 circle-text">Day 1</p>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>14 May 2021</h4>
-                                    <hr class="timeline-heading-hr">
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            Opening Ceremony
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">16:30 - 17:00 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            Keynote Talk by Dr. Bala Iyer
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">17:30 - 19:30 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            Enigma
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">20:00 - 8:00 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <p class="m-0 circle-text">Day 2</p>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>15 May 2021</h4>
-                                    <hr class="timeline-heading-hr">
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            RAD@IITMandi Workshop Part 1
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">9:00 - 13:30 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            Keynote Talk by Dr. Laura Hayes
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">15:00 - 17:00 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            Keynote Talk by Dr. Somak Raychaudhury
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">17:00 - 19:00 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            Mission X - Case Study
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">19:00 - 21:00 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            War of the Worlds
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">Begins at 21:00 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <p class="m-0 circle-text">Day 3</p>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>16 May 2021</h4>
-                                    <hr class="timeline-heading-hr">
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            RAD@IITMandi Workshop Part 2
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">09:00 - 13:30 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            The Gordian Knot - Astro Quiz
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">13:30 - 14:30 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            Infinitesimal Abyss - Paper Presentation
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">14:30 - 16:30 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            Keynote Talk by Dorje Angchuk
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">16:30 - 18:00 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="timeline-body text-muted">
-                                    <div class="row">
-                                        <div class="col-lg-7 col-sm-12 item-text">
-                                            Closing Ceremony
-                                        </div>
-                                        <div class="col-lg-5 col-sm-12 my-auto item-time">18:30 - 19:00 IST</div>
-                                    </div>
-                                    <hr>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+    <!-- Signup-->
+    <section class="signup-section" id="signup">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                    <form class="form-signup" id="contactForm" >
+                        <!-- Email address input-->
+                        <div class="row input-group-newsletter">
+                            <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." /></div>
+                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="partner" class="section partner">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3 class="section-title">Title Sponsor</h3>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Address</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="spon-img mx-auto my-2">
-                        <a href="http://www.astro4dev.org/" target="_blank" rel="noopener noreferrer">
-                            <img class="img-fluid" src="assets/images/sponsors/oad.webp" alt="OAD">
-                        </a>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">+1 (555) 902-8832</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <h3 class="section-title">Associate Sponsor</h3>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="spon-img mx-auto" style="max-width: 400px;">
-                        <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">
-                            <img class="img-fluid my-5" src="assets/images/sponsors/gfg.webp" alt="GeeksforGeeks">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h3 class="section-title">Technical Sponsor</h3>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="spon-img mx-auto my-4">
-                        <a href="https://younity.in" target="_blank" rel="noopener noreferrer">
-                            <img class="img-fluid" src="assets/images/sponsors/younity.webp" alt="younity.in">
-                        </a>
-                    </div>
-                </div>
+            <div class="social d-flex justify-content-center">
+                <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
-
-    <!--
-    <section id="faq" class="section faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="section-title">Event FAQs</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="accordion">
-                        <div class="card">
-                            <div class="card-header" id="faqhead1">
-                                <a href="" class="btn btn-header-link" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">S.S.S</a>
-                            </div>
-                            <div id="faq1" class="collapse show" aria-labelledby="faqhead1" data-parent="#faq">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="faqhead3">
-                                <a href="" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3" aria-expanded="true" aria-controls="faq3">S.S.S</a>
-                            </div>
-
-                            <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    <section id="photos" class="section photos">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="section-title">Photos</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="carousel" class="owl-carousel owl-theme">
-                        <div class="carousel-photo">
-                            <img src="./assets/images/photos/ay_ws.webp" alt="AryaBhatta WorkShop" class="img-fluid" />
-                            <span class="caption">WorkShop by AryaBhatta</span>
-                        </div>
-                        <div class="carousel-photo">
-                            <img src="./assets/images/photos/hack1.webp" alt="Enigma AstraX19" class="img-fluid" />
-                            <span class="caption">Enigma-AstraX 19</span>
-                        </div>
-                        <div class="carousel-photo">
-                            <img src="./assets/images/photos/hack2.webp" alt="Enigma AstraX19" class="img-fluid" />
-                            <span class="caption">Enigma-AstraX 19</span>
-                        </div>
-                        <div class="carousel-photo">
-                            <img src="./assets/images/photos/remote_talk1.webp" alt="Talks-AstraX20" class="img-fluid" />
-                            <span class="caption">Remote Talk-AstraX 20</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2">
-                    <div class="col text-center footer-contact">
-                        <h4>Contact</h4>
-                        <p><i class="fa fa-map-marker"></i> SAC-001, North Campus, IIT Mandi, Kamand, Himachal Pradesh – 175005, India</p>
-                        <p><i class="fa fa-phone"></i> Phone: +91-70428-45211</p>
-                        <p><i class="fa fa-phone"></i> Phone: +91-90821-40571</p>
-                        <p><i class="fa fa-envelope"></i> Email: <a href="mailto:team@astrax.in">team@astrax.in</a></p>
-                    </div>
-                    <div class="col text-center footer-links">
-                        <div class="row">
-                            <div class="col">
-                                <h4>Links</h4>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <p><a href="#">Home</a></p>
-                                <p><a href="/team.html" target="_blank" rel="noopener noreferrer">Team</a></p>
-                                <p><a href="https://stac.iitmandi.co.in" target="_blank" rel="noopener noreferrer">STAC</a></p>
-                                <p><a href="https://iitmandi.ac.in" target="_blank" rel="noopener noreferrer">IIT Mandi</a></p>
-                            </div>
-                            <div class="col-md-6">
-                                <p><a href="https://www.townscript.com/e/astrax21" target="_blank" rel="noopener noreferrer">Register Now</a></p>
-                                <p><a href="./coc.pdf" target="_blank" rel="noopener noreferrer">Code of Conduct</a></p>
-                                <p><a href="/astrax19" target="_blank" rel="noopener noreferrer">AstraX 19</a></p>
-                                <p><a href="/astrax20" target="_blank" rel="noopener noreferrer">AstraX 20</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col footer-copyright">
-                        &copy; AstraX 2021
-                    </div>
-                    <div class="col footer-social">
-                        <a href="https://www.youtube.com/channel/UCnmH6Nadt91VEkoeN_lK-rA" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a>
-                        <a href="https://www.facebook.com/stacIITMandi/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
-                        <a href="https://twitter.com/stac_iitmandi" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/astrax.in/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- script -->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script defer src="assets/js/main.js"></script>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div></footer>
 </body>
 
 </html>
