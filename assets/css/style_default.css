@@ -173,31 +173,36 @@ section.page-section p {
     color: var(--astrax-dark);
 }
 
-.event-bicolor-svg {
+.event-card {
     background-color: var(--astrax-dark);
     overflow: hidden;
-    transition: max-height 0.5s;
-    max-height: 20rem;
+    transition: max-height 0.5s, background-color 0.5s;
+    max-height: 18rem;
 }
-.event-bicolor-svg p {
-    margin-bottom: 0.5rem !important;
+.event-card p {
+    margin-bottom: 0 !important;
 }
-.event-bicolor-svg:hover {
-    max-height: 40rem;
+.event-card:hover {
+    background-color: var(--astrax-dark2);
+    max-height: 35rem;
 }
-.event-bicolor-svg object {
+.event-card object {
+    /* codepen.io/sosuke/pen/Pjoqqp */ /* Changes black into --astrax-orange */
     filter: invert(54%) sepia(65%) saturate(3708%) hue-rotate(1deg) brightness(104%) contrast(90%);
     height: 40%;
 }
 @media (min-width: 768px) {
-    .event-bicolor-svg {
-        max-height: 15rem;
+    .event-card {
+        max-height: 12rem;
     }
-    .event-bicolor-svg:hover {
-        max-height: 25rem;
+    .event-card:hover {
+        max-height: 22rem;
     }
-    .event-bicolor-svg object {
-        height: 75%;
+    .event-card object {
+        height: 60%;
+    }
+    .event-card .svg-holder {
+        min-height: 400px;
     }
 }
 .signup-section {
