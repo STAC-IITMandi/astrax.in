@@ -1,36 +1,39 @@
-#mainNav {
-    min-height: 3.5rem;
-    background-color: #fff;
+:root {
+    --astrax-orange: #f27a0e;
+    --astrax-dark: #0b2232;
+    --astrax-dark2: #101018;
 }
 
+/* Navbar on mobile screens (collapsed menu) */
+#mainNav {
+    min-height: 1rem;
+    background-color: var(--astrax-dark);
+}
 #mainNav .navbar-toggler {
     font-size: 80%;
-    padding: 0.75rem;
-    color: #64a19d;
-    border: 1px solid #64a19d;
+    padding: 0.5rem;
+    color: #fffb;
+    border: 1px solid #fffb;
 }
-
 #mainNav .navbar-toggler:focus {
     outline: none;
 }
-
 #mainNav .navbar-brand {
-    color: #000;
+    color: #fffb;
     font-weight: 700;
-    padding: 0.9rem 0;
+    padding: 0.25rem 0;
 }
-
 #mainNav .navbar-nav .nav-item:hover {
-    color: fade(#fff, 80%);
+    color: var(--astrax-orange);
     outline: none;
     background-color: transparent;
 }
-
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
     outline: none;
     background-color: transparent;
 }
 
+/* Navbar on desktop screens */
 @media (min-width: 992px) {
     #mainNav {
         padding-top: 0;
@@ -39,59 +42,43 @@
         background-color: transparent;
         transition: background-color 0.3s ease-in-out;
     }
-
     #mainNav .navbar-brand {
         padding: 0.5rem 0;
-        color: rgba(255, 255, 255, 0.5);
+        color: #fffb;
     }
-
     #mainNav .nav-link {
         transition: none;
-        padding: 2rem 1.5rem;
-        color: rgba(255, 255, 255, 0.5);
+        padding: 1rem 1.5rem;
+        color: #fffb !important;
     }
-
-    #mainNav .nav-link:hover {
-        color: rgba(255, 255, 255, 0.75);
+    #mainNav .nav-link:hover,
+    #mainNav .nav-link:active,
+    #mainNav.navbar-shrink .nav-link:hover,
+    #mainNav.navbar-shrink .nav-link:active {
+        color: var(--astrax-orange);
     }
-
-    #mainNav .nav-link:active {
-        color: #fff;
-    }
-
     #mainNav.navbar-shrink {
-        background-color: #fff;
+        background-color: var(--astrax-dark);
     }
-
     #mainNav.navbar-shrink .navbar-brand {
-        color: #000;
+        color: #fffb;
     }
-
     #mainNav.navbar-shrink .nav-link {
-        color: #000;
+        color: #fffb;
         padding: 1.5rem 1.5rem 1.25rem;
         border-bottom: 0.25rem solid transparent;
     }
-
-    #mainNav.navbar-shrink .nav-link:hover {
-        color: #64a19d;
-    }
-
-    #mainNav.navbar-shrink .nav-link:active {
-        color: #467370;
-    }
-
     #mainNav.navbar-shrink .nav-link.active {
-        color: #64a19d;
+        color: var(--astrax-orange);
         outline: none;
-        border-bottom: 0.25rem solid #64a19d;
+        border-bottom: 0.25rem solid var(--astrax-orange);
     }
 }
 
 /* Changing color of navbar on scrolling */
 .nav-scrolled {
     /* Color can be modified as per theme */
-    background-color: #704725 !important;
+    background-color: var(--astrax-dark) !important;
     transition: background-color 200ms ease-in;
 }
 
@@ -101,60 +88,66 @@
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../images/pexels-pixabay-433155.jpg");
+    background: linear-gradient(to bottom, #0004 0%, #0008 80%, #000a 100%), 
+                url("../images/nasa--hI5dX2ObAs-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
 }
 
+/* Responsive title size on small/mobile screen */
 .masthead h1, .masthead .h1 {
-    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 2.5rem;
+    font-family: "Righteous", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 3rem;
     line-height: 2.5rem;
-    letter-spacing: 0.8rem;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    letter-spacing: 1rem;
+    color: #fffd;
 }
-
 .masthead h2, .masthead .h2 {
     max-width: 20rem;
-    font-size: 1rem;
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    color: #fffb !important;
 }
-
+/* Responsive title size on medium screen */
 @media (min-width: 768px) {
     .masthead h1, .masthead .h1 {
         font-size: 4rem;
         line-height: 4rem;
     }
 }
-
+/* Responsive title size on large/desktop screen */
 @media (min-width: 992px) {
     .masthead {
         height: 100vh;
         padding: 0;
     }
-
     .masthead h1, .masthead .h1 {
         font-size: 6.5rem;
         line-height: 6.5rem;
         letter-spacing: 0.8rem;
     }
-
     .masthead h2, .masthead .h2 {
         max-width: 30rem;
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
 }
 
-.about-section {
-    padding-top: 10rem;
-    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+h2, h3, 
+.h2, .h3 {
+    color: var(--astrax-orange);
+    letter-spacing: 0.2rem;
+    font-family: "Righteous", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.about-section {
+    padding-top: 4rem;
+    background: var(--astrax-dark2);
+}
 .about-section p {
+    color: #fffb;
+    font-size: 1.1rem;
     margin-bottom: 5rem;
 }
 
@@ -169,7 +162,7 @@
 @media (min-width: 992px) {
     .projects-section .featured-text {
         padding: 0 0 0 2rem;
-        border-left: 0.5rem solid #64a19d;
+        border-left: 0.5rem solid var(--astrax-orange);
     }
 }
 
@@ -184,7 +177,7 @@
     }
 
     .projects-section .project-text hr {
-        border-color: #64a19d;
+        border-color: var(--astrax-orange);
         border-width: 0.25rem;
         width: 30%;
     }
@@ -216,7 +209,7 @@
 
 .contact-section .card {
     border: 0;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid var(--astrax-orange);
 }
 
 .contact-section .card h4, .contact-section .card .h4 {
@@ -227,7 +220,7 @@
 }
 
 .contact-section .card hr {
-    border-color: #64a19d;
+    border-color: var(--astrax-orange);
     border-width: 0.25rem;
     width: 3rem;
 }
