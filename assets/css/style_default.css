@@ -88,6 +88,13 @@
     }
 }
 
+/* Changing color of navbar on scrolling */
+.nav-scrolled {
+    /* Color can be modified as per theme */
+    background-color: #704725 !important;
+    transition: background-color 200ms ease-in;
+}
+
 .masthead {
     position: relative;
     width: 100%;
