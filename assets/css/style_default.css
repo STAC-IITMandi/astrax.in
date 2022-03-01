@@ -255,5 +255,40 @@
 }
 
 .footer {
-    padding: 5rem 0;
+    padding-top: 3.5rem;
+    margin-bottom:0px;
+}
+
+footer{
+    /* background-color: rgb(3, 8, 53); */
+    background-color: rgb(4, 16, 56);
+}
+footer a, footer p{
+    color: rgb(218, 214, 255);
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgb(130, 129, 243);
+}
+footer .contact, footer .links-wrap, footer .social{
+    border-bottom: 1px dotted white;
+    flex-grow: 1;
+}
+footer .contact{
+    width: 485px;
+}
+footer .links-wrap{
+    width: 485px;
+}
+footer .social{
+    width: 120px;
+}
+footer  i{
+    margin-right: 10px;
+}
+footer h1{
+    padding: 1.5rem 0;
+}
+footer .links1, footer .links2{
+    width: 120px;
 }
