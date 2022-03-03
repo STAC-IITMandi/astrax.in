@@ -5,12 +5,11 @@ const scrollTopBtn = document.querySelector("#scroll-top");
 function scroll() {
     window.scrollTo({
         top: 0,
-        left: 0,
         behavior: "smooth",
     });
 }
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 100px from the top of the document, show the button
 function scrollFunction() {
     if (
         document.body.scrollTop > 100 ||

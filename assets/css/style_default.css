@@ -309,6 +309,7 @@ footer .links1, footer .links2{
 }
 
 /* Styling Scroll to Top button Element */
+
 #scroll-top{
     position: fixed;
     right: 15px;
@@ -320,7 +321,7 @@ footer .links1, footer .links2{
     width: 50px;
     height: 50px;
     color: var(--astrax-dark);
-    
+    display: none;
 }
 #scroll-top:hover{
     background-color: var(--astrax-orange);
