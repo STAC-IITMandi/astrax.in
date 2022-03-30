@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /astrax20/
-Disallow: /astrax19/
+Disallow: /archive/
+Disallow: /404.html
 Sitemap: http://astrax.in/sitemap.xml

@@ -3,3 +3,4 @@ public/
 .cache/
 .DS_Store
 .vscode/
+**/untracked
