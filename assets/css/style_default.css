@@ -155,13 +155,21 @@ h4,
 }
 
 .btn-orange {
+    
     background-color: var(--astrax-orange);
     border-color: var(--astrax-orange);
     color: #000;
+    padding-left:50px;
+    padding-right:50px;
+    /* width:150px;
+    height: 40px; */
+    
 }
 .btn-orange:hover {
-    background-color: orange;
-    border-color: orange;
+    background-color: var(--astrax-dark2);
+    border-color: var(--astrax-dark2);
+    color:#fff;
+    transition: 0.5s;
 }
 
 section.page-section {
@@ -354,16 +362,20 @@ footer h3 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 2rem;
+    margin-left:100px;
+    margin-right:100px;
 }
 .person-detail {
     border-radius: 5%;
     margin: 1.5rem;
-    transition: 0.3s;
+    transition: 0.5s;
+    /* transition: 0.3s; */
 }
 .person {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* padding: 20px; */
     padding: 0.1rem;
 }
 .person-role {
@@ -378,10 +390,13 @@ footer h3 {
 }
 .person-img {
     border-radius: 50%;
+    padding:20px;
 }
 
 .person-detail:hover {
-    box-shadow: 8px 8px 7px 3px var(--astrax-dark);
+    box-shadow: 8px 8px 7px 3px #946e06;
+    /* box-shadow: 8px 8px 7px 3px var(--astrax-dark); */
     transform: translate(-5px, -5px);
     transition: 0.3s;
 }
+
