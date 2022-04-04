@@ -94,6 +94,7 @@ body {
     transform: translateY(-60%);
     font-family: 'Righteous', cursive;
     color: #343e49;
+    z-index: 1;
   }
   .title {
     font-size: 6.5em;
