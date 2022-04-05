@@ -17,11 +17,13 @@
     <link href="assets/css/style_default.css" rel="stylesheet">
 
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+    
 </head>
 
 
@@ -51,6 +53,10 @@
                     <h1 class="mx-auto my-0 text-uppercase">Astrax '22</h1>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5">April 30 - May 3</h2>
                     <!-- <a class="btn btn-primary" href="#about">Get Started</a> -->
+                <!-- </div> -->
+                <!-- countdown timer -->
+               
+                
                 </div>
             </div>
         </div>
@@ -69,6 +75,33 @@
                 </div>
             </div>
         </div>
+        
+    </section>
+    <section class="page">
+       <div >
+           <div><h2 class="coming">Coming Soon In !</h2></div>
+            <div class="">
+                
+                <div class="countdown">
+                    <div>
+                        <p id="days" class="time">00</p>
+                        <span class="year">Days</span>
+                    </div>
+                    <div>
+                        <p id="hours" class="time">00</p>
+                        <span class="year">Hours</span>
+                    </div>
+                    <div>
+                        <p id="minutes" class="time">00</p>
+                        <span class="year">Minutes</span>
+                    </div>
+                    <div>
+                        <p id="seconds" class="time">00</p>
+                        <span class="year">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Participants -->
     <section class="page-section container px-4 px-lg-5 text-center" id="participants">
@@ -84,10 +117,15 @@
                 </p>
                 <div class="container-md my-2"><hr/></div>
                 <span class="mt-2"><i>Take a look at previous years' editions meanwhile</i></span>
-                <div class="d-flex justify-content-center mb-2 py-2">
+                <!-- <div class="d-flex justify-content-center mb-2 py-2">
                     <a class="btn btn-orange btn-rounded mx-4 my-3" href="archive/astrax19/" target="_blank">Astrax 19</a>
                     <a class="btn btn-orange btn-rounded mx-4 my-3" href="archive/astrax20/" target="_blank">Astrax 20</a>
                     <a class="btn btn-orange btn-rounded mx-4 my-3" href="archive/astrax21/" target="_blank">Astrax 21</a>
+                </div> -->
+                <div class="row">
+                    <div class="col"><a class="btn btn-orange btn-rounded mx-4 my-3" href="archive/astrax19/" target="_blank">Astrax 19</a></div>
+                    <div class="col"><a class="btn btn-orange btn-rounded mx-4 my-3" href="archive/astrax20/" target="_blank">Astrax 20</a></div>
+                    <div class="col"><a class="btn btn-orange btn-rounded mx-4 my-3" href="archive/astrax21/" target="_blank">Astrax 21</a></div>
                 </div>
             </div>
         </div>
@@ -153,6 +191,27 @@
                     <object data="assets/images/events/treasure.svg" type="image/svg+xml" style="margin: 65px 20px 30px 70px; "></object>
                 </div>
             </div>
+            
+        </div>
+    </section>
+    <!-- championship -->
+    <section id="champ">
+        <div class="row  mb-5 justify-content-center" id="school" style="padding-top:40px">
+          <h2>School Championship</h2>
+          <div class="row" style="margin:20px">
+              <div class="col-4-sm" style="margin-bottom:10px">
+                <i class="fa-solid fa-10x fa-trophy"></i>
+              </div>
+              <div class="col">
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt id eveniet. Quidem numquam ad nulla laudantium veritatis impedit eum?</h6>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt id eveniet. Quidem numquam ad nulla laudantium veritatis impedit eum?</h6>
+                <div class="row">
+                    <div class="col"> <a class="btn btn-orange btn-rounded mx-4 my-3" href="" target="_blank">Rulebook</a></div>
+                    <div class="col"><a class="btn btn-orange btn-rounded mx-4 my-3" href="" target="_blank">Register Now!</a></div>  
+                </div>
+                
+              </div>
+          </div>
         </div>
     </section>
     <!-- Footer-->
@@ -198,7 +257,8 @@
                 <div class="social">
                     <h3>Social</h3>
                     <div class="footer-list text-left">
-                        <p><a href="https://www.youtube.com/channel/UCnmH6Nadt91VEkoeN_lK-rA"><i class="fa-brands fa-youtube"></i> YouTube</a></p>
+                        <p><a href="https://www.youtube.com/channel/UCnmH6Nadt91VEkoeN_lK-rA"><i class="fab fa-youtube"></i> YouTube</a></p>
+                        <!-- <p><a href="https://www.youtube.com/channel/UCnmH6Nadt91VEkoeN_lK-rA"><i class="fa-brands fa-youtube"></i> YouTube</a></p> -->
                         <p><a href="https://www.facebook.com/stacIITMandi/"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
                         <p><a href="https://www.instagram.com/astrax.in/"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
                         <p><a href="https://twitter.com/stac_iitmandi"><i class="fa-brands fa-twitter"></i> Twitter</a></p>
@@ -213,11 +273,12 @@
     </footer>
 
     <!-- Scroll to Top Button -->
+    <!-- <button id="scroll-top"><i class="fa-solid fa-2x icon--top fa-circle-up"></i></button> -->
     <button id="scroll-top"><i class="fa fa-arrow-up icon--top fa-2x"></i></button>
 
     <!-- Custom Script -->
     <script src="assets/js/app.js"></script>
-    
+    <script src="assets/js/countdown.js"></script>
 </body>
 
 </html>

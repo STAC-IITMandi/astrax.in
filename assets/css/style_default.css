@@ -291,20 +291,24 @@ footer h3 {
     position: fixed;
     right: 15px;
     bottom: 15px;
-    border: 4px solid var(--astrax-dark);
-    box-shadow: 0px 5px 10px 3px var(--astrax-dark);
+    border: 6px solid var(--astrax-dark);
+    /* box-shadow: 0px 5px 10px 3px var(--astrax-dark); */
     border-radius: 50%;
     background-color: white;
     width: 50px;
     height: 50px;
     color: var(--astrax-dark);
     display: none;
+    transition: 0.5s;
 }
 #scroll-top:hover {
-    background-color: var(--astrax-orange);
-    border: 4px solid var(--astrax-orange);
-    box-shadow: 0px 5px 10px 3px var(--astrax-orange);
-    color: white;
+    background-color: #fff;
+    /* background-color: var(--astrax-orange); */
+    border: 6px solid var(--astrax-orange);
+    box-shadow: 0px 3px 10px 3px var(--astrax-orange);
+    color:  var(--astrax-orange);
+    bottom:20px;
+    /* color: white; */
 }
 #scroll-top:active {
     transform: translateY(3px);
@@ -312,6 +316,7 @@ footer h3 {
     background-color: var(--astrax-dark);
     border-color: var(--astrax-dark);
     box-shadow: 0px 3px 10px 3px var(--astrax-dark);
+    
 }
 
 /* Styling Team Page */
@@ -398,5 +403,108 @@ footer h3 {
     /* box-shadow: 8px 8px 7px 3px var(--astrax-dark); */
     transform: translate(-5px, -5px);
     transition: 0.3s;
+}
+
+
+
+/* school_champition */
+#school{
+    background-color: #0b2232;
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+#school i{
+    color:#f27a0e ;
+}
+#champ{
+    margin-left: 206px;
+    margin-right: 206px;
+}
+@media(max-width: 650px){
+    #champ{
+        margin-left: 40px;
+        margin-right: 40px;
+    }  
+}
+
+
+
+
+
+.countdown{
+    display: flex;
+}
+
+/* .time{
+    font-size: 4px;
+ 
+} */
+
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    background-color: #101018;
+    margin-top: -5px;
+}
+
+.time{
+    font-size: 30px;
+    
+}
+
+.countdown div{
+    margin: 0 2rem;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 5px 20px;
+    padding-bottom: 10px!important;
+    color: #fff;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 20px #fff;
+    box-sizing: border-box;
+    
+}
+.days{
+    font-size: 50px;
+}
+
+@media (max-width:992px){
+    .countdown div{
+        margin: 0 1rem;
+    }
+}
+@media (max-width:767px){
+    .countdown{
+        flex-wrap: wrap;
+    }
+    .countdown div{
+        margin: 1rem auto;
+        max-width: 30px;
+
+    }
+    
+    
+}
+@media(max-width:700px){
+    .countdown div{
+        margin:0 10px;
+        margin-bottom: 10px;
+        margin-right:15px;
+        margin-left:65px;
+        
+    }
+}
+.coming{
+    padding-bottom: 20px;
+    color:#f27a0e;
+    text-align: center;
 }
 
