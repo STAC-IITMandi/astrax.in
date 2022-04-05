@@ -250,6 +250,7 @@ footer .contact,
 footer .links-wrap,
 footer .social {
     border-bottom: 1px dotted white;
+    margin-bottom: 1em;
     flex-grow: 1;
 }
 footer .contact {
@@ -419,29 +420,11 @@ footer h3 {
 #school i{
     color:#f27a0e ;
 }
-#champ{
-    margin-left: 206px;
-    margin-right: 206px;
-}
-@media(max-width: 650px){
-    #champ{
-        margin-left: 40px;
-        margin-right: 40px;
-    }  
-}
-
-
-
 
 
 .countdown{
     display: flex;
 }
-
-/* .time{
-    font-size: 4px;
- 
-} */
 
 .page{
     display: flex;
