@@ -491,3 +491,12 @@ footer h3 {
     text-align: center;
 }
 
+.event-details {
+	display: none;
+	height: 0;
+	transition: height 5s;
+}
+
+.event-card:hover .event-details {
+	display: block;
+}
