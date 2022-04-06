@@ -508,3 +508,23 @@ footer h3 {
     text-align: center;
 }
 
+
+/* sponsor */
+#sponsors{
+   
+    text-align: center;
+   }
+   #spon{
+       color:var(--astrax-dark);
+       text-align: center;
+       font-family:Geometric sans-serif ;
+       font-size: 50px;
+       font-weight: bold;
+       margin-bottom: 20px;
+   }
+   .sponrow{
+       margin-bottom: 40px;
+       
+   }
+   
+
