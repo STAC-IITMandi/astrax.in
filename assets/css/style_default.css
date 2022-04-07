@@ -493,13 +493,13 @@ footer h3 {
 }
 
 .event-details {
-	display: none;
+	display: none !important;
 	height: 0;
 	transition: height 5s;
 }
 
 .event-card:hover .event-details {
-    display: block;
+    display: inline !important;
     height: 20px;
 }
 
