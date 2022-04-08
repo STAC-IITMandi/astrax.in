@@ -104,7 +104,7 @@
         Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 3rem;
-    line-height: 2.5rem;
+    line-height: 3.5rem;
     letter-spacing: 1rem;
     color: #fffd;
 }
@@ -204,8 +204,8 @@ section.page-section p {
     margin-bottom: 0 !important;
 }
 .event-card:hover {
-    background-color: var(--astrax-dark2);
-    max-height: 35rem;
+    /* background-color: var(--astrax-dark2); */
+    max-height: 40rem;
 }
 .event-card object {
     /* codepen.io/sosuke/pen/Pjoqqp */ /* Changes black into --astrax-orange */
@@ -249,6 +249,7 @@ footer .contact,
 footer .links-wrap,
 footer .social {
     border-bottom: 1px dotted white;
+    margin-bottom: 1em;
     flex-grow: 1;
 }
 footer .contact {
@@ -418,29 +419,6 @@ footer h3 {
 #school i{
     color:#f27a0e ;
 }
-#champ{
-    margin-left: 206px;
-    margin-right: 206px;
-}
-@media(max-width: 650px){
-    #champ{
-        margin-left: 40px;
-        margin-right: 40px;
-    }  
-}
-
-
-
-
-
-.countdown{
-    display: flex;
-}
-
-/* .time{
-    font-size: 4px;
- 
-} */
 
 .page{
     display: flex;
@@ -457,8 +435,13 @@ footer h3 {
     
 }
 
+.countdown{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .countdown div{
-    margin: 0 2rem;
+    margin: 2rem 2rem;
     text-align: center;
     border: 2px solid #fff;
     padding: 5px 20px;
@@ -477,28 +460,29 @@ footer h3 {
 
 @media (max-width:992px){
     .countdown div{
-        margin: 0 1rem;
+        margin: 1rem 1rem;
+        min-height: 80px;
     }
 }
-@media (max-width:767px){
-    .countdown{
-        flex-wrap: wrap;
-    }
+/* @media (max-width:767px){
     .countdown div{
-        margin: 1rem auto;
         max-width: 30px;
-
-    }
-    
-    
-}
+        font-size: 80%;
+    } 
+} */
 @media(max-width:700px){
+    .countdown {
+        border: 2px solid #fff;
+        border-radius: 15px;
+        box-shadow: 0px 2px 20px #fff;
+    }
     .countdown div{
-        margin:0 10px;
-        margin-bottom: 10px;
-        margin-right:15px;
-        margin-left:65px;
-        
+        margin: 10px auto;
+        min-width: 80px;
+        min-height: 50px;
+        font-size: 75%;
+        border: none;
+        box-shadow: none;
     }
 }
 .coming{
@@ -507,6 +491,23 @@ footer h3 {
     text-align: center;
 }
 
+.event-details {
+	display: none !important;
+	height: 0;
+	transition: height 5s;
+}
 
-   
+.event-card:hover .event-details {
+    display: inline !important;
+    height: 20px;
+}
+
+.event-card > div.col-md-9 {
+    min-height: auto;
+    transition: min-height 5s;
+}
+
+.event-card:hover > div.col-md-9 {
+    min-height: 25rem;
+}
 
