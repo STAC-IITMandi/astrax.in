@@ -190,8 +190,7 @@ section.page-section p {
     color: #fffb;
 }
 
-#participants h2,
-#events h2 {
+.page-section h2 {
     color: var(--astrax-dark);
 }
 
@@ -511,3 +510,4 @@ footer h3 {
 .event-card:hover > div.col-md-9 {
     min-height: 25rem;
 }
+
