@@ -415,15 +415,7 @@ footer h3 {
     color: #f27a0e;
 }
 
-<<<<<<< HEAD
-.countdown {
-    display: flex;
-}
-
-.page {
-=======
 .page{
->>>>>>> bb1f14062fbb23a93310f9b88585810f42e0a158
     display: flex;
     align-items: center;
     justify-content: center;
@@ -437,10 +429,6 @@ footer h3 {
     font-size: 30px;
 }
 
-<<<<<<< HEAD
-.countdown div {
-    margin: 0 2rem;
-=======
 .countdown{
     display: flex;
     flex-wrap: wrap;
@@ -448,7 +436,6 @@ footer h3 {
 
 .countdown div{
     margin: 2rem 2rem;
->>>>>>> bb1f14062fbb23a93310f9b88585810f42e0a158
     text-align: center;
     border: 2px solid #fff;
     padding: 5px 20px;
@@ -464,28 +451,6 @@ footer h3 {
     font-size: 50px;
 }
 
-<<<<<<< HEAD
-@media (max-width: 992px) {
-    .countdown div {
-        margin: 0 1rem;
-    }
-}
-@media (max-width: 767px) {
-    .countdown {
-        flex-wrap: wrap;
-    }
-    .countdown div {
-        margin: 1rem auto;
-        max-width: 30px;
-    }
-}
-@media (max-width: 700px) {
-    .countdown div {
-        margin: 0 10px;
-        margin-bottom: 10px;
-        margin-right: 15px;
-        margin-left: 65px;
-=======
 @media (max-width:992px){
     .countdown div{
         margin: 1rem 1rem;
@@ -511,7 +476,6 @@ footer h3 {
         font-size: 75%;
         border: none;
         box-shadow: none;
->>>>>>> bb1f14062fbb23a93310f9b88585810f42e0a158
     }
 }
 .coming {
