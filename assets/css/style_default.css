@@ -155,20 +155,18 @@ h4,
 }
 
 .btn-orange {
-    
     background-color: var(--astrax-orange);
     border-color: var(--astrax-orange);
     color: #000;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left: 50px;
+    padding-right: 50px;
     /* width:150px;
     height: 40px; */
-    
 }
 .btn-orange:hover {
     background-color: var(--astrax-dark2);
     border-color: var(--astrax-dark2);
-    color:#fff;
+    color: #fff;
     transition: 0.5s;
 }
 
@@ -307,8 +305,8 @@ footer h3 {
     /* background-color: var(--astrax-orange); */
     border: 6px solid var(--astrax-orange);
     box-shadow: 0px 3px 10px 3px var(--astrax-orange);
-    color:  var(--astrax-orange);
-    bottom:20px;
+    color: var(--astrax-orange);
+    bottom: 20px;
     /* color: white; */
 }
 #scroll-top:active {
@@ -317,7 +315,6 @@ footer h3 {
     background-color: var(--astrax-dark);
     border-color: var(--astrax-dark);
     box-shadow: 0px 3px 10px 3px var(--astrax-dark);
-    
 }
 
 /* Styling Team Page */
@@ -368,8 +365,8 @@ footer h3 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 2rem;
-    margin-left:100px;
-    margin-right:100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .person-detail {
     border-radius: 5%;
@@ -396,7 +393,7 @@ footer h3 {
 }
 .person-img {
     border-radius: 50%;
-    padding:20px;
+    padding: 20px;
 }
 
 .person-detail:hover {
@@ -406,27 +403,23 @@ footer h3 {
     transition: 0.3s;
 }
 
-
-
 /* school_champition */
-#school{
+#school {
     background-color: #0b2232;
-    color:white;
+    color: white;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    
 }
-#school i{
-    color:#f27a0e ;
+#school i {
+    color: #f27a0e;
 }
 
-
-.countdown{
+.countdown {
     display: flex;
 }
 
-.page{
+.page {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -436,58 +429,131 @@ footer h3 {
     margin-top: -5px;
 }
 
-.time{
+.time {
     font-size: 30px;
-    
 }
 
-.countdown div{
+.countdown div {
     margin: 0 2rem;
     text-align: center;
     border: 2px solid #fff;
     padding: 5px 20px;
-    padding-bottom: 10px!important;
+    padding-bottom: 10px !important;
     color: #fff;
     min-width: 100px;
     min-height: 100px;
     border-radius: 15px;
     box-shadow: 0px 2px 20px #fff;
     box-sizing: border-box;
-    
 }
-.days{
+.days {
     font-size: 50px;
 }
 
-@media (max-width:992px){
-    .countdown div{
+@media (max-width: 992px) {
+    .countdown div {
         margin: 0 1rem;
     }
 }
-@media (max-width:767px){
-    .countdown{
+@media (max-width: 767px) {
+    .countdown {
         flex-wrap: wrap;
     }
-    .countdown div{
+    .countdown div {
         margin: 1rem auto;
         max-width: 30px;
-
     }
-    
-    
 }
-@media(max-width:700px){
-    .countdown div{
-        margin:0 10px;
+@media (max-width: 700px) {
+    .countdown div {
+        margin: 0 10px;
         margin-bottom: 10px;
-        margin-right:15px;
-        margin-left:65px;
-        
+        margin-right: 15px;
+        margin-left: 65px;
     }
 }
-.coming{
+.coming {
     padding-bottom: 20px;
-    color:#f27a0e;
+    color: #f27a0e;
     text-align: center;
+}
+
+/* Styling Keynotes Section  */
+.keynote-container{
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #0b2232; */
+}
+
+.keynote-container > h2{
+    text-align: center;
+}
+.keynote {
+    box-shadow:0 0 50px 0 rgba(179, 179, 179, 0.5) ;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    width: 75%;
+    /* border: 5px solid red; */
+    /* width: 35rem; */
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: #fff;
+    border: 2.5px solid var(--astrax-dark);
+    border-radius: 15px;
+}
+
+.key-detail{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.key-detail > img {
+    border: 2px solid var(--astrax-dark2);
+    /* margin: 1rem; */
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow:0 0 50px -5px rgba(179, 179, 179, 0.5) ;
+}
+.key-detail > .name{
+    color: var(--astrax-orange);
+    font-size:3rem;
+    font-weight: bold;
+    font-family: "Righteous", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 0.2rem;
+    text-align: center;
+
+}
+.info{
+    color: var(--astrax-dark2);
+    font-weight: 500;
+    width: 90%;
+    margin: auto;
+}
+.keynote-1 {
+}
+.keynote-2 {
+    /* flex-direction: row-reverse; */
+}
+.key-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around ;
+}
+
+@media (max-width: 800px) {
+    .key-detail {
+        
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
