@@ -156,20 +156,18 @@ h4,
 }
 
 .btn-orange {
-    
     background-color: var(--astrax-orange);
     border-color: var(--astrax-orange);
     color: #000;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left: 50px;
+    padding-right: 50px;
     /* width:150px;
     height: 40px; */
-    
 }
 .btn-orange:hover {
     background-color: var(--astrax-dark2);
     border-color: var(--astrax-dark2);
-    color:#fff;
+    color: #fff;
     transition: 0.5s;
 }
 
@@ -307,8 +305,8 @@ footer h3 {
     /* background-color: var(--astrax-orange); */
     border: 6px solid var(--astrax-orange);
     box-shadow: 0px 3px 10px 3px var(--astrax-orange);
-    color:  var(--astrax-orange);
-    bottom:20px;
+    color: var(--astrax-orange);
+    bottom: 20px;
     /* color: white; */
 }
 #scroll-top:active {
@@ -317,7 +315,6 @@ footer h3 {
     background-color: var(--astrax-dark);
     border-color: var(--astrax-dark);
     box-shadow: 0px 3px 10px 3px var(--astrax-dark);
-    
 }
 
 /* Styling Team Page */
@@ -368,8 +365,8 @@ footer h3 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 2rem;
-    margin-left:100px;
-    margin-right:100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .person-detail {
     border-radius: 5%;
@@ -396,7 +393,7 @@ footer h3 {
 }
 .person-img {
     border-radius: 50%;
-    padding:20px;
+    padding: 20px;
 }
 
 .person-detail:hover {
@@ -406,22 +403,19 @@ footer h3 {
     transition: 0.3s;
 }
 
-
-
 /* school_champition */
-#school{
+#school {
     background-color: #0b2232;
-    color:white;
+    color: white;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    
 }
-#school i{
-    color:#f27a0e ;
+#school i {
+    color: #f27a0e;
 }
 
-.page{
+.page {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -431,36 +425,34 @@ footer h3 {
     margin-top: -5px;
 }
 
-.time{
+.time {
     font-size: 30px;
-    
 }
 
-.countdown{
+.countdown {
     display: flex;
     flex-wrap: wrap;
 }
 
-.countdown div{
+.countdown div {
     margin: 2rem 2rem;
     text-align: center;
     border: 2px solid #fff;
     padding: 5px 20px;
-    padding-bottom: 10px!important;
+    padding-bottom: 10px !important;
     color: #fff;
     min-width: 100px;
     min-height: 100px;
     border-radius: 15px;
     box-shadow: 0px 2px 20px #fff;
     box-sizing: border-box;
-    
 }
-.days{
+.days {
     font-size: 50px;
 }
 
-@media (max-width:992px){
-    .countdown div{
+@media (max-width: 992px) {
+    .countdown div {
         margin: 1rem 1rem;
         min-height: 80px;
     }
@@ -471,13 +463,13 @@ footer h3 {
         font-size: 80%;
     } 
 } */
-@media(max-width:700px){
+@media (max-width: 700px) {
     .countdown {
         border: 2px solid #fff;
         border-radius: 15px;
         box-shadow: 0px 2px 20px #fff;
     }
-    .countdown div{
+    .countdown div {
         margin: 10px auto;
         min-width: 80px;
         min-height: 50px;
@@ -486,16 +478,77 @@ footer h3 {
         box-shadow: none;
     }
 }
-.coming{
+.coming {
     padding-bottom: 20px;
-    color:#f27a0e;
+    color: #f27a0e;
     text-align: center;
 }
 
+/* Styling Keynotes Section  */
+.keynote-heading {
+    font-size: 2.25rem;
+    text-align: center;
+    color: var(--astrax-dark);
+    margin-bottom: 1rem;
+}
+.keynote-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.keynote {
+    transition: 0.2s;
+    width: 400px;
+    box-shadow: 0 0 75px -5px rgba(179, 179, 179, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 2.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 1.5rem;
+}
+.keynote:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 50px 19px rgba(179, 179, 179, 0.5);
+    transition: 0.2s;
+}
+.key-detail {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.key-detail > img {
+    border: 2.5px solid var(--astrax-dark2);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.key-detail > .name {
+    color: var(--astrax-orange);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Righteous", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.keynote > .info {
+    font-size: 1rem;
+    color: var(--astrax-dark2);
+    font-weight: 500;
+    word-wrap: break-word;
+}
+/* *******************************************************************************/
 .event-details {
-	display: none !important;
-	height: 0;
-	transition: height 5s;
+    display: none !important;
+    height: 0;
+    transition: height 5s;
 }
 
 .event-card:hover .event-details {
@@ -511,4 +564,3 @@ footer h3 {
 .event-card:hover > div.col-md-9 {
     min-height: 25rem;
 }
-
