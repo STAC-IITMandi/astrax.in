@@ -206,7 +206,7 @@ section.page-section p {
 }
 .event-card:hover {
     /* background-color: var(--astrax-dark2); */
-    max-height: 40rem;
+    max-height: 42rem;
 }
 .event-card object {
     /* codepen.io/sosuke/pen/Pjoqqp */ /* Changes black into --astrax-orange */
@@ -219,7 +219,7 @@ section.page-section p {
         max-height: 12rem;
     }
     .event-card:hover {
-        max-height: 22rem;
+        max-height: 23rem;
     }
     .event-card object {
         height: 60%;
