@@ -218,6 +218,13 @@ h4,
     /* width:150px;
     height: 40px; */
 }
+.btn-orange.btn-outline {
+    background-color: transparent;
+    color: var(--astrax-orange);
+}
+.btn-orange.btn-outline:hover {
+    background-color: var(--astrax-orange);
+}
 .btn-orange:hover {
     background-color: var(--astrax-dark2);
     border-color: var(--astrax-dark2);
