@@ -2,23 +2,60 @@
     --astrax-orange: #f27a0e;
     --astrax-dark: #0b2232;
     --astrax-dark2: #101018;
+    --discord-bg: rgb(24,26,28);
 }
-.links a
-{margin:10px;
-height:100px;width:100px;
-display:inline-flex;
-justify-content:center;
-align-items:center;
-box-shadow:1px 4px 2px 2px #dcdde1;
-border-radius:50px;}
-.links a i
-{transition:all 0.3s linear;}
-.links a i:hover
-{transform:scale(1.2);}
+
+.text-orange {
+    color: var(--astrax-orange) !important;
+}
+
+.social-links a {
+    margin:10px;
+    height:4em;
+    width:4em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:1px 4px 2px 2px #dcdde1;
+    border-radius:5em;
+    text-decoration: none !important;
+}
+.social-links a i {
+    transition:all 0.3s linear;
+}
+.social-links a i:hover {
+    transform:scale(1.2);
+}
+
+@media (min-width: 768px) {
+    #discord-sidetext {
+        max-width: 400px;
+        text-align: right !important;
+    }
+    #discord-embed {
+        justify-content: start;
+    }
+}
+@media (max-width: 768px) {
+    #discord-embed > iframe {
+        margin: auto;
+    }
+    #discord-embed {
+        justify-content: center;
+    }
+}
+@media (max-width: 450px) {
+    #discord-embed {
+        max-width: 350px;
+        overflow-x: scroll;
+    }
+}
+
+
 /* Navbar on mobile screens (collapsed menu) */
 #mainNav {
     min-height: 1rem;
-    background-color: var(--astrax-dark);
+    /* background-color: var(--astrax-dark); */
 }
 #mainNav .navbar-toggler {
     font-size: 80%;
@@ -97,12 +134,8 @@ border-radius:50px;}
     background-color: var(--astrax-dark) !important;
     transition: background-color 200ms ease-in;
 }
-#insta {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;}
+
+
 .masthead {
     position: relative;
     width: 100%;
@@ -197,6 +230,8 @@ section.page-section {
 }
 section.page-section p {
     font-size: 1.1rem;
+}
+section.page-section p:not(.no-mb) {
     margin-bottom: 4rem;
 }
 
