@@ -2,12 +2,60 @@
     --astrax-orange: #f27a0e;
     --astrax-dark: #0b2232;
     --astrax-dark2: #101018;
+    --discord-bg: rgb(24,26,28);
 }
+
+.text-orange {
+    color: var(--astrax-orange) !important;
+}
+
+.social-links a {
+    margin:10px;
+    height:4em;
+    width:4em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:1px 4px 2px 2px #dcdde1;
+    border-radius:5em;
+    text-decoration: none !important;
+}
+.social-links a i {
+    transition:all 0.3s linear;
+}
+.social-links a i:hover {
+    transform:scale(1.2);
+}
+
+@media (min-width: 768px) {
+    #discord-sidetext {
+        max-width: 400px;
+        text-align: right !important;
+    }
+    #discord-embed {
+        justify-content: start;
+    }
+}
+@media (max-width: 768px) {
+    #discord-embed > iframe {
+        margin: auto;
+    }
+    #discord-embed {
+        justify-content: center;
+    }
+}
+@media (max-width: 450px) {
+    #discord-embed {
+        max-width: 350px;
+        overflow-x: scroll;
+    }
+}
+
 
 /* Navbar on mobile screens (collapsed menu) */
 #mainNav {
     min-height: 1rem;
-    background-color: var(--astrax-dark);
+    /* background-color: var(--astrax-dark); */
 }
 #mainNav .navbar-toggler {
     font-size: 80%;
@@ -33,7 +81,11 @@
     outline: none;
     background-color: transparent;
 }
-
+@media(min-width:767px){
+    .m a{
+        line-height:2.5em;
+    }
+}
 /* Navbar on desktop screens */
 @media (min-width: 992px) {
     #mainNav {
@@ -83,6 +135,7 @@
     transition: background-color 200ms ease-in;
 }
 
+
 .masthead {
     position: relative;
     width: 100%;
@@ -115,6 +168,7 @@
     font-size: 1.25rem;
     color: #fffb !important;
 }
+
 /* Responsive title size on medium screen */
 @media (min-width: 768px) {
     .masthead h1,
@@ -164,6 +218,13 @@ h4,
     /* width:150px;
     height: 40px; */
 }
+.btn-orange.btn-outline {
+    background-color: transparent;
+    color: var(--astrax-orange);
+}
+.btn-orange.btn-outline:hover {
+    background-color: var(--astrax-orange);
+}
 .btn-orange:hover {
     background-color: var(--astrax-dark2);
     border-color: var(--astrax-dark2);
@@ -176,6 +237,8 @@ section.page-section {
 }
 section.page-section p {
     font-size: 1.1rem;
+}
+section.page-section p:not(.no-mb) {
     margin-bottom: 4rem;
 }
 
