@@ -208,13 +208,20 @@ h4,
         Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+@media (min-width:450px) {
+    .btn-orange{
+        padding: 5px 50px;
+    }
+}
+@media(max-width:450px){
+    .btn-orange{
+        padding: 5px 2px;
+    }
+}
 .btn-orange {
     background-color: var(--astrax-orange);
     border-color: var(--astrax-orange);
     color: #000;
-    padding-left: 50px;
-    padding-right: 50px;
     /* width:150px;
     height: 40px; */
 }
@@ -280,7 +287,7 @@ section.page-section p:not(.no-mb) {
         max-height: 12rem;
     }
     .event-card:hover {
-        max-height: 23rem;
+        max-height: 80vh;
     }
     .event-card object {
         height: 60%;
