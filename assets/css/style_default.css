@@ -19,6 +19,7 @@
     box-shadow:1px 4px 2px 2px #dcdde1;
     border-radius:5em;
     text-decoration: none !important;
+    /* color: var(--astrax-dark) !important; */
 }
 .social-links a i {
     transition:all 0.3s linear;
@@ -55,7 +56,6 @@
 /* Navbar on mobile screens (collapsed menu) */
 #mainNav {
     min-height: 1rem;
-    /* background-color: var(--astrax-dark); */
 }
 #mainNav .navbar-toggler {
     font-size: 80%;
@@ -80,6 +80,17 @@
 #mainNav .navbar-nav .nav-item:focus {
     outline: none;
     background-color: transparent;
+}
+@media (max-width: 992px) {
+    #mainNav.opaque-bg {
+        background-color: var(--astrax-dark);
+    }
+    #mainNav a.nav-link {
+        color: #fffb;
+    }
+    #navbarResponsive {
+        padding: 1em 0em 1.5em 1em;
+    }
 }
 @media(min-width:767px){
     .m a{
@@ -641,4 +652,9 @@ footer h3 {
 .sponrow{
 margin-top:40px;
   margin-bottom: 40px;
+}
+
+span.tslide {
+    position: relative;
+    /* display: inline-block; */
 }
