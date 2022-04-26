@@ -5,7 +5,7 @@ let secondsItem = document.querySelector("#seconds");
 let comingItem = document.querySelector(".coming");
 let countdownItem = document.querySelector(".countdown");
 let countDown = () => {
-    let futureDate = new Date("30 april 2022");
+    let futureDate = new Date("29 april 2022 18:00");
     let endingDate = new Date("4 may 2022");
     let currentDate = new Date();
     let ongoingDate = endingDate - currentDate;
@@ -23,7 +23,7 @@ let countDown = () => {
     let minutes = Math.floor(myDate / 1000 / 60) % 60;
     let seconds=Math.floor(myDate/1000) % 60;
     if(ongoingDate < 0){
-        comingItem.innerHTML = "AstraX has Ended! See you next year!";
+        comingItem.innerHTML = "AstraX'22 has Ended! See you next year!";
         countdownItem.remove();
     }
     daysItem.innerHTML = days;
