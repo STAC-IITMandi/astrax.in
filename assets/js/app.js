@@ -87,3 +87,29 @@ navbarContent.addEventListener('show.bs.collapse', function() {
 navbarContent.addEventListener('hidden.bs.collapse', function() {
     navbar.classList.remove('opaque-bg')
 })
+
+
+var scsws = document.querySelectorAll('li.swpg-switch');
+for (let sw of scsws) {
+    sw.addEventListener('click', function(e) {
+        for (let swa of scsws)
+            swa.classList.remove('active');
+        // console.log(this, e.target);
+        e.target.parentElement.classList.add('active');
+    })
+}
+
+setTimeout(function(){
+    // During the fest, display the page containing current day's schedule directly
+    switch (new Date().toDateString()) {
+        case 'Sun May 01 2022' :
+            document.querySelector('a.switch-title[href="#schedule-day2"]').click();
+            break;
+        case 'Mon May 02 2022' :
+            document.querySelector('a.switch-title[href="#schedule-day3"]').click();
+            break;
+        case 'Tue May 03 2022' :
+            document.querySelector('a.switch-title[href="#schedule-day4"]').click();
+            break;
+    }
+})

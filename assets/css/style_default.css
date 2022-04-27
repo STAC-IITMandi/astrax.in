@@ -441,6 +441,108 @@ footer h3 {
     }
 }
 
+#schedule {
+    overflow-x: clip;
+}
+.sched-daytitle {
+    background-color: #ffdaa3;
+}
+
+.swc-wrapper-timeline .swpg-progressbar {
+    position: relative;
+    margin-bottom: 70px;
+    background-color: transparent;
+    height: 4px;
+    border-bottom: 1px solid #000;
+    width: 75%;
+}
+.swc-wrapper-timeline .swpg-progressbar-fill {
+    background-color: #000;
+    height: 3px;
+    top: 2px;
+}
+.swc-wrapper-timeline .swpg-progressbar:before {
+    position: absolute;
+    top: 3px;
+    left: -120%;
+    width: 120%;
+    height: 1px;
+    background-color: #000;
+    content: "";
+}
+.swc-wrapper-timeline .swpg-progressbar:after {
+    position: absolute;
+    top: 3px;
+    right: -80%;
+    width: 80%;
+    height: 1px;
+    background-color: #000;
+    content: "";
+}
+.swc-wrapper-timeline .swpg-custom {
+    position: relative;
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    line-height: 1.66;
+    bottom: 0;
+    z-index: 11;
+    width: 75%;
+    display: flex;
+}
+.swc-wrapper-timeline .swpg-custom .swpg-switch {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+.swc-wrapper-timeline .swpg-custom .swpg-switch .switch-title {
+    position: absolute;
+    font-weight: 400;
+    right: 0;
+    transform: translateX(50%);
+    transition: 0.2s all ease-in-out;
+    transition-delay: 0s;
+    cursor: pointer;
+    z-index: 1;
+    color: black;
+    text-decoration: none;
+}
+.swc-wrapper-timeline .swpg-custom .swpg-switch .switch-title:after {
+    position: absolute;
+    top: calc(100% + 19px);
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 2rem;
+    content: "";
+    transition: 0.2s all ease-in-out;
+    transition-delay: 0s;
+    z-index: 1;
+}
+.swc-wrapper-timeline .swpg-custom .swpg-switch.active .switch-title {
+    font-weight: 400;
+    transition-delay: 0.4s;
+}
+.swc-wrapper-timeline .swpg-custom .swpg-switch.active .switch-title:after {
+    background: #000;
+    width: 25px;
+    height: 25px;
+    transition-delay: 0.4s;
+}
+.swc-wrapper-timeline .swpg-custom .swpg-switch.active ~ .swpg-switch .switch-title {
+    color: #888;
+    font-weight: 16px;
+}
+.swc-wrapper-timeline .swpg-custom .swpg-switch.active ~ .swpg-switch .switch-title:after {
+    background: #888;
+}
+
+
 /* Designing of team section */
 .team-section {
     display: flex;
@@ -686,36 +788,20 @@ span.tslide {
     
 }
 
-.stime{
-    width: auto;
-    margin:300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
-    box-shadow: 2px 2px 10px 2px #aaaba7;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 @media(max-width:1000px){
     .stime{
         width: auto;
        margin:10px;
     }
 }
-#darkhr{
-    height: 5px;
+.darkhr{
+    height: 5px !important;
     background-color:rgb(117, 90, 193);
     margin-left: 10px;
     margin-right: 10px;
     border: none;
     border-radius:50px ;
        
-}
-.just{
-    display: flex;
-    justify-content: center;
-   
 }
 .line{
     margin-left: 10px;
@@ -724,20 +810,19 @@ span.tslide {
     margin-bottom: 0px;
     border: none;
 }
-.trow{
-height: 50px;
-margin-left: 6.5px;
-margin-right: 6.5px;
-align-items: center;
-
-font-family: "Righteous", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+.trow {
+    padding-top: 1em;
+    margin-left: 6.5px;
+    margin-right: 6.5px;
+    align-items: center;
+}
+.trow p:first-child {
+    font-family: "Righteous", -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 .trow:hover{
-    /* background-color:#101018 ;
-    color: #fff; */
-    background-color: #f27a0e;
-    color:#fff;
+    background-color: linen;
     border-radius: 5px;
 
 }
