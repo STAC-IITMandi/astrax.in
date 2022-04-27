@@ -292,6 +292,7 @@ section.page-section p:not(.no-mb) {
     filter: invert(54%) sepia(65%) saturate(3708%) hue-rotate(1deg)
         brightness(104%) contrast(90%);
     height: 40%;
+    max-width: 85%;
 }
 @media (min-width: 768px) {
     .event-card {
@@ -653,6 +654,9 @@ footer h3 {
 margin-top:40px;
   margin-bottom: 40px;
 }
+.sponrow object {
+    max-width: 90% !important;
+}
 
 span.tslide {
     position: relative;
@@ -767,4 +771,22 @@ font-family: "Righteous", -apple-system, BlinkMacSystemFont, "Segoe UI",
 #hr{
     display: flex;
     justify-content: center;
+}
+@media (max-width: 450px) {
+    i.fa-trophy {
+        font-size: 400% !important;
+    }
+}
+
+#workshop-img {
+    max-width: 35vw;
+    display: block;
+    margin: 1em auto 0;
+    width: 90%;
+    border-radius: 10px;
+}
+@media (min-width: 992px) {
+    #workshop-sidetext {
+        text-align: left !important;
+    }
 }
