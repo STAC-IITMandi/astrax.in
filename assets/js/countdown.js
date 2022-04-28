@@ -5,7 +5,7 @@ let secondsItem = document.querySelector("#seconds");
 let comingItem = document.querySelector(".coming");
 let countdownItem = document.querySelector(".countdown");
 let countDown = () => {
-    let futureDate = new Date("29 april 2022 18:00");
+    let futureDate = new Date("30 april 2022 12:00");
     let endingDate = new Date("4 may 2022");
     let currentDate = new Date();
     let ongoingDate = endingDate - currentDate;
