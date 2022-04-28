@@ -442,9 +442,12 @@ footer h3 {
 }
 
 #schedule {
-    overflow-x: clip;
+    position: relative;
+    overflow-x: hidden;
 }
 .sched-daytitle {
+    /* color: var(--astrax-orange); */
+    /* background-color: var(--astrax-dark2); */
     background-color: #ffdaa3;
 }
 
@@ -526,13 +529,13 @@ footer h3 {
 }
 .swc-wrapper-timeline .swpg-custom .swpg-switch.active .switch-title {
     font-weight: 400;
-    transition-delay: 0.4s;
+    transition-delay: 0.1s;
 }
 .swc-wrapper-timeline .swpg-custom .swpg-switch.active .switch-title:after {
     background: #000;
     width: 25px;
     height: 25px;
-    transition-delay: 0.4s;
+    transition-delay: 0.1s;
 }
 .swc-wrapper-timeline .swpg-custom .swpg-switch.active ~ .swpg-switch .switch-title {
     color: #888;
@@ -801,6 +804,25 @@ span.tslide {
 
 
 @media (max-width: 450px) {
+    .swpg-custom {
+        min-height: 3rem;
+        padding-top: 1rem;
+    }
+    a.switch-title {
+        transform: translateX(50%) rotateZ(-90deg) !important;
+        min-width: 4rem;
+    }
+    a.switch-title::after {
+        transform: translateX(-250%) translateY(-150%) !important;
+    }
+    .swc-wrapper-timeline .swpg-custom .swpg-switch .switch-title:after {
+        top: 100% !important;
+        right: calc(100% - 17px) !important;
+    }
+    .swc-wrapper-timeline .swpg-custom .swpg-switch.active .switch-title:after {
+        top: 140% !important;
+        right: calc(100% - 57px) !important;
+    }
     i.fa-trophy {
         font-size: 400% !important;
     }
