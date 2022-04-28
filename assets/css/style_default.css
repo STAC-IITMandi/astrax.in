@@ -766,34 +766,6 @@ span.tslide {
 }
 
 /* schedule */
-
-.btn-s{
-   
-    color:  #101018;
-    background-color: #f27a0e;
-    border-radius: 3px;
- 
-    border: none;
-    justify-content: center;
-}
-.btn-s:hover{
-    color:white;
-    background-color:#101018;
-}
-#date{
-    justify-content: center;
-    padding: 5px;
-    padding-left:15px;
-    padding-right: 15px;
-    
-}
-
-@media(max-width:1000px){
-    .stime{
-        width: auto;
-       margin:10px;
-    }
-}
 .darkhr{
     height: 5px !important;
     background-color:rgb(117, 90, 193);
@@ -826,37 +798,8 @@ span.tslide {
     border-radius: 5px;
 
 }
-.permanent{
-    background-color: #000;
-    color:#fff;
-}
-#mayone{
-   display: none;
-}
-#maytwo{
-    display:none;
-}
-#maythree{
-    display:none;
-}
-.dbtn{
-    display: flex;
-    justify-content: center;
-    margin-left: 280px;
-    margin-right: 280px;
-}
-@media(max-width:1000px){
-    .dbtn{
-        display: flex;
-        justify-content: center;
-       margin-left: 10px;
-        margin-right: 10px;
-}
-}
-#hr{
-    display: flex;
-    justify-content: center;
-}
+
+
 @media (max-width: 450px) {
     i.fa-trophy {
         font-size: 400% !important;
