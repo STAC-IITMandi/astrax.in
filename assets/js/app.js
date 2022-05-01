@@ -103,13 +103,22 @@ setTimeout(function(){
     // During the fest, display the page containing current day's schedule directly
     switch (new Date().toDateString()) {
         case 'Sun May 01 2022' :
-            document.querySelector('a.switch-title[href="#schedule-day2"]').click();
+            document.querySelector('#schedule-day1').classList.remove('show');
+            document.querySelector('#schedule-day2').classList.add('show');
+            document.querySelector('a.switch-title[href="#schedule-day1"]').parentElement.classList.remove('active');
+            document.querySelector('a.switch-title[href="#schedule-day2"]').parentElement.classList.add('active');
             break;
         case 'Mon May 02 2022' :
-            document.querySelector('a.switch-title[href="#schedule-day3"]').click();
+            document.querySelector('#schedule-day1').classList.remove('show');
+            document.querySelector('#schedule-day3').classList.add('show');
+            document.querySelector('a.switch-title[href="#schedule-day1"]').parentElement.classList.remove('active');
+            document.querySelector('a.switch-title[href="#schedule-day3"]').parentElement.classList.add('active');
             break;
         case 'Tue May 03 2022' :
-            document.querySelector('a.switch-title[href="#schedule-day4"]').click();
-            break;
+            document.querySelector('#schedule-day1').classList.remove('show');
+            document.querySelector('#schedule-day4').classList.add('show');
+            document.querySelector('a.switch-title[href="#schedule-day1"]').parentElement.classList.remove('active');
+            document.querySelector('a.switch-title[href="#schedule-day4"]').parentElement.classList.add('active');
+        break;
     }
 })
