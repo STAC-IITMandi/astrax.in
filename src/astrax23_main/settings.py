@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'astrax23.apps.Astrax23Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
