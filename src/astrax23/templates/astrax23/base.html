@@ -19,6 +19,12 @@
     <meta name="twitter:title" content="AstraX '23" />
     <meta name="twitter:description" content="AstraX is the inter-college astronomy themed fest organised annually by the students of IIT Mandi. AstraX'22 is taking place from 30 Apr - 3 May" />
     <meta name="twitter:image" content="https://astrax.in/assets/images/bg.jpeg" />
+     <!-- Title of Page -->
+  {% if title %}
+  <title>{{title}} | STAC | IIT Mandi</title>
+  {% else %}
+  <title>STAC | IIT Mandi</title>
+  {% endif %}
     <title>AstraX '23</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
 
@@ -41,10 +47,9 @@
 
   </head>
   <body>
-    {% block navbar %}
-    {% include 'astrax23/navbar.html' %}
-    {% endblock %}
+    {% block navbar %}{% include 'astrax23/navbar.html' %}{% endblock %}
     {% block content %}{% endblock %}
+    {% block speakers %}{% endblock %}
     {% block footer %} {% include 'astrax23/footer.html' %} {% endblock %}
     <!-- Back-to-top-button -->
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i>
