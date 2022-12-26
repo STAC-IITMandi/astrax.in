@@ -318,7 +318,7 @@ section.page-section p:not(.no-mb) {
 
 footer {
     /* background-color: rgb(3, 8, 53); */
-    background-color: var(--astrax-dark);
+    background-color:var(--astrax-dark);
 }
 footer a,
 footer p {

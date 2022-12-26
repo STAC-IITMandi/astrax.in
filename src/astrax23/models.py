@@ -5,6 +5,12 @@ class Speaker(models.Model):
     bio = models.TextField()
     image = models.ImageField(upload_to='images/',default='astrax23/images/speaker_images/default.jpg')
 
+class Sponsor(models.Model):
+    name=models.TextField()
+    website=models.TextField()
+    type=models.TextField()
+    image=models.ImageField(upload_to="images/")
+
     
     def __str__(self):
         return self.name

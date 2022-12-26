@@ -17,7 +17,18 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
                 ('bio', models.TextField()),
-                ('image', models.ImageField(default='astrax23/images/speaker_images/default.jpg', upload_to='images/')),
+                ('image', models.ImageField(default='astrax23/images/speaker_images/default.jpg', upload_to='images/speakers_images')),
             ],
         ),
+        migrations.CreateModel(
+            name='Sponsor',
+            fields=[
+              ('id',models.BigAutoField(auto_created=True,primary_key=True,serialize=False, verbose_name='ID')),
+              ('name',models.TextField()),
+              ('website',models.TextField()),
+              ('type',models.TextField()),
+              ('image', models.ImageField(default='astrax23/images/sponsor_images/default.jpg', upload_to='images/sponsor_images')),
+            ],
+        )
+
     ]
