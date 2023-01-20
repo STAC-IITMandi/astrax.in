@@ -7,7 +7,7 @@ def home(request):
         'speakers_details':Speaker.objects.all(),
         'sponsors':Sponsor.objects.all()
     }
-    return render(request,'astrax23/home.html',content)
+    return render(request,'base.html',content)
 
 
 

@@ -1,0 +1,20 @@
+<section class="page-section container px-4 px-lg-5 text-center" id="keynotes">
+    <h2 class="mt-2 mb-4">Keynote Speakers</h2>
+    <div class="keynote-container">
+        {%for speaker in speakers_details%}
+        <div class="keynote">
+            <div class="key-detail">
+                
+                <img src={{speaker.image.url}} alt={{speaker.name}}>
+               
+                <div class="name">{{speaker.name}}</div>
+            </div>
+            <div class="info">
+                {{speaker.bio}}
+            </div>
+        </div>
+        {%endfor%}
+        
+    </div>
+</section>
+<div class="container-md my-2"><hr/></div>
