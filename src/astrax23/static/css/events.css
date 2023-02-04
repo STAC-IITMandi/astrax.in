@@ -1,0 +1,34 @@
+.event-card {
+    background-color: var(--astrax-dark);
+    overflow: hidden;
+    transition: max-height 0.5s, background-color 0.5s;
+    max-height: 18rem;
+}
+.event-card p {
+    margin-bottom: 0 !important;
+}
+.event-card:hover {
+    /* background-color: var(--astrax-dark2); */
+    max-height: 42rem;
+}
+.event-card object {
+    /* codepen.io/sosuke/pen/Pjoqqp */ /* Changes black into --astrax-orange */
+    filter: invert(54%) sepia(65%) saturate(3708%) hue-rotate(1deg)
+        brightness(104%) contrast(90%);
+    height: 40%;
+    max-width: 85%;
+}
+@media (min-width: 768px) {
+    .event-card {
+        max-height: 12rem;
+    }
+    .event-card:hover {
+        max-height: 80vh;
+    }
+    .event-card object {
+        height: 60%;
+    }
+    .event-card .svg-holder {
+        min-height: 400px;
+    }
+}
