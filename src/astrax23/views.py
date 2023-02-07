@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import JsonResponse
-from .models import (Speaker,Sponsor,Event)
+# from .models import (Speaker,Sponsor,Event)
 from .models import (Speaker,Sponsor,Team,Event)
 
 def home(request):
