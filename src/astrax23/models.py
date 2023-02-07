@@ -18,6 +18,18 @@ class Sponsor(models.Model):
     def __str__(self):
         return self.name
 
+class Event(models.Model):
+    name=models.CharField(max_length=100)
+    short_description=models.TextField()
+    long_description=models.TextField()
+    team_size=models.CharField(max_length=100)
+    date=models.CharField(max_length=100)
+    rulebook_link = models.URLField(max_length = 200)
+    Registration_link = models.URLField(max_length = 200)
+    submission_link= models.URLField(max_length = 200)
+    image=models.ImageField(upload_to='images/',default='astrax23/images/events_images/default.jpg')
+    def __str__(self):
+        return self.name
 
 class Team(models.Model):
     name=models.CharField(max_length=100)
