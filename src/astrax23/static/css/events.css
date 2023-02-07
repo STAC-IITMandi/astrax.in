@@ -1,5 +1,5 @@
 .event-card {
-    background-color: var(--astrax-dark);
+    background-color: #310063;
     overflow: hidden;
     transition: max-height 0.5s, background-color 0.5s;
     max-height: 18rem;
@@ -31,4 +31,7 @@
     .event-card .svg-holder {
         min-height: 400px;
     }
+}
+.body{
+    background-color: black;
 }
