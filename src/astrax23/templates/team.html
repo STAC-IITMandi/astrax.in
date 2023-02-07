@@ -55,9 +55,9 @@
     
         <div class="container-md my-2"><hr/></div>
 
-        {% comment %} WebD Team {% endcomment %}
+        {% comment %}  Conveners {% endcomment %}
         <section class="page-section container px-4 px-lg-5 text-center" id="keynotes">
-            <h2 class="mt-2 mb-4"> WebD Team</h2>
+            <h2 class="mt-2 mb-4"> Conveners </h2>
             <div class="keynote-container">
                 {%for member in team_members%}
                 <div class="keynote">
@@ -68,7 +68,10 @@
                         <div class="name">{{member.name}}</div>
                     </div>
                     <div class="info">
-                        {{member.designation}}
+                        {{member.Position_of_head}}
+                        
+                        <a href="{{member.insta_link}}">Insta</a>
+                        <a href="{{member.linkedin_link}}">Linkedin</a>
                     </div>
                 </div>
                 {%endfor%} 
@@ -78,9 +81,9 @@
     
     
     
-        {% comment %} Planning Team {% endcomment %}
+        {% comment %} Team Members {% endcomment %}
         <section class="page-section container px-4 px-lg-5 text-center" id="keynotes">
-            <h2 class="mt-2 mb-4"> Planning Team</h2>
+            <h2 class="mt-2 mb-4">  Team Members </h2>
             <div class="keynote-container">
                 {%for member in team_members%}
                 <div class="keynote">
@@ -91,37 +94,17 @@
                         <div class="name">{{member.name}}</div>
                     </div>
                     <div class="info">
-                        {{member.designation}}
+                        {{member.Position_of_head}}
+                        
+                        <a href="{{member.insta_link}}">Insta</a>
+                        <a href="{{member.linkedin_link}}">Linkedin</a>
                     </div>
                 </div>
                 {%endfor%} 
             </div>
         </section>   
         <div class="container-md my-2"><hr/></div> 
-    
-        {% comment %} Content Team {% endcomment %}
-        <section class="page-section container px-4 px-lg-5 text-center" id="keynotes">
-            <h2 class="mt-2 mb-4"> Content Team</h2>
-            <div class="keynote-container">
-                {%for member in team_members%}
-                <div class="keynote">
-                    <div class="key-detail">
-                        
-                        <img src={{member.image.url}} alt={{member.name}}>
-                       
-                        <div class="name">{{member.name}}</div>
-                    </div>
-                    <div class="info">
-                        {{member.designation}}
-                    </div>
-                </div>
-                {%endfor%} 
-            </div>
-        </section>
-        <div class="container-md my-2"><hr/></div>      
-    
-        
-    </section>
+
 
     {% block footer %} {% include 'footer.html' %} {% endblock %}
     <!-- Back-to-top-button -->

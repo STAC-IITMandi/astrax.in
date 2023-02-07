@@ -21,8 +21,9 @@ class Sponsor(models.Model):
 
 class Team(models.Model):
     name=models.CharField(max_length=100)
-    designation=models.CharField(max_length=100)
-    relationship_status=models.CharField(max_length=100)
+    Position_of_head=models.CharField(max_length=100)
+    insta_link = models.URLField(max_length=200,default='https://www.youtube.com/watch?v=33Xe3z8L73A')
+    linkedin_link = models.URLField(max_length=200,default='https://www.youtube.com/watch?v=33Xe3z8L73A')
     image = models.ImageField(upload_to='images/',default='astrax23/images/team_images/default.jpg')
 
     def __str__(self):
