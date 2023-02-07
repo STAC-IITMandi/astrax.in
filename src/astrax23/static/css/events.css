@@ -1,37 +1,182 @@
-.event-card {
-    background-color: #310063;
-    overflow: hidden;
-    transition: max-height 0.5s, background-color 0.5s;
-    max-height: 18rem;
+/*.event-card {
+  background-color: #310063;
+  overflow: hidden;
+  transition: max-height 0.5s, background-color 0.5s;
+  max-height: 18rem;
 }
 .event-card p {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
-.event-card:hover {
-    /* background-color: var(--astrax-dark2); */
-    max-height: 42rem;
+.event-card:hover {*/
+  /* background-color: var(--astrax-dark2); *//*
+  max-height: 42rem;
 }
-.event-card object {
-    /* codepen.io/sosuke/pen/Pjoqqp */ /* Changes black into --astrax-orange */
-    filter: invert(54%) sepia(65%) saturate(3708%) hue-rotate(1deg)
-        brightness(104%) contrast(90%);
-    height: 40%;
-    max-width: 85%;
+.event-card object {*/
+  /* codepen.io/sosuke/pen/Pjoqqp */ /* Changes black into --astrax-orange *//*
+  filter: invert(54%) sepia(65%) saturate(3708%) hue-rotate(1deg)
+      brightness(104%) contrast(90%);
+  height: 40%;
+  max-width: 85%;
 }
 @media (min-width: 768px) {
-    .event-card {
-        max-height: 12rem;
-    }
-    .event-card:hover {
-        max-height: 80vh;
-    }
-    .event-card object {
-        height: 60%;
-    }
-    .event-card .svg-holder {
-        min-height: 400px;
-    }
+  .event-card {
+      max-height: 12rem;
+  }
+  .event-card:hover {
+      max-height: 80vh;
+  }
+  .event-card object {
+      height: 60%;
+  }
+  .event-card .svg-holder {
+      min-height: 400px;
+  }
 }
 .body{
-    background-color: black;
-}
+  background-color: black;
+}*/
+
+
+
+
+
+
+
+
+body {
+    background: black;
+    /* background: -moz-linear-gradient(top, #28343b 0%, #958b99 100%);
+    background: -webkit-linear-gradient(top, #28343b 0%,#958b99 10f0%);
+    background: linear-gradient(to bottom, #28343b 0%,#958b99 100%); */
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28343b', endColorstr='#958b99',GradientType=0 ); */
+     height:100vh;
+    }
+    
+    /* .showcaseContainer {
+        display: flex;
+        justify-content: space-between;
+    } */
+    
+    .showcaseBox {
+      -webkit-transition: all 500ms ease-out 0s;
+      -moz-transition: all 500ms ease-out 0s;
+      -o-transition: all 500ms ease-out 0s;
+      transition: all 500ms ease-out 0s;
+      position:relative;
+      margin: 1px;
+      flex-basis: calc(33.333% - 20px); 
+      height:250px;
+      background-color:grey;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border:1px solid transparent;
+    }
+    
+    .showcaseBox span {
+      -webkit-transition: all 250ms ease-out 450ms;
+      -moz-transition: all 250ms ease-out 450ms;
+      -o-transition: all 250ms ease-out 450ms;
+      transition: all 250ms ease-out 450ms;
+      color:white;
+      position:absolute;
+      width:100%;
+      text-align:center;
+      /* top:35%; */
+      opacity:1;
+      font-size:300%;
+      font-weight:bold;
+      font-family:"Trebuchet MS";
+    }
+    
+    
+    
+
+    
+    .ekstraStuff2 {
+      padding:15px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 500ms ease-out 250ms, color 250ms ease-out 0ms;
+      -moz-transition: all 500ms ease-out 250ms, color 250ms ease-out 0ms;
+      -o-transition: all 500ms ease-out 250ms, color 250ms ease-out 0ms;
+      transition: all 500ms ease-out 250ms, color 250ms ease-out 0ms;
+      width:0px;
+      height:100%;
+      left:right;
+      opacity:0;
+      color:transparent;
+      background-color:rgba(255,255,255,0.8);
+    }
+    
+    #box2 {
+      border:1px solid rgba(255,255,255,0.8);
+      transition: all 500ms ease-out 500ms;
+      background: url("https://picsum.photos/600/300/?random");
+      /* background-position: -10px -10px;  */
+      background-size: center cover;
+    }
+    
+    #box2:hover .ekstraStuff2 {
+      -webkit-transition: all 500ms ease-out 0ms, color 250ms ease-out 500ms;
+      -moz-transition: all 500ms ease-out 0ms, color 250ms ease-out 500ms;
+      -o-transition: all 500ms ease-out 0ms, color 250ms ease-out 500ms;
+      transition: all 500ms ease-out 0ms, color 250ms ease-out 500ms;
+      opacity:1;
+      color:black;
+      width:100%;
+    }
+    
+    #box2:hover { 
+      border:1px solid rgba(255,255,255,0.8);
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+      gap: 2rem;
+      margin: 10rem 5vw;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .card {
+      position: relative;
+      display: block;
+      height: 100%;
+      border-radius: calc(var(--curve) * 1px);
+      overflow: hidden;
+      text-decoration: none;
+    }
+    h3{
+      color:aliceblue;
+      font-weight: bold;
+    
+    }
+    #box2:hover .fade-in-image {
+      animation: fadeIn 5s;
+      -webkit-animation: fadeIn 5s;
+      -moz-animation: fadeIn 5s;
+      -o-animation: fadeIn 5s;
+      -ms-animation: fadeIn 5s;
+    }
+    
+    @keyframes fadeIn {
+      0% { opacity: 1; }
+      20% { opacity: 0.3; }
+      100% { opacity: 0.3; }
+    }
+
+
+    
+    
+    
+    
+    /* #boxContainer {
+      width:100%;
+      height:100%;
+      background-color:transparent;
+    } */
+    
+    
