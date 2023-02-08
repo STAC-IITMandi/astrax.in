@@ -57,8 +57,59 @@
 {% block event %}
 
 
-<section class="page-section container px-4 px-lg-5 text-center" id="events">
-    <div class="container px-4 px-lg-5">
+<!-- <section class="page-section container px-4 px-lg-5 text-center" id="events"> -->
+<section class="page-section text-center" id="events">
+
+<div class="eventheading">
+    <p class="heading">EVENTS</p>
+</div>
+<div class="row eventrow">
+{%for event in event_details%}
+    <div class="col-md-6 event-card-container" >
+        <div class="event_card">
+            <div class="eventsub">
+            <div class="event_container" style="background-image:url('{{ BASIC_DIR }}/media/{{event.image}}');">
+                <!-- <img src="{{ BASIC_DIR }}/media/{{event.image}}"  alt=""  class="eventimage"> -->
+                <div class="eventname">
+                    <p>{{event.name}}</p>
+                </div>
+                <div class="eventdate">
+                    <p>{{event.date}}</p>
+                </div>
+                <div class="prizeworth">
+                    <p>{{event.price_worth}}</p>
+                </div>
+                <div class="info">
+                    <p>{{event.short_description}}</p>
+                </div>
+            </img>
+            </div>
+<!-- 
+            <div class="ekstraStuff2">Neat little animation to show a hover-message over the picture (or whatever else could be in the box!).</div> -->
+
+            <div class="eventlinks">
+                <span class="eventlinkspan1">
+
+                    <a href={{event.rulebook_link }} target="_blank"><button class="eventbutton">Rulebook</button></a>
+                </span>
+                <span class="eventlinkspan2">
+
+                    <a href={{event.Registration_link }} target="_blank"><button class="eventbutton">Register</button></a>
+                </span>
+                <!-- <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-6">
+                    </div>
+                </div> -->
+            </div>
+            </div>
+        </div>
+    </div>
+{%endfor%}
+</div>
+</section>
+    <!-- <div class="container px-4 px-lg-5">
         <h2 class="mb-4">Events</h2>
         <p></p>
         {%for event in event_details%}
@@ -83,8 +134,8 @@
         {%endfor%}
         
         
-    </div>
-</section>
+    </div> -->
+<!-- </section> -->
 
 
 {% endblock event %} 
