@@ -20,6 +20,7 @@ class Sponsor(models.Model):
 
 class Event(models.Model):
     name=models.CharField(max_length=100)
+    price_worth=models.CharField(max_length=100)
     short_description=models.TextField()
     long_description=models.TextField()
     team_size=models.CharField(max_length=100)

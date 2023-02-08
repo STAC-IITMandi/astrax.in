@@ -1,4 +1,185 @@
-.event-card {
+
+#events{
+    /* height: 100vh; */
+    /* background-image:url('../images/event_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color:#26004C;
+    /* filter: blur(1000); */
+   
+}
+.eventheading .heading{
+    font-size: 4rem;
+    /* margin-bottom: 25px; */
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 800;
+    /* background: linear-gradient(yellow, */
+    background: linear-gradient(#7CA0FE,
+    #7CA0FE, #9251FE,#9251FE);
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+}
+#events .event-card-container{
+    background-repeat: no-repeat;
+    background-size:center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 1000px; */
+    /* height: 100vh; */
+
+}
+.event_card {
+    height: 429px;
+    /* padding-bottom: 300px; */
+    width: 400px;
+   
+   /* margin-bottom: -20px; */
+   /* border: 3px solid #9251FE;1 */
+  
+   padding-bottom: -20px;
+}
+.event_container{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.eventlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.eventbutton{
+   width:197px;
+height: 40px;
+}
+.eventbutton:hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.eventlinkspan2 .eventbutton{
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* border-right:3px solid #9251FE; */
+    border-bottom-right-radius: 10px;
+}
+.eventlinkspan1 .eventbutton{
+border-bottom-left-radius: 10px;
+}
+.eventname{
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    color: azure;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.eventsub{
+    /* padding-bottom: 20px; */
+    border: 3px solid #9251FE;
+    border-radius: 10px;
+}
+.eventdate{
+    margin-top: -10px;
+    padding-left: 20px;
+    text-align: left;
+    color: azure;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.info{
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    text-align: left;
+    color: azure;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.prizeworth{
+    margin-top: -10px;
+    padding-left: 20px;
+    text-align: left;
+    color: azure;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.eventrow{
+    padding-bottom: 50px;
+}
+@media screen and (max-width:767px) {
+    .event_card{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:410px) {
+    .event_card{
+        width: 350px;
+    }
+    .eventbutton{
+        width:173px;
+     height: 40px;
+     }
+}
+/* .ekstraStuff2 {
+    padding:15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 500ms ease-out 250ms, color 250ms ease-out 0ms;
+    -moz-transition: all 500ms ease-out 250ms, color 250ms ease-out 0ms;
+    -o-transition: all 500ms ease-out 250ms, color 250ms ease-out 0ms;
+    transition: all 500ms ease-out 250ms, color 250ms ease-out 0ms;
+    width:0px;
+    height:100%;
+    left:right;
+    opacity:0;
+    color:transparent;
+    background-color:rgba(255,255,255,0.8);
+  }
+  .event_card {
+    border:10px solid rgba(255,255,255,0.8);
+    transition: all 500ms ease-out 500ms;
+    background: url("https://picsum.photos/600/300/?random");
+    background-position: -10px -10px; 
+    background-size: center cover;
+  }
+  
+  .event_card:hover .ekstraStuff2 {
+    -webkit-transition: all 500ms ease-out 0ms, color 250ms ease-out 500ms;
+    -moz-transition: all 500ms ease-out 0ms, color 250ms ease-out 500ms;
+    -o-transition: all 500ms ease-out 0ms, color 250ms ease-out 500ms;
+    transition: all 500ms ease-out 0ms, color 250ms ease-out 500ms;
+    opacity:1;
+    color:black;
+    width:100%;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .event-card {
     background-color: #310063;
     overflow: hidden;
     transition: max-height 0.5s, background-color 0.5s;
@@ -6,19 +187,19 @@
 }
 .event-card p {
     margin-bottom: 0 !important;
-}
-.event-card:hover {
+} */
+/* .event-card:hover { */
     /* background-color: var(--astrax-dark2); */
-    max-height: 42rem;
-}
-.event-card object {
+    /* max-height: 42rem;
+} */
+/* .event-card object { */
     /* codepen.io/sosuke/pen/Pjoqqp */ /* Changes black into --astrax-orange */
-    filter: invert(54%) sepia(65%) saturate(3708%) hue-rotate(1deg)
+    /* filter: invert(54%) sepia(65%) saturate(3708%) hue-rotate(1deg)
         brightness(104%) contrast(90%);
     height: 40%;
     max-width: 85%;
-}
-@media (min-width: 768px) {
+} */
+/* @media (min-width: 768px) {
     .event-card {
         max-height: 12rem;
     }
@@ -34,4 +215,4 @@
 }
 .body{
     background-color: black;
-}
+} */
