@@ -1,11 +1,11 @@
 style_default.css
 
-:root {
+/* :root {
     --astrax-orange: #f27a0e;
-    --astrax-dark: #0b2232;
-    --astrax-dark2: #101018;
+    -- #0b2232: #0b2232;
+    -- #0b22322: #101018;
     --discord-bg: rgb(24,26,28);
-}
+} */
 
 .text-orange {
     color: var(--astrax-orange) !important;
@@ -21,7 +21,7 @@ style_default.css
     box-shadow:1px 4px 2px 2px #dcdde1;
     border-radius:5em;
     text-decoration: none !important;
-    /* color: var(--astrax-dark) !important; */
+    /* color: var(-- #0b2232) !important; */
 }
 .social-links a i {
     transition:all 0.3s linear;
@@ -85,7 +85,7 @@ style_default.css
 }
 @media (max-width: 992px) {
     #mainNav.opaque-bg {
-        background-color: var(--astrax-dark);
+        background-color:#0b2232;
     }
     #mainNav a.nav-link {
         color: #fffb;
@@ -124,7 +124,7 @@ style_default.css
         color: var(--astrax-orange);
     }
     #mainNav.navbar-shrink {
-        background-color: var(--astrax-dark);
+        background-color:  #0b2232;
     }
     #mainNav.navbar-shrink .navbar-brand {
         color: #fffb;
@@ -144,7 +144,7 @@ style_default.css
 /* Changing color of navbar on scrolling */
 .nav-scrolled {
     /* Color can be modified as per theme */
-    background-color: var(--astrax-dark) !important;
+    background-color: #0b2232 !important;
     transition: background-color 200ms ease-in;
 }
 
@@ -246,8 +246,8 @@ h4,
     background-color: var(--astrax-orange);
 }
 .btn-orange:hover {
-    background-color: var(--astrax-dark2);
-    border-color: var(--astrax-dark2);
+    background-color: #0b2322;
+    border-color: var(-- #0b2322);
     color: #fff;
     transition: 0.5s;
 }
@@ -263,7 +263,7 @@ section.page-section p:not(.no-mb) {
 }
 
 #about {
-    background: var(--astrax-dark2);
+    background: var(-- #0b22322);
 }
 #about h2 {
     color: var(--astrax-orange);
@@ -273,11 +273,11 @@ section.page-section p:not(.no-mb) {
 }
 
 .page-section h2 {
-    color: var(--astrax-dark);
+    color: var(-- #0b2232);
 }
 
 .event-card {
-    background-color: var(--astrax-dark);
+    background-color: var(-- #0b2232);
     overflow: hidden;
     transition: max-height 0.5s, background-color 0.5s;
     max-height: 18rem;
@@ -286,7 +286,7 @@ section.page-section p:not(.no-mb) {
     margin-bottom: 0 !important;
 }
 .event-card:hover {
-    /* background-color: var(--astrax-dark2); */
+    /* background-color: var(-- #0b22322); */
     max-height: 42rem;
 }
 .event-card object {
@@ -318,7 +318,7 @@ section.page-section p:not(.no-mb) {
 
 footer {
     /* background-color: rgb(3, 8, 53); */
-    background-color:var(--astrax-dark);
+    background-color:var(-- #0b2232);
 }
 footer a,
 footer p {
@@ -364,7 +364,7 @@ footer h3 {
 
 /* #footer-transition-gradient {
     height: 20px;
-    background-color: var(--astrax-dark2);
+    background-color: var(-- #0b22322);
     background: linear-gradient(0deg, rgba(11,34,50,1) 0%, rgba(255,255,255,0) 100%);
 } */
 
@@ -374,13 +374,13 @@ footer h3 {
     position: fixed;
     right: 15px;
     bottom: 15px;
-    border: 6px solid var(--astrax-dark);
-    /* box-shadow: 0px 5px 10px 3px var(--astrax-dark); */
+    border: 6px solid var(-- #0b2232);
+    /* box-shadow: 0px 5px 10px 3px var(-- #0b2232); */
     border-radius: 50%;
     background-color: white;
     width: 50px;
     height: 50px;
-    color: var(--astrax-dark);
+    color: var(-- #0b2232);
     display: none;
     transition: 0.5s;
 }
@@ -396,9 +396,9 @@ footer h3 {
 #scroll-top:active {
     transform: translateY(3px);
     color: white;
-    background-color: var(--astrax-dark);
-    border-color: var(--astrax-dark);
-    box-shadow: 0px 3px 10px 3px var(--astrax-dark);
+    background-color: var(-- #0b2232);
+    border-color: var(-- #0b2232);
+    box-shadow: 0px 3px 10px 3px var(-- #0b2232);
 }
 
 /* Styling Team Page */
@@ -449,7 +449,7 @@ footer h3 {
 }
 .sched-daytitle {
     /* color: var(--astrax-orange); */
-    /* background-color: var(--astrax-dark2); */
+    /* background-color: var(-- #0b22322); */
     background-color: #ffdaa3;
 }
 
@@ -573,7 +573,7 @@ footer h3 {
 .person-role {
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    color: var(--astrax-dark);
+    color: var(-- #0b2232);
 }
 .person-name {
     font-size: 1.2rem;
@@ -587,7 +587,7 @@ footer h3 {
 
 .person-detail:hover {
     box-shadow: 8px 8px 7px 3px #946e06;
-    /* box-shadow: 8px 8px 7px 3px var(--astrax-dark); */
+    /* box-shadow: 8px 8px 7px 3px var(-- #0b2232); */
     transform: translate(-5px, -5px);
     transition: 0.3s;
 }
@@ -677,7 +677,7 @@ footer h3 {
 .keynote-heading {
     font-size: 2.25rem;
     text-align: center;
-    color: var(--astrax-dark);
+    color: var(-- #0b2232);
     margin-bottom: 1rem;
 }
 .keynote-container {
@@ -712,7 +712,7 @@ footer h3 {
     justify-content: space-around;
 }
 .key-detail > img {
-    border: 2.5px solid var(--astrax-dark2);
+    border: 2.5px solid var(-- #0b22322);
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -729,7 +729,7 @@ footer h3 {
 }
 .keynote > .info {
     font-size: 1rem;
-    color: var(--astrax-dark2);
+    color: var(-- #0b22322);
     font-weight: 500;
     word-wrap: break-word;
 }

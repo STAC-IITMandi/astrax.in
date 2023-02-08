@@ -28,9 +28,9 @@ window.addEventListener("scroll", (e) => {
         navbar.classList.add("nav-scrolled");
     } else {
         // if scrolled class is present then remove it
-        if (navbar.classList.contains("nav-scrolled")) {
-            navbar.classList.remove("nav-scrolled");
-        }
+        // if (navbar.classList.contains("nav-scrolled")) {
+        //     navbar.classList.remove("nav-scrolled");
+        // }
     }
 
     // // Title effect

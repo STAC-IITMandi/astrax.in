@@ -10,7 +10,7 @@ body{
     font-size: 80%;
     padding: 0.5rem;
     color: #fffb;
-    border: 1px solid #fffb;
+    /* border: 1px solid #fffb; */
 }
 #mainNav .navbar-toggler:focus {
     outline: none;
@@ -32,7 +32,11 @@ body{
 }
 @media (max-width: 992px) {
     #mainNav.opaque-bg {
-        background-color: var(--astrax-dark);
+        background-color:  #26004C;
+    }
+    #mainNav .navbar-nav .nav-item{
+        text-align: center;
+        font-size: 1.5rem;
     }
     #mainNav a.nav-link {
         color: #fffb;
@@ -63,16 +67,16 @@ body{
         transition: none;
         padding: 0.5rem 0.9rem;
         color: #fffb !important;
-        font-size: ;
+        font-size: 1rem;
     }
     #mainNav .nav-link:hover,
     #mainNav .nav-link:active,
     #mainNav.navbar-shrink .nav-link:hover,
     #mainNav.navbar-shrink .nav-link:active {
-        color: var(--astrax-orange);
+        color: #9251FE;
     }
     #mainNav.navbar-shrink {
-        background-color: var(--astrax-dark);
+        background-color:  #26004C;
     }
     #mainNav.navbar-shrink .navbar-brand {
         color: #fffb;
@@ -83,9 +87,9 @@ body{
         border-bottom: 0.25rem solid transparent;
     }
     #mainNav.navbar-shrink .nav-link.active {
-        color: var(--astrax-orange);
+        color: #9251FE;
         outline: none;
-        border-bottom: 0.25rem solid var(--astrax-orange);
+        border-bottom: 0.25rem solid #9251FE;
     }
 }
 .register{
@@ -95,7 +99,7 @@ body{
 /* Changing color of navbar on scrolling */
 .nav-scrolled {
     /* Color can be modified as per theme */
-    background-color: black !important;
+    background-color: #26004C !important;
     transition: background-color 200ms ease-in;
 }
 
@@ -119,12 +123,15 @@ body{
 
 .footer {
     padding-top: 3.5rem;
-    margin-bottom: 0px;
+    margin-bottom: -50px;
+    margin-top: 0px;
 }
 
 footer {
     /* background-color: rgb(3, 8, 53); */
-    background-color:var(--astrax-dark);
+    background-color: #26004C;
+    margin-bottom: -20px;
+    /* margin-top: 500px; */
 }
 footer a,
 footer p {
