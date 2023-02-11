@@ -68,21 +68,21 @@
     <div class="col-md-6 event-card-container" >
         <div class="event_card">
             <div class="eventsub">
-            <div class="event_container" style="background-image:url('{{ BASIC_DIR }}/media/{{event.image}}');">
+            <div class="event_container" style="background-image:url('{{ BASIC_DIR }}/media/{{event.image}}'); background-size: contain;">
                 <!-- <img src="{{ BASIC_DIR }}/media/{{event.image}}"  alt=""  class="eventimage"> -->
-                <div class="eventname">
-                    <p>{{event.name}}</p>
-                </div>
-                <div class="eventdate">
-                    <p>{{event.date}}</p>
-                </div>
-                <div class="prizeworth">
-                    <p>{{event.price_worth}}</p>
-                </div>
-                <div class="info">
-                    <p>{{event.short_description}}</p>
-                </div>
-            </img>
+                    <div class="eventname">
+                        <p>{{event.name}}</p>
+                    </div>
+                    <div class="eventdate">
+                        <p>{{event.date}}</p>
+                    </div>
+                    <div class="prizeworth">
+                        <p>{{event.price_worth}}</p>
+                    </div>
+                    <div class="info">
+                        <p>{{event.short_description}}</p>
+                    </div>
+            <!-- </img> -->
             </div>
 <!-- 
             <div class="ekstraStuff2">Neat little animation to show a hover-message over the picture (or whatever else could be in the box!).</div> -->

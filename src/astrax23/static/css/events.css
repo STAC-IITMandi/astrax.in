@@ -45,7 +45,7 @@
 .event_container{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
+    
 }
 .eventlinks{
     display: flex;
@@ -98,7 +98,7 @@ border-bottom-left-radius: 10px;
 .info{
     margin-top: -10px;
     padding-left: 20px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     text-align: left;
     color: azure;
     font-size: 1.2rem;
