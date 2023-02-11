@@ -7,6 +7,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    margin-top: -2px;
 }
 
 .about  #about .newheading {
@@ -23,6 +24,9 @@
     margin: 0px;
     text-align: justify;
     margin-bottom: 10px;
+}
+.about-content{
+    color: #fff;
 }
 .about #about .btnclass{
     display: flex;

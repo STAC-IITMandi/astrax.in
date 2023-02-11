@@ -123,14 +123,14 @@ body{
 
 .footer {
     padding-top: 3.5rem;
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
     margin-top: 0px;
 }
 
 footer {
     /* background-color: rgb(3, 8, 53); */
     background-color: #26004C;
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
     /* margin-top: 500px; */
 }
 footer a,
@@ -139,7 +139,7 @@ footer p {
     text-decoration: none;
 }
 footer a:hover {
-    color: #200040;
+    color: #7CA0FE;
 }
 footer .contact,
 footer .links-wrap,

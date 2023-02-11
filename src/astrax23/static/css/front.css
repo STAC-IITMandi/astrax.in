@@ -1,0 +1,177 @@
+
+@keyframes mymove{
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+
+
+.main-heading{
+    font-size: 9vw;
+    margin-bottom:-2.2vw;
+}
+
+.line{
+    width: 13vw;
+    border: 1px solid white;
+    opacity: 1;
+    margin-left: 2vw;
+    margin-bottom: 0px;
+    margin-top: 1.5vw;
+}
+
+.heading2-line{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+@media screen and (min-width:850px){
+    #smallscreen{
+        display: none;
+    }
+    #front{
+        height: 100vh;
+        background-image: url("../images/siteimg/BG.png");
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        color: white;
+        position: relative;
+    }
+    .heading-container{
+        position: absolute;
+        top: 30%;
+        left:10%;
+    }
+    
+    #sat{
+        position: absolute;
+        top: 10%;
+        right:0%;
+        animation: mymove 3s infinite;
+        animation-timing-function: ease-in-out;
+    
+    }
+    .main-heading2{
+        font-size: 3vw;
+        margin-bottom: 0px;
+        font-weight: 400;
+    }
+    
+    .main-heading3{
+        font-size: 2vw;
+        font-weight: 200;
+    }
+
+    .main-heading{
+        font-size: 9vw;
+        margin-bottom:-2.2vw;
+    }
+    
+    .sat-img{
+        width: 40vw;
+        height: 40vw;
+        animation: mymove 3s infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+@media screen and (max-width: 850px) {
+    #smallscreen {
+        display: block;
+    }
+    #front{
+        height: 100vh;
+        background-image: url("../images/siteimg/BGipad.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        color: white;
+    }
+    #bigscreen{
+        display: none;
+    }
+    #smallscreen #smallcontainer {
+       display:flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    #sat{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    /* .heading-container .main- */
+    .main-heading{
+        font-size: 7rem;
+    }
+    .main-heading2{
+        font-size: 2.7rem;
+        margin-bottom: 0px;
+        font-weight: 400;
+    }
+    
+    .main-heading3{
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+    
+    
+    
+    .sat-img{
+        width: 60vw;
+        height: 60vw;
+        animation: mymove 3s infinite;
+        animation-timing-function: ease-in-out;
+    }
+    #smallscreen{
+        padding-top: 30%;
+    }
+}
+@media screen and (max-width:450px) {
+    #front{
+        height: 100vh;
+        background-image: url("../images/siteimg/BGmobile.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        color: white;
+    }
+
+    .main-heading{
+        font-size: 3rem;
+        margin-bottom:1%;
+        text-align: center;
+    }
+    .main-heading2{
+        font-size: 2rem;
+        margin-bottom: 1%;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    .main-heading3{
+        text-align: center;
+        font-size:1.3rem;
+        font-weight: 200;
+    }
+    .line{
+        display: none;
+    }
+    .heading2-line{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .sat-img{
+        margin-top: 20%;
+        width: 40vw;
+        height: 40vw;
+        animation: mymove 3s infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
