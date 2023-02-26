@@ -34,15 +34,16 @@ class Event(models.Model):
 
 class Team(models.Model):
     name=models.CharField(max_length=100)
-    Position_of_head=models.CharField(max_length=100)
-    insta_link = models.URLField(max_length=200,default='https://www.youtube.com/watch?v=33Xe3z8L73A')
-    linkedin_link = models.URLField(max_length=200,default='https://www.youtube.com/watch?v=33Xe3z8L73A')
+    position=models.CharField(max_length=100)
+    insta = models.URLField(max_length=200,default='https://www.youtube.com/watch?v=33Xe3z8L73A')
+    linkedin = models.URLField(max_length=200,default='https://www.youtube.com/watch?v=33Xe3z8L73A')
+    facebook = models.URLField(max_length=200,default='https://www.youtube.com/watch?v=33Xe3z8L73A')
     image = models.ImageField(upload_to='images/',default='astrax23/images/team_images/default.jpg')
 
     def __str__(self):
         return self.name
 
-# class Event(models.Model):
+# class Event(models.Model):y
 #     name=models.CharField(max_length=100)
 #     description=models.TextField()
 #     image=models.ImageField(upload_to='images/',default='astrax23/images/events_images/default.jpg')

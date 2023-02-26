@@ -5,6 +5,7 @@ body{
 /* Navbar on mobile screens (collapsed menu) */
 #mainNav {
     min-height: 1rem;
+    z-index: 10000;
 }
 #mainNav .navbar-toggler {
     font-size: 80%;
